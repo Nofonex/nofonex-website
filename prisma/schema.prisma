@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
 }
 
 datasource db {
@@ -9,85 +8,46 @@ datasource db {
 }
 
 model Account {
-  id                String  @id
+  id                String  @id @default(cuid())
   userId            String
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String?
-  access_token      String?
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
   expires_at        Int?
   token_type        String?
   scope             String?
-  id_token          String?
+  id_token          String? @db.Text
   session_state     String?
-  User              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
 
-model Comment {
-  id            String    @id
-  content       String
-  postSlug      String
-  userId        String
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime
-  parentId      String?
-  status        String    @default("pending")
-  Comment       Comment?  @relation("CommentToComment", fields: [parentId], references: [id], onDelete: Cascade)
-  other_Comment Comment[] @relation("CommentToComment")
-  User          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  Like          Like[]
-  Report        Report[]
-
-  @@index([postSlug])
-}
-
-model Like {
-  id        String   @id
-  commentId String
-  userId    String
-  createdAt DateTime @default(now())
-  Comment   Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
-  User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([commentId, userId])
-}
-
-model Report {
-  id        String   @id
-  reason    String
-  commentId String
-  userId    String
-  createdAt DateTime @default(now())
-  Comment   Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
-  User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
 model Session {
-  id           String   @id
+  id           String   @id @default(cuid())
   sessionToken String   @unique
   userId       String
   expires      DateTime
-  User         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model User {
-  id             String    @id
-  name           String?
-  email          String?   @unique
-  emailVerified  DateTime?
-  image          String?
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
   hashedPassword String?
-  role           String    @default("user")
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime
-  Account        Account[]
-  Comment        Comment[]
-  Like           Like[]
-  Report         Report[]
-  Session        Session[]
+  role          String    @default("user")
+  accounts      Account[]
+  sessions      Session[]
+  comments      Comment[]
+  likes         Like[]
+  reports       Report[]
+  payments      Payment[]
 }
 
 model VerificationToken {
@@ -96,4 +56,55 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  postSlug  String
+  status    String   @default("pending") // pending, approved, rejected
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  likes     Like[]
+  reports   Report[]
+}
+
+model Like {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  commentId String
+  userId    String
+  comment   Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([commentId, userId])
+}
+
+model Report {
+  id        String   @id @default(cuid())
+  reason    String
+  createdAt DateTime @default(now())
+  commentId String
+  userId    String
+  comment   Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([commentId, userId])
+}
+
+model Payment {
+  id              String   @id @default(cuid())
+  userId          String?
+  amount          Float
+  currency        String
+  status          String   // pending, processing, confirmed, failed
+  type            String   // crypto, bank, invoice
+  transactionHash String?  // For crypto payments
+  metadata        Json?    // Additional payment details
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
 }

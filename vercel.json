@@ -1,0 +1,11 @@
+{
+  "buildCommand": "node scripts/vercel-build.js",
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "PRISMA_GENERATE_SKIP_AUTOINSTALL": "true"
+  }
+}
