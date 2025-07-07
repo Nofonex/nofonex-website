@@ -275,7 +275,7 @@ export default function Home() {
               </div>
               <div className="md:w-1/2">
                 <Image
-                  src="/bridges__futuristic_city_1.jpg"
+                  src="images/bridges__futuristic_city_1.jpg"
                   alt="bridges futuristic city"
                   width={600}
                   height={400}
