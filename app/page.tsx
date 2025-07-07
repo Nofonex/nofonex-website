@@ -156,7 +156,7 @@ export default function Home() {
               <div className="order-1 lg:order-2 relative">
                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
                 <Image
-                  src="/images/global-network-connections.jpg"
+                  src="/images/digital_city_night_1.jpg"
                   alt="Global network of digital connections representing international business opportunities"
                   width={600}
                   height={500}
