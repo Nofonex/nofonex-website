@@ -198,7 +198,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Reliable Delivery</h3>
                 <p className="text-gray-600">
-                  As a freelancer, our reputation depends on meeting deadlines and delivering quality work consistently.
+                  Our reputation depends on meeting deadlines and delivering quality work consistently.
                   We respect our clients' timelines and communicate clearly throughout every project.
                 </p>
               </div>
