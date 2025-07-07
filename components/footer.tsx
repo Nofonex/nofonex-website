@@ -10,10 +10,10 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Image src="/logo-small.png" alt="Nofonex Logo" width={32} height={32} className="h-8 w-8" />
-              <span className="text-xl font-bold text-primary">Nofonex</span>
+              <span className="text-xl font-bold text-primary">Bridging langauges</span>
             </Link>
             <p className="text-gray-600 text-sm">
-              Specialized English-Dutch language services and digital content production to help businesses communicate
+              Specialized  language services and digital content production to help businesses communicate
               effectively across cultures and platforms.
             </p>
           </div>

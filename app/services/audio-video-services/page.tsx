@@ -8,7 +8,7 @@ export default function AudioVideoServicesPage() {
       subtitle="AI-powered transcription, subtitling, and multimedia accessibility solutions."
       description={`We transform audio and video content into accessible, engaging formats using advanced AI technology. Our solutions enhance content reach while ensuring compliance with accessibility standards.
 
-Our AI-driven approach delivers rapid results without compromising quality. For English-Dutch content, we offer specialized expertise to capture nuanced cultural context.`}
+Our AI-driven approach delivers rapid results without compromising quality. For multilingual content, we offer specialized expertise to capture nuanced cultural context.`}
       icon={Film}
       imageSrc="/placeholder.svg?height=500&width=600"
       imageAlt="Audio/Video Services"

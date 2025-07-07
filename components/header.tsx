@@ -14,7 +14,6 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about-us" },
     { name: "Services", href: "/#services" },
-    { name: "Portfolio", href: "/portfolio" },
     { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/#contact" },
@@ -27,7 +26,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo-small.png" alt="Nofonex Logo" width={32} height={32} className="h-8 w-8" />
-            <span className="text-xl font-bold text-primary">Nofonex</span>
+            <span className="text-xl font-bold text-primary">Bridging languages</span>
           </Link>
 
           {/* Desktop Navigation */}

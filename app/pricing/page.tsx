@@ -24,8 +24,8 @@ const pricingPlans: PricingPlan[] = [
     name: "Starter",
     description: "Perfect for small businesses and entrepreneurs just starting their global journey.",
     price: {
-      monthly: "$299",
-      annual: "$249",
+      monthly: "$349",
+      annual: "$299",
     },
     features: [
       "Up to 5,000 words of translation per month",
@@ -41,8 +41,8 @@ const pricingPlans: PricingPlan[] = [
     name: "Professional",
     description: "Ideal for growing businesses with regular content and translation needs.",
     price: {
-      monthly: "$599",
-      annual: "$499",
+      monthly: "$939",
+      annual: "$799",
     },
     features: [
       "Up to 15,000 words of translation per month",
@@ -51,8 +51,7 @@ const pricingPlans: PricingPlan[] = [
       "Basic video subtitling (up to 30 minutes/month)",
       "Priority email and chat support",
       "Faster delivery times",
-      "Dedicated account manager",
-      "Comprehensive analytics dashboard",
+      "Comprehensive analytics dashboard" 
     ],
     popular: true,
   },
@@ -61,8 +60,8 @@ const pricingPlans: PricingPlan[] = [
     name: "Enterprise",
     description: "Comprehensive solution for businesses with extensive global communication needs.",
     price: {
-      monthly: "$1,299",
-      annual: "$1,099",
+      monthly: "$2,449",
+      annual: "$2,099",
     },
     features: [
       "Up to 50,000 words of translation per month",
@@ -70,11 +69,7 @@ const pricingPlans: PricingPlan[] = [
       "Premium content creation (8 blog posts/month)",
       "Advanced video subtitling (up to 120 minutes/month)",
       "Interactive media production",
-      "24/7 priority support",
-      "Expedited delivery options",
-      "Dedicated project manager",
-      "Custom terminology management",
-      "Quarterly strategy consultations",
+      "Realtime analytics",
     ],
   },
 ]
@@ -89,7 +84,7 @@ const faqItems = [
   {
     question: "What happens if I exceed my monthly word limit?",
     answer:
-      "If you exceed your monthly word limit, additional words will be billed at our standard per-word rate. We'll always notify you before charging for overages.",
+      "If you exceed your monthly word limit, additional words will be billed at our standard per-word rate depending on the service you require. We'll always notify you before charging for overages.",
   },
   {
     question: "Do unused words roll over to the next month?",
@@ -147,7 +142,7 @@ export default function PricingPage() {
                 Annual Billing
               </span>
               <span className="ml-2 inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">
-                Save 16%
+                Save at least 14%
               </span>
             </div>
           </div>
@@ -212,8 +207,7 @@ export default function PricingPage() {
               <div className="badge badge-secondary mb-2">Enterprise Solutions</div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Need a Custom Plan?</h2>
               <p className="text-gray-600 mb-6">
-                We understand that every business has unique needs. Our team can create a tailored solution specifically
-                for your organization.
+                We understand that every business has unique needs. Our team can create a tailored solution specifically for your organization.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">

@@ -19,7 +19,7 @@ export default function Home() {
                   Bridging Languages, <span className="text-secondary">Connecting Worlds</span>
                 </h1>
                 <p className="text-lg text-gray-600">
-                  Specialized English-Dutch language services and digital content production to help businesses
+                  Specialized language services and digital content production to help businesses
                   communicate effectively across cultures and platforms.
                 </p>
                 <div className="flex flex-wrap gap-4 pt-2">
@@ -167,14 +167,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* My Values Section */}
+        {/* Our Values Section */}
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="badge badge-secondary mb-2">My Values</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Drives My Work</h2>
+              <div className="badge badge-secondary mb-2">Our Values</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Drives Our Work</h2>
               <p className="text-gray-600">
-                These core values have guided my journey from simple transcription work to complex language projects and
+                These core values have guided our journey from simple transcription work to complex language projects and
                 now into creative content exploration.
               </p>
             </div>
@@ -186,8 +186,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Continuous Learning</h3>
                 <p className="text-gray-600">
-                  Every project teaches me something new. From basic transcription to complex language quality
-                  assurance, I continuously refine my skills and apply what I learn to deliver better results for each
+                  Every project teaches us something new. From basic transcription to complex language quality
+                  assurance, we continuously refine our skills and apply what we learn to deliver better results for each
                   client.
                 </p>
               </div>
@@ -198,8 +198,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Reliable Delivery</h3>
                 <p className="text-gray-600">
-                  As a freelancer, my reputation depends on meeting deadlines and delivering quality work consistently.
-                  I respect my clients' timelines and communicate clearly throughout every project.
+                  As a freelancer, our reputation depends on meeting deadlines and delivering quality work consistently.
+                  We respect our clients' timelines and communicate clearly throughout every project.
                 </p>
               </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Cultural Bridge-Building</h3>
                 <p className="text-gray-600">
-                  Working between English and Dutch contexts, I understand that effective communication goes beyond
+                  Working between international contexts, we understand that effective communication goes beyond
                   literal translation—it's about making messages feel natural and appropriate in each cultural setting.
                 </p>
               </div>
@@ -220,8 +220,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Thoughtful Adaptation</h3>
                 <p className="text-gray-600">
-                  I embrace new tools and approaches that genuinely improve my work, from AI assistance in language
-                  tasks to exploring creative content production with my family—always with purpose, not just for
+                  We embrace new tools and approaches that genuinely improve our work, from AI assistance in language
+                  tasks to exploring creative content production with our family—always with purpose, not just for
                   novelty.
                 </p>
               </div>
@@ -232,8 +232,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Personal Attention</h3>
                 <p className="text-gray-600">
-                  Working directly with clients means I can offer the kind of personalized service and attention to
-                  detail that larger operations often can't provide. Your project gets my full focus.
+                  Working directly with clients means we can offer the kind of personalized service and attention to
+                  detail that larger operations often can't provide. Your project gets our full focus.
                 </p>
               </div>
 
@@ -243,8 +243,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Honest Communication</h3>
                 <p className="text-gray-600">
-                  I believe in transparent communication about timelines, capabilities, and costs. If I can't do
-                  something or need to collaborate with others, I'll tell you upfront rather than overpromise.
+                  We believe in transparent communication about timelines, capabilities, and costs. If we can't do
+                  something or need to collaborate with others, we'll tell you upfront rather than overpromise.
                 </p>
               </div>
             </div>

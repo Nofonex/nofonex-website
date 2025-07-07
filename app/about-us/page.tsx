@@ -11,7 +11,7 @@ export default function AboutUsPage() {
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Nofonex</h1>
             <p className="text-lg text-gray-600">
-              We're a specialized team of language and digital content experts dedicated to providing exceptional
+              We are a specialized team of language and digital content experts dedicated to providing exceptional
               English-Dutch translation and content services.
             </p>
           </div>
@@ -44,6 +44,11 @@ export default function AboutUsPage() {
                 collaborating with local team members for specific language projects, the focus remained on maintaining
                 the flexibility and personal touch that defines freelance work.
               </p>
+              <p className="text-gray-600">
+                Nowadays, while adapting to the changes in the digital world with AI taking over more translation jobs, 
+                we are expanding our services to include digital content production, such as e-books, illustrated works, 
+                and music.
+              </p>
             </div>
           </div>
         </div>
@@ -57,13 +62,13 @@ export default function AboutUsPage() {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <Target className="text-primary" size={24} />
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">My mission</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">Our mission</h3>
               <p className="text-gray-600">
-                To help businesses and individuals communicate effectively across the English-Dutch language divide by
-                providing personalized, high-quality language services and project support.
+                To help businesses and individuals communicate effectively across languages by providing personalized,
+                high-quality language services and project support.
               </p>
               <p className="text-gray-600 mt-4">
-                Whether it's complex language quality assurance, creative writing, or practical project management, I
+                Whether it's complex language quality assurance, creative writing, or practical project management, we
                 focus on delivering solutions that truly serve each client's unique needs with the attention to detail
                 that only personal service can provide.
               </p>
@@ -73,15 +78,15 @@ export default function AboutUsPage() {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <Globe className="text-primary" size={24} />
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">My vision</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">Our vision</h3>
               <p className="text-gray-600">
                 To continue growing as a versatile language professional while exploring new creative frontiers in
-                content production, building something meaningful with my family along the way.
+                content production, building something meaningful with our family along the way.
               </p>
               <p className="text-gray-600 mt-4">
-                I envision expanding from traditional language services into original content creation—developing
+                We envision expanding from traditional language services into original content creation—developing
                 e-books, illustrated works, and music that can reach audiences while maintaining the personal touch and
-                quality that defines my approach to every project.
+                quality that defines our approach to every project.
               </p>
             </div>
           </div>
@@ -92,10 +97,10 @@ export default function AboutUsPage() {
       <section className="py-16 md:py-24">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="badge badge-secondary mb-2">My Values</div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Drives My Work</h2>
+            <div className="badge badge-secondary mb-2">Our Values</div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Drives Our Work</h2>
             <p className="text-gray-600">
-              These core values have guided my journey from simple transcription work to complex language projects and
+              These core values have guided our journey from simple transcription work to complex language projects and
               now into creative content exploration.
             </p>
           </div>
@@ -107,8 +112,8 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Continuous Learning</h3>
               <p className="text-gray-600">
-                Every project teaches me something new. From basic transcription to complex language quality assurance,
-                I continuously refine my skills and apply what I learn to deliver better results for each client.
+                Every project teaches us something new. From basic transcription to complex language quality assurance,
+                we continuously refine our skills and apply what we learn to deliver better results for each client.
               </p>
             </div>
 
@@ -118,8 +123,8 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Reliable Delivery</h3>
               <p className="text-gray-600">
-                As a freelancer, my reputation depends on meeting deadlines and delivering quality work consistently. I
-                respect my clients' timelines and communicate clearly throughout every project.
+                As a freelancer, our reputation depends on meeting deadlines and delivering quality work consistently. We
+                respect our clients' timelines and communicate clearly throughout every project.
               </p>
             </div>
 
@@ -129,8 +134,9 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Cultural Bridge-Building</h3>
               <p className="text-gray-600">
-                Working between English and Dutch contexts, I understand that effective communication goes beyond
-                literal translation—it's about making messages feel natural and appropriate in each cultural setting.
+                Working mostly between English and Dutch contexts, we understand that effective communication goes 
+                beyond literal translation—it's about making messages feel natural and appropriate in each cultural
+                setting.
               </p>
             </div>
 
@@ -140,8 +146,8 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Thoughtful Adaptation</h3>
               <p className="text-gray-600">
-                I embrace new tools and approaches that genuinely improve my work, from AI assistance in language tasks
-                to exploring creative content production with my family—always with purpose, not just for novelty.
+                We embrace new tools and approaches that genuinely improve our work, from AI assistance in language tasks
+                to exploring creative content production with our family—always with purpose, not just for novelty.
               </p>
             </div>
 
@@ -151,8 +157,8 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Personal Attention</h3>
               <p className="text-gray-600">
-                Working directly with clients means I can offer the kind of personalized service and attention to detail
-                that larger operations often can't provide. Your project gets my full focus.
+                Working directly with clients means we can offer the kind of personalized service and attention to detail
+                that larger operations often can't provide. Your project gets our full focus.
               </p>
             </div>
 
@@ -162,8 +168,8 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Honest Communication</h3>
               <p className="text-gray-600">
-                I believe in transparent communication about timelines, capabilities, and costs. If I can't do something
-                or need to collaborate with others, I'll tell you upfront rather than overpromise.
+                We believe in transparent communication about timelines, capabilities, and costs. If we can't do something
+                or need to collaborate with others, we'll tell you upfront rather than overpromise.
               </p>
             </div>
           </div>
@@ -207,8 +213,8 @@ export default function AboutUsPage() {
               <p className="text-secondary font-medium mb-2">Content Director</p>
               <p className="text-gray-600 text-sm">
                 Suraya brings valuable insight to our content creation process, specializing in developing engaging
-                materials for diverse audiences. Her expertise in Dutch language nuances ensures our translations
-                maintain cultural authenticity and relevance.
+                materials for diverse audiences. Her expertise in visual creativity ensures our content to maintain 
+                cultural authenticity and attraction.
               </p>
             </div>
           </div>
@@ -294,7 +300,7 @@ export default function AboutUsPage() {
                   <div>
                     <h3 className="font-semibold text-white">Remote Collaboration</h3>
                     <p className="text-gray-200">
-                      Our digital-first approach enables efficient remote work and collaboration
+                      Our digital-first approach enables efficient remote work and collaboration at competitive rates
                     </p>
                   </div>
                 </div>

@@ -6,15 +6,15 @@ export default function LanguageServicesPage() {
     <ServicePageTemplate
       title="Language Services"
       subtitle="AI-powered translation, editing, proofreading, and quality assurance solutions."
-      description={`At Nofonex, we deliver efficient language solutions by combining advanced AI technology with expert human oversight. We specialize in English-Dutch language pairs, providing high-quality translations that maintain linguistic accuracy and cultural relevance.
+      description={`At Nofonex, we deliver efficient language solutions by combining advanced AI technology with expert human oversight. We specialize in multilingual language pairs, providing high-quality translations that maintain linguistic accuracy and cultural relevance.
 
-Our English-Dutch translation services are handled by native speakers with specialized expertise, while additional language pairs are supported through our AI-enhanced processing systems with careful human review.`}
+Our multilingual translation services are handled by native speakers with specialized expertise, while additional language pairs are supported through our AI-enhanced processing systems with careful human review.`}
       icon={Globe}
       imageSrc="/placeholder.svg?height=500&width=600"
       imageAlt="Language Services"
       features={[
         {
-          title: "English-Dutch Expertise",
+          title: "multilingual Expertise",
           description: "Specialized native-level translation between English and Dutch",
         },
         {

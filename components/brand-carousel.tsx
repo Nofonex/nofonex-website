@@ -51,7 +51,7 @@ const BrandCarousel = () => {
             Trusted by Leading Brands
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Join thousands of companies worldwide who trust our services
+            Join various companies worldwide who trust our services
           </p>
         </div>
 
