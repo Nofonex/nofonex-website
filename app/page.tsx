@@ -275,8 +275,8 @@ export default function Home() {
               </div>
               <div className="md:w-1/2">
                 <Image
-                  src="/global-language-network.png"
-                  alt="Global Language Network"
+                  src="/bridges__futuristic_city_1.jpg"
+                  alt="bridges futuristic city"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
