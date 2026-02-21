@@ -1,6 +1,17 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Users, Target, Award, Clock, Globe } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "About Us - Our Story, Mission & Team",
+  description:
+    "Meet the Nofonex team. Founded in 2014 in Suriname, we specialize in English-Dutch language services and digital content production for global businesses.",
+  openGraph: {
+    title: "About Nofonex | Our Story, Mission & Team",
+    description: "Founded in 2014, specializing in English-Dutch language services and digital content production.",
+  },
+}
 
 export default function AboutUsPage() {
   return (
@@ -24,8 +35,8 @@ export default function AboutUsPage() {
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Our Story"
+                src="/images/our-story.jpg"
+                alt="The Nofonex story - from freelance translation to digital content production"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -193,7 +204,7 @@ export default function AboutUsPage() {
             {/* Team Member 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/placeholder.svg?height=128&width=128" alt="Team Member" fill className="object-cover" />
+                <Image src="/images/xenofon-martokarijo.jpg" alt="Xenofon Martokarijo - Founder & Director" fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Xenofon Martokarijo</h3>
               <p className="text-secondary font-medium mb-2">Founder & Director</p>
@@ -207,7 +218,7 @@ export default function AboutUsPage() {
             {/* Team Member 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/placeholder.svg?height=128&width=128" alt="Team Member" fill className="object-cover" />
+                <Image src="/images/team-1.jpg" alt="Suraya Martokarijo-Batenburg - Content Director" fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Suraya Martokarijo-Batenburg</h3>
               <p className="text-secondary font-medium mb-2">Content Director</p>
@@ -224,7 +235,7 @@ export default function AboutUsPage() {
             {/* Team Member 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/placeholder.svg?height=128&width=128" alt="Team Member" fill className="object-cover" />
+                <Image src="/images/team-2.jpg" alt="Quinxen Martokarijo - Creative Assistant" fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Quinxen Martokarijo</h3>
               <p className="text-secondary font-medium mb-2">Creative Assistant</p>
@@ -237,7 +248,7 @@ export default function AboutUsPage() {
             {/* Team Member 4 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/placeholder.svg?height=128&width=128" alt="Team Member" fill className="object-cover" />
+                <Image src="/images/team-3.jpg" alt="Xenaya Martokarijo - Production Assistant" fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Xenaya Martokarijo</h3>
               <p className="text-secondary font-medium mb-2">Production Assistant</p>
@@ -250,7 +261,7 @@ export default function AboutUsPage() {
             {/* Team Member 5 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/placeholder.svg?height=128&width=128" alt="Team Member" fill className="object-cover" />
+                <Image src="/images/team-4.jpg" alt="Yaixelina Martokarijo - Quality Assurance Assistant" fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Yaixelina Martokarijo</h3>
               <p className="text-secondary font-medium mb-2">Quality Assurance Assistant</p>
@@ -316,15 +327,15 @@ export default function AboutUsPage() {
                 </div>
               </div>
 
-              <Link href="/contact" className="btn bg-white text-primary hover:bg-gray-100">
+              <Link href="/#contact" className="btn bg-white text-primary hover:bg-gray-100">
                 Contact Us
               </Link>
             </div>
 
             <div>
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Our Collaborative Approach"
+                src="/images/join-team.jpg"
+                alt="Nofonex collaborative approach to language services"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"

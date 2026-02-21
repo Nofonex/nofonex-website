@@ -1,5 +1,16 @@
+import type { Metadata } from "next"
 import { Pencil, FileText, BookOpen, ShoppingBag, GraduationCap, FileEdit } from "lucide-react"
 import ServicePageTemplate from "@/components/service-page-template"
+
+export const metadata: Metadata = {
+  title: "Content Writing Services - Articles, Blogs & Copywriting",
+  description:
+    "Professional content writing services including blog posts, articles, product descriptions, educational materials, and e-books. Bilingual English-Dutch expertise.",
+  openGraph: {
+    title: "Content Writing Services | Nofonex",
+    description: "Professional bilingual content writing for blogs, articles, product descriptions, and more.",
+  },
+}
 
 export default function ContentWritingServicesPage() {
   return (

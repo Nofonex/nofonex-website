@@ -1,6 +1,17 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, BookOpen } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "E-Book Production - Writing, Design & Publishing",
+  description:
+    "End-to-end e-book production services including writing, editing, formatting, cover design, and publishing. Create professional e-books in English and Dutch.",
+  openGraph: {
+    title: "E-Book Production Services | Nofonex",
+    description: "Complete e-book creation from writing to publishing, in English and Dutch.",
+  },
+}
 
 export default function EbookProductionPage() {
   return (

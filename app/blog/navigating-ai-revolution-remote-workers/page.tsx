@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, Tag } from "lucide-react"
@@ -5,6 +6,16 @@ import AdBanner from "@/components/ad-banner"
 import StyledParagraph from "@/components/styled-paragraph"
 import DropCap from "@/components/drop-cap"
 import ClientCommentWrapper from "@/components/client-comment-wrapper"
+
+export const metadata: Metadata = {
+  title: "Navigating the AI Revolution: A Survival Guide for Remote Workers",
+  description:
+    "Practical strategies for remote workers to adapt and thrive amid the AI revolution, covering professional growth and career resilience.",
+  openGraph: {
+    title: "AI Revolution Survival Guide for Remote Workers | Nofonex Blog",
+    description: "How remote workers can adapt and thrive in the AI revolution.",
+  },
+}
 
 // Force static rendering for this page
 export const dynamic = "force-static"

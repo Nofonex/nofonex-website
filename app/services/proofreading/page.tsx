@@ -1,6 +1,17 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, FileText } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Proofreading Services - Quality Assurance for Your Content",
+  description:
+    "Professional proofreading services for documents, manuscripts, and digital content. Ensure error-free, polished writing in English and Dutch.",
+  openGraph: {
+    title: "Proofreading Services | Nofonex",
+    description: "Professional proofreading for error-free, polished content in English and Dutch.",
+  },
+}
 
 export default function ProofreadingServicePage() {
   return (

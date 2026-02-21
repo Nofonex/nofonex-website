@@ -1,5 +1,16 @@
+import type { Metadata } from "next"
 import { Globe, CheckCircle, FileText, Bot } from "lucide-react"
 import ServicePageTemplate from "@/components/service-page-template"
+
+export const metadata: Metadata = {
+  title: "Language Services - Translation, Editing, LQA & MTPE",
+  description:
+    "Comprehensive language services including translation, editing, proofreading, language quality assurance (LQA), and machine translation post-editing (MTPE).",
+  openGraph: {
+    title: "Language Services | Nofonex",
+    description: "Professional translation, editing, proofreading, LQA, and MTPE services.",
+  },
+}
 
 export default function LanguageServicesPage() {
   return (

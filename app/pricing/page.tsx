@@ -239,7 +239,7 @@ export default function PricingPage() {
                   </div>
                 </li>
               </ul>
-              <Link href="/contact-sales" className="btn btn-primary">
+              <Link href="/#contact" className="btn btn-primary">
                 Contact Sales
               </Link>
             </div>
@@ -385,7 +385,7 @@ export default function PricingPage() {
             <p className="text-gray-600 mb-4">
               Need more information about our additional services? Contact our sales team for detailed pricing.
             </p>
-            <Link href="/contact-sales" className="btn btn-outline">
+            <Link href="/#contact" className="btn btn-outline">
               Contact Sales
             </Link>
           </div>
