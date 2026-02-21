@@ -1,6 +1,17 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Pencil } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Copywriting Services - Persuasive Marketing Content",
+  description:
+    "Professional copywriting services for websites, ads, email campaigns, and marketing materials. Bilingual English-Dutch copywriting that converts.",
+  openGraph: {
+    title: "Copywriting Services | Nofonex",
+    description: "Persuasive bilingual copywriting for websites, ads, and marketing materials.",
+  },
+}
 
 export default function CopywritingServicePage() {
   return (

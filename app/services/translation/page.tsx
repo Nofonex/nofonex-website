@@ -1,5 +1,16 @@
+import type { Metadata } from "next"
 import { Globe, FileText, Globe2, MonitorSmartphone, Scale, FileCheck } from "lucide-react"
 import ServicePageTemplate from "@/components/service-page-template"
+
+export const metadata: Metadata = {
+  title: "Professional Translation Services in 40+ Languages",
+  description:
+    "Expert translation by native speakers with industry expertise. Document, website, marketing, technical, legal, and certified translation services.",
+  openGraph: {
+    title: "Professional Translation Services | Nofonex",
+    description: "Expert translation by native speakers in 40+ languages with industry-specific expertise.",
+  },
+}
 
 export default function TranslationServicePage() {
   return (

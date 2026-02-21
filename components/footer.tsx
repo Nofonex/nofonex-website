@@ -10,10 +10,10 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Image src="/logo-small.png" alt="Nofonex Logo" width={32} height={32} className="h-8 w-8" />
-              <span className="text-xl font-bold text-primary">Bridging langauges</span>
+              <span className="text-xl font-bold text-primary">Bridging languages</span>
             </Link>
             <p className="text-gray-600 text-sm">
-              Specialized  language services and digital content production to help businesses communicate
+              Specialized language services and digital content production to help businesses communicate
               effectively across cultures and platforms.
             </p>
           </div>
@@ -55,8 +55,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="footer-link">
-                  Portfolio
+                <Link href="/blog" className="footer-link">
+                  Insights
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-gray-500 text-sm">© 2024 Nofonex Online Services. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Nofonex Online Services. All rights reserved.</p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <a href="mailto:info@nofonex.com" className="text-gray-500 hover:text-primary transition-colors">
               info@nofonex.com

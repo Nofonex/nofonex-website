@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, Tag } from "lucide-react"
@@ -5,6 +6,16 @@ import AdBanner from "@/components/ad-banner"
 import StyledParagraph from "@/components/styled-paragraph"
 import DropCap from "@/components/drop-cap"
 import ClientCommentWrapper from "@/components/client-comment-wrapper"
+
+export const metadata: Metadata = {
+  title: "AI Translation vs. Human Expertise: Finding the Right Balance",
+  description:
+    "Explore how businesses can leverage both AI translation and human expertise for optimal results in multilingual content strategy.",
+  openGraph: {
+    title: "AI Translation vs. Human Expertise | Nofonex Blog",
+    description: "How to balance AI translation and human expertise for optimal multilingual content.",
+  },
+}
 
 // Force static rendering for this page
 export const dynamic = "force-static"

@@ -1,6 +1,17 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Film } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Subtitling Services - Video Localization & Accessibility",
+  description:
+    "Professional subtitling and captioning services for video content. Multilingual subtitles for films, corporate videos, and online media.",
+  openGraph: {
+    title: "Subtitling Services | Nofonex",
+    description: "Professional multilingual subtitling and captioning for video content.",
+  },
+}
 
 export default function SubtitlingServicePage() {
   return (

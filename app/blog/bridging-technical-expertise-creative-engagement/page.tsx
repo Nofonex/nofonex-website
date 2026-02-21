@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, Tag } from "lucide-react"
@@ -5,6 +6,16 @@ import AdBanner from "@/components/ad-banner"
 import StyledParagraph from "@/components/styled-paragraph"
 import DropCap from "@/components/drop-cap"
 import ClientCommentWrapper from "@/components/client-comment-wrapper"
+
+export const metadata: Metadata = {
+  title: "Bridging Technical Expertise and Creative Engagement",
+  description:
+    "Discover how to combine technical precision and creative engagement in your content strategy by learning from both IT and non-IT perspectives.",
+  openGraph: {
+    title: "Technical Expertise Meets Creative Content | Nofonex Blog",
+    description: "Combining technical precision and creative engagement in content strategy.",
+  },
+}
 
 // Force static rendering for this page
 export const dynamic = "force-static"

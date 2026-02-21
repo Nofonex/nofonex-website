@@ -1,7 +1,18 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, Tag, ArrowRight } from "lucide-react"
 import AdBanner from "@/components/ad-banner"
+
+export const metadata: Metadata = {
+  title: "Blog - Language Services, Content Strategy & Industry Insights",
+  description:
+    "Insights, tips, and trends on language services, AI translation, content strategy, and global communication. Expert articles by Nofonex.",
+  openGraph: {
+    title: "Nofonex Blog | Language Services & Content Strategy Insights",
+    description: "Expert articles on translation, AI, content strategy, and global communication.",
+  },
+}
 
 // Blog Post Type
 interface BlogPost {

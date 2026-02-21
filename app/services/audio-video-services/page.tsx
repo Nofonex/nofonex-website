@@ -1,5 +1,16 @@
+import type { Metadata } from "next"
 import { Film, Headphones, FileText, Subtitles, Video, Mic } from "lucide-react"
 import ServicePageTemplate from "@/components/service-page-template"
+
+export const metadata: Metadata = {
+  title: "Audio & Video Services - Transcription, Subtitling & More",
+  description:
+    "Professional audio and video services including transcription, subtitling, voiceover, and multimedia accessibility solutions for global audiences.",
+  openGraph: {
+    title: "Audio & Video Services | Nofonex",
+    description: "Professional transcription, subtitling, voiceover, and multimedia accessibility solutions.",
+  },
+}
 
 export default function AudioVideoServicesPage() {
   return (

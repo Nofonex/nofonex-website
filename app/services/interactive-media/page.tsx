@@ -1,5 +1,16 @@
+import type { Metadata } from "next"
 import { Laptop, Bot, Music, Video, Palette } from "lucide-react"
 import ServicePageTemplate from "@/components/service-page-template"
+
+export const metadata: Metadata = {
+  title: "Interactive Media Production - Animation, Audio & Video",
+  description:
+    "Creative interactive media production services including animation, audio, video, and digital content creation for engaging audience experiences.",
+  openGraph: {
+    title: "Interactive Media Production | Nofonex",
+    description: "Animation, audio, video, and interactive digital content production services.",
+  },
+}
 
 export default function InteractiveMediaProductionPage() {
   return (

@@ -1,6 +1,17 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Globe, FileText, Laptop, Rocket, Target, Users } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Entrepreneur Package - Launch Your Global Business",
+  description:
+    "Comprehensive language and digital content solution for entrepreneurs entering international markets. Multilingual websites, brand identity, and marketing materials.",
+  openGraph: {
+    title: "Entrepreneur Package | Nofonex",
+    description: "Launch your global business with multilingual websites, brand identity, and content.",
+  },
+}
 
 export default function EntrepreneurPackagePage() {
   return (

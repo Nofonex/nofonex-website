@@ -1,9 +1,21 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Globe, FileText, Film, Pencil, BookOpen, Laptop, CheckCircle, Award, Clock, Users } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import BrandCarousel from "@/components/brand-carousel"
 import { ClientProvider } from "@/components/client-provider"
+
+export const metadata: Metadata = {
+  title: "Nofonex - Professional Language Services & Digital Content Production",
+  description:
+    "Professional English-Dutch translation, transcreation, content writing, and digital content production. Based in Suriname, serving businesses worldwide since 2014.",
+  openGraph: {
+    title: "Nofonex - Professional Language Services & Digital Content Production",
+    description:
+      "Professional English-Dutch translation, transcreation, content writing, and digital content production for global businesses.",
+  },
+}
 
 export default function Home() {
   return (
@@ -88,7 +100,7 @@ export default function Home() {
                 title="E-Book Production"
                 description="End-to-end e-book creation including writing, editing, formatting, and publishing."
                 icon={BookOpen}
-                link="/services/content-writing"
+                link="/services/ebook-production"
               />
               <ServiceCard
                 title="Document Services"
