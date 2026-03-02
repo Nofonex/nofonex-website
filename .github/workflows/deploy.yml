@@ -35,7 +35,7 @@ jobs:
         NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
     
     - name: Deploy to Vercel
-      uses: vercel/action@v1
+      uses: vercel/vercel-action@v1
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         vercel-org-id: ${{ secrets.ORG_ID }}
