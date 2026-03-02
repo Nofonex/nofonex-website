@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 import prisma from "@/lib/prisma-init" // Use the new initialization module
 import { getServerSession } from "next-auth"
-import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { authOptions } from "@/lib/auth"
 
 // GET /api/comments?postSlug=your-post-slug
 export async function GET(request: NextRequest) {

@@ -32,13 +32,13 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "7-days-of-becoming-a-blessing",
-    title: "7 Days of Becoming a Blessing: A Bilingual Devotional for Professionals",
+    title: "7 Days of Becoming a Blessing: A Devotional for Professionals",
     excerpt:
-      "A 7-day bilingual (EN/NL) devotional for Christian professionals navigating career change, entrepreneurship, and fear. Biblical stories meet real-life application.",
+      "A 7-day devotional for Christian professionals navigating career change, entrepreneurship, and fear. Biblical stories meet real-life application.",
     date: "March 2, 2026",
     author: "Xenofon Martokarijo",
     category: "Devotional",
-    tags: ["Devotional", "Faith & Work", "Career", "Bilingual"],
+    tags: ["Devotional", "Faith & Work", "Career"],
     image: "/placeholder.svg",
     readTime: "25 min read",
   },
@@ -124,8 +124,7 @@ export default function BlogPage() {
               <div className="text-center p-8">
                 <p className="text-6xl mb-4">✝️</p>
                 <p className="text-2xl font-bold text-primary">7 Days of Becoming a Blessing</p>
-                <p className="text-lg text-gray-600 mt-2">A Bilingual Devotional for Professionals</p>
-                <p className="text-sm text-gray-500 mt-1 italic">Een Tweetalige Overdenking voor Professionals</p>
+                <p className="text-lg text-gray-600 mt-2">A Devotional for Professionals</p>
               </div>
             </div>
             <div className="space-y-6">
@@ -133,7 +132,7 @@ export default function BlogPage() {
                 Featured Post
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                7 Days of Becoming a Blessing: A Bilingual Devotional for Professionals
+                7 Days of Becoming a Blessing: A Devotional for Professionals
               </h2>
               <div className="flex flex-wrap gap-4 text-sm text-gray-500">
                 <div className="flex items-center">
@@ -150,7 +149,7 @@ export default function BlogPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-lg">
-                A 7-day bilingual (English-Dutch) devotional for Christian professionals navigating career change,
+                A 7-day devotional for Christian professionals navigating career change,
                 entrepreneurship, and fear. Six biblical stories. In-depth study. Real-life application.
               </p>
               <Link
