@@ -1,13 +1,3 @@
-import { PrismaClient } from "@prisma/client"
-
-// Re-export PrismaClient to maintain compatibility with existing code
+// Re-export from the single prisma-init module to avoid multiple PrismaClient instances
 export { PrismaClient } from "@prisma/client"
-
-// Create a singleton instance of PrismaClient
-const globalForPrisma = global as unknown as { prisma: PrismaClient }
-
-export const prisma = globalForPrisma.prisma || new PrismaClient()
-
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma
-
-export default prisma
+export { prisma, prisma as default } from "@/lib/prisma-init"
