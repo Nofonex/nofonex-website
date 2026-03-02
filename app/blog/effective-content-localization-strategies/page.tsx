@@ -48,7 +48,7 @@ export default function EffectiveContentLocalizationStrategies() {
             />
           </div>
 
-          <AdBanner size="top" className="my-8" />
+          <AdBanner size="medium" className="my-8" />
 
           <DropCap color="primary">
             Content localization is more than just translation—it's about adapting your message to resonate with
@@ -65,8 +65,6 @@ export default function EffectiveContentLocalizationStrategies() {
             your target markets. It goes beyond simple translation to ensure that your message maintains its impact and
             relevance across different cultural contexts.
           </StyledParagraph>
-
-          <AdBanner size="inline" className="my-10" />
 
           <h2 className="text-3xl font-bold mt-12 mb-6 text-primary">
             Key Strategies for Effective Content Localization
@@ -87,8 +85,6 @@ export default function EffectiveContentLocalizationStrategies() {
             business goals, establish quality standards, and define workflows. This strategic approach ensures
             consistency and efficiency in your localization efforts.
           </StyledParagraph>
-
-          <AdBanner size="inline" className="my-10" />
 
           <h3 className="text-2xl font-semibold mt-10 mb-4">3. Work with Local Experts</h3>
 
@@ -114,7 +110,7 @@ export default function EffectiveContentLocalizationStrategies() {
             your international audiences.
           </StyledParagraph>
 
-          <AdBanner size="inline" className="my-10" />
+          <AdBanner size="medium" className="my-10" />
 
           <h3 className="text-2xl font-semibold mt-10 mb-4">6. Optimize for Local SEO</h3>
 
@@ -142,8 +138,6 @@ export default function EffectiveContentLocalizationStrategies() {
             scores, and market-specific revenue to evaluate the effectiveness of your localization efforts. Use these
             insights to continuously refine your approach.
           </StyledParagraph>
-
-          <AdBanner size="inline" className="my-10" />
 
           <h2 className="text-3xl font-bold mt-12 mb-6 text-primary">Conclusion</h2>
 
@@ -176,7 +170,6 @@ export default function EffectiveContentLocalizationStrategies() {
             </div>
           </div>
 
-          <AdBanner size="bottom" className="mt-12" />
         </div>
 
         {/* Sidebar */}
