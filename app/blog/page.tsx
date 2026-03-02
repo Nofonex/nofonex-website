@@ -31,6 +31,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "7-days-of-becoming-a-blessing",
+    title: "7 Days of Becoming a Blessing: A Bilingual Devotional for Professionals",
+    excerpt:
+      "A 7-day bilingual (EN/NL) devotional for Christian professionals navigating career change, entrepreneurship, and fear. Biblical stories meet real-life application.",
+    date: "March 2, 2026",
+    author: "Xenofon Martokarijo",
+    category: "Devotional",
+    tags: ["Devotional", "Faith & Work", "Career", "Bilingual"],
+    image: "/placeholder.svg",
+    readTime: "25 min read",
+  },
+  {
     id: "bridging-technical-expertise-creative-engagement",
     title: "Bridging Technical Expertise and Creative Engagement: Content Creation Strategies",
     excerpt:
@@ -108,26 +120,25 @@ export default function BlogPage() {
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <div>
-              <Image
-                src="/global-connections-seo.png"
-                alt="Featured Blog Post - Bridging Technical Expertise and Creative Engagement"
-                width={600}
-                height={500}
-                className="rounded-lg shadow-lg"
-              />
+            <div className="relative h-[400px] rounded-lg overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/5 to-primary/10 flex items-center justify-center">
+              <div className="text-center p-8">
+                <p className="text-6xl mb-4">✝️</p>
+                <p className="text-2xl font-bold text-primary">7 Days of Becoming a Blessing</p>
+                <p className="text-lg text-gray-600 mt-2">A Bilingual Devotional for Professionals</p>
+                <p className="text-sm text-gray-500 mt-1 italic">Een Tweetalige Overdenking voor Professionals</p>
+              </div>
             </div>
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-secondary text-white text-sm font-medium rounded-full">
                 Featured Post
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                Bridging Technical Expertise and Creative Engagement: Content Creation Strategies
+                7 Days of Becoming a Blessing: A Bilingual Devotional for Professionals
               </h2>
               <div className="flex flex-wrap gap-4 text-sm text-gray-500">
                 <div className="flex items-center">
                   <Calendar size={16} className="mr-1" />
-                  <span>April 28, 2024</span>
+                  <span>March 2, 2026</span>
                 </div>
                 <div className="flex items-center">
                   <User size={16} className="mr-1" />
@@ -135,18 +146,18 @@ export default function BlogPage() {
                 </div>
                 <div className="flex items-center">
                   <Tag size={16} className="mr-1" />
-                  <span>Content Strategy</span>
+                  <span>Devotional, Faith &amp; Work</span>
                 </div>
               </div>
               <p className="text-gray-600 text-lg">
-                Discover how to combine technical precision and creative engagement in your content strategy by learning
-                from both IT and non-IT perspectives.
+                A 7-day bilingual (English-Dutch) devotional for Christian professionals navigating career change,
+                entrepreneurship, and fear. Six biblical stories. In-depth study. Real-life application.
               </p>
               <Link
-                href="/blog/bridging-technical-expertise-creative-engagement"
+                href="/blog/7-days-of-becoming-a-blessing"
                 className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-dark transition-colors"
               >
-                Read Article
+                Read Devotional
               </Link>
             </div>
           </div>
