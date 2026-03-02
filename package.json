@@ -12,7 +12,6 @@
     "@auth/core": "^0.34.3",
     "@auth/prisma-adapter": "^2.11.1",
     "@hookform/resolvers": "^3.9.1",
-    "@next/swc-win32-x64-msvc": "^15.3.5",
     "@prisma/client": "^6.0.0",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
