@@ -1,7 +1,3 @@
-"use client"
-
-import { useEffect, useRef } from "react"
-
 interface AdBannerProps {
   size: "sidebar" | "inline" | "top" | "bottom" | "medium" | "large"
   position?: string
@@ -11,8 +7,6 @@ interface AdBannerProps {
 }
 
 export default function AdBanner({ size, id, className = "" }: AdBannerProps) {
-  const adRef = useRef<HTMLDivElement>(null)
-
   const sizeMap = {
     sidebar: { width: 300, height: 600 },
     inline: { width: 728, height: 90 },
@@ -24,26 +18,11 @@ export default function AdBanner({ size, id, className = "" }: AdBannerProps) {
 
   const adSize = sizeMap[size] || { width: 300, height: 250 }
 
-  useEffect(() => {
-    if (!adRef.current) return
-
-    // Adsterra native banner integration
-    const script = document.createElement("script")
-    script.async = true
-    script.setAttribute("data-cfasync", "false")
-    script.src = "//pl28825063.effectivegatecpm.com/f6/89/2e/f6892ec944b67119568ccfe2605a6421.js"
-
-    // Only add popunder script once per page
-    if (!document.querySelector('script[src*="f6892ec944b67119568ccfe2605a6421"]')) {
-      document.head.appendChild(script)
-    }
-  }, [])
 
   return (
     <div
       id={id}
       className={`ad-container relative ${className}`}
-      ref={adRef}
       style={{
         width: size === "sidebar" ? "300px" : "100%",
         maxWidth: adSize.width,

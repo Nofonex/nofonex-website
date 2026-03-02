@@ -110,8 +110,6 @@ export default function BlogPost() {
               boost SEO authority and establish topical relevance.
             </StyledParagraph>
 
-            <AdBanner size="small" className="my-12" />
-
             <h3 className="text-xl md:text-2xl font-semibold text-primary mt-8 mb-4">
               3. Cross-Functional Collaboration with Subject Matter Experts
             </h3>
@@ -161,8 +159,6 @@ export default function BlogPost() {
               relevant and resonant content.
             </StyledParagraph>
 
-            <AdBanner size="medium" className="my-12" />
-
             <h3 className="text-xl md:text-2xl font-semibold text-primary mt-8 mb-4">
               2. Quality Over Quantity Philosophy
             </h3>
@@ -210,8 +206,6 @@ export default function BlogPost() {
             <StyledParagraph variant="highlight">
               As a newcomer to content creation, you can benefit by combining the strengths of both perspectives:
             </StyledParagraph>
-
-            <AdBanner size="small" className="my-12" />
 
             <h3 className="text-xl md:text-2xl font-semibold text-primary mt-8 mb-4">
               1. Balance Data with Human Insight
