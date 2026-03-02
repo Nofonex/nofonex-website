@@ -5,18 +5,21 @@ import Link from "next/link"
 import Image from "next/image"
 import { useSession, signOut } from "next-auth/react"
 import { Menu, X, User, LogOut } from "lucide-react"
+import LanguageSelector from "@/components/language-selector"
+import { useLocale } from "@/lib/i18n/context"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { data: session } = useSession()
+  const { t } = useLocale()
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about-us" },
-    { name: "Services", href: "/#services" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/#contact" },
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.about"), href: "/about-us" },
+    { name: t("nav.services"), href: "/#services" },
+    { name: t("nav.pricing"), href: "/pricing" },
+    { name: t("nav.blog"), href: "/blog" },
+    { name: t("nav.contact"), href: "/#contact" },
   ]
 
   return (
@@ -38,26 +41,27 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop Auth Buttons */}
+          {/* Desktop Auth + Language */}
           <div className="hidden md:flex items-center gap-2">
+            <LanguageSelector />
             {session ? (
               <div className="flex items-center gap-2">
                 <Link href="/profile" className="btn btn-ghost">
                   <User className="h-4 w-4 mr-2" />
-                  Profile
+                  {t("nav.profile")}
                 </Link>
                 <button onClick={() => signOut()} className="btn btn-ghost">
                   <LogOut className="h-4 w-4 mr-2" />
-                  Sign Out
+                  {t("nav.signOut")}
                 </button>
               </div>
             ) : (
               <>
                 <Link href="/login" className="btn btn-ghost">
-                  Sign In
+                  {t("nav.signIn")}
                 </Link>
                 <Link href="/register" className="btn btn-primary">
-                  Sign Up
+                  {t("nav.signUp")}
                 </Link>
               </>
             )}
@@ -79,24 +83,29 @@ export default function Header() {
                 </Link>
               ))}
 
+              {/* Mobile Language Selector */}
+              <div className="pt-4 border-t border-gray-200 mt-4">
+                <LanguageSelector />
+              </div>
+
               {/* Mobile Auth */}
               <div className="pt-4 border-t border-gray-200 mt-4">
                 {session ? (
                   <div className="flex flex-col space-y-2">
                     <Link href="/profile" className="nav-link block">
-                      Profile
+                      {t("nav.profile")}
                     </Link>
                     <button onClick={() => signOut()} className="nav-link block text-left">
-                      Sign Out
+                      {t("nav.signOut")}
                     </button>
                   </div>
                 ) : (
                   <div className="flex flex-col space-y-2">
                     <Link href="/login" className="nav-link block">
-                      Sign In
+                      {t("nav.signIn")}
                     </Link>
                     <Link href="/register" className="nav-link block">
-                      Sign Up
+                      {t("nav.signUp")}
                     </Link>
                   </div>
                 )}

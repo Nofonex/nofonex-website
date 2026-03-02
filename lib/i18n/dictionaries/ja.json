@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "services": "サービス",
+    "pricing": "料金",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "signIn": "ログイン",
+    "signUp": "新規登録",
+    "signOut": "ログアウト",
+    "profile": "プロフィール"
+  },
+  "hero": {
+    "badge": "言語サービス＆デジタルコンテンツ",
+    "title": "言語をつなぎ、",
+    "titleHighlight": "世界をつなぐ",
+    "description": "企業が文化やプラットフォームを超えて効果的にコミュニケーションできるよう、専門的な言語サービスとデジタルコンテンツ制作を提供しています。",
+    "cta": "始めましょう",
+    "ctaSecondary": "サービスを見る"
+  },
+  "services": {
+    "badge": "サービス一覧",
+    "title": "提供サービス",
+    "subtitle": "お客様のビジネスニーズに合わせた包括的な言語およびデジタルコンテンツソリューション",
+    "languageServices": "言語サービス",
+    "languageServicesDesc": "翻訳、編集、校正、LQA、MTPEなど、多言語でのプロフェッショナルなサービス。",
+    "audioVideo": "音声・映像サービス",
+    "audioVideoDesc": "プロフェッショナルな文字起こし、字幕制作、マルチメディアアクセシビリティソリューション。",
+    "contentWriting": "コンテンツライティング",
+    "contentWritingDesc": "魅力的なコピーライティング、記事、商品説明、教育資料、電子書籍の制作。",
+    "interactiveMedia": "インタラクティブメディア",
+    "interactiveMediaDesc": "インタラクティブコンテンツ、アニメーション、音声・映像制作。",
+    "ebookProduction": "電子書籍制作",
+    "ebookProductionDesc": "執筆、編集、フォーマット、出版までの一貫した電子書籍制作。",
+    "documentServices": "ドキュメントサービス",
+    "documentServicesDesc": "プロフェッショナルなドキュメント作成、フォーマット、管理サービス。"
+  },
+  "entrepreneurs": {
+    "badge": "起業家の方へ",
+    "title": "デジタルジャーニーを始めよう",
+    "description": "国際的な野心を持ってビジネスを始めますか？初日から説得力のあるグローバルプレゼンスを確立するための専門サービスを提供します。",
+    "multilingualWeb": "多言語ウェブサイト開発",
+    "multilingualWebDesc": "お客様の言語で語りかけるプロフェッショナルなウェブサイトを制作",
+    "brandIdentity": "ブランドアイデンティティ構築",
+    "brandIdentityDesc": "すべての市場で一貫した魅力的なブランドを開発",
+    "digitalMarketing": "デジタルマーケティング資料",
+    "digitalMarketingDesc": "成功するマーケティングキャンペーンに必要なコンテンツを取得",
+    "ongoingSupport": "継続的サポート",
+    "ongoingSupportDesc": "ビジネスの成長に合わせた継続的な言語・コンテンツサポート",
+    "cta": "起業家パッケージを見る"
+  },
+  "values": {
+    "badge": "私たちの価値観",
+    "title": "私たちを動かすもの",
+    "subtitle": "これらの核となる価値観は、シンプルな文字起こしから複雑な言語プロジェクト、そしてクリエイティブなコンテンツ制作への旅を導いてきました。",
+    "continuousLearning": "継続的な学習",
+    "continuousLearningDesc": "すべてのプロジェクトが新しいことを教えてくれます。基本的な文字起こしから複雑な言語品質保証まで、スキルを継続的に磨き、各クライアントにより良い結果を提供します。",
+    "reliableDelivery": "信頼性の高い納品",
+    "reliableDeliveryDesc": "私たちの評判は、期限を守り、一貫して質の高い仕事を提供することにかかっています。クライアントのタイムラインを尊重し、プロジェクト全体を通じて明確にコミュニケーションします。",
+    "culturalBridge": "文化的架け橋",
+    "culturalBridgeDesc": "国際的な文脈の中で活動する私たちは、効果的なコミュニケーションが逐語訳を超えるものであることを理解しています——各文化的設定でメッセージが自然で適切に感じられるようにすることです。",
+    "thoughtfulAdaptation": "思慮深い適応",
+    "thoughtfulAdaptationDesc": "言語タスクにおけるAI支援からクリエイティブなコンテンツ制作まで、仕事を真に改善する新しいツールやアプローチを受け入れます——常に目的を持って。",
+    "personalAttention": "個別対応",
+    "personalAttentionDesc": "クライアントと直接協力することで、大規模な組織では提供できないパーソナライズされたサービスときめ細かな対応を提供できます。",
+    "honestCommunication": "誠実なコミュニケーション",
+    "honestCommunicationDesc": "タイムライン、能力、コストについて透明性のあるコミュニケーションを信じています。できないことや他者との協力が必要な場合は、過度な約束をせず事前にお伝えします。"
+  },
+  "contact": {
+    "badge": "お問い合わせ",
+    "title": "お問い合わせ",
+    "description": "サービスについてのご質問やプロジェクトの開始準備ができましたら、今すぐお問い合わせください。",
+    "emailUs": "メールで連絡",
+    "callUs": "電話で連絡",
+    "visitUs": "所在地",
+    "sendMessage": "メッセージを送信",
+    "fullName": "氏名",
+    "emailAddress": "メールアドレス",
+    "subject": "件名",
+    "message": "メッセージ",
+    "send": "送信する"
+  },
+  "footer": {
+    "rights": "全著作権所有。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cookies": "Cookieポリシー"
+  },
+  "common": {
+    "readMore": "続きを読む",
+    "learnMore": "詳しく見る",
+    "getInTouch": "お問い合わせ",
+    "backToBlog": "ブログに戻る"
+  }
+}
