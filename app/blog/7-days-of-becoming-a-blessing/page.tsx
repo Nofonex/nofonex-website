@@ -23,6 +23,24 @@ export const dynamic = "force-static"
 export default function BlogPost() {
   return (
     <>
+      {/* ✏️ XENOFON — EDITING GUIDE:
+          Search for "✏️ XENOFON" to find all 9 places where you should add/adjust content.
+          Summary of markers:
+          1. INTRO: Add personal intro paragraph (who you are, why you wrote this)
+          2. INTRO NL: Review Dutch intro for natural voice
+          3. DAY 1: Add your career change story (MTPE/AI disruption)
+          4. DAY 1 NL: Review Dutch prayers
+          5. DAY 2: Add your "active waiting" example (what you're building now)
+          6. DAY 3: Add your MTPE "unlearning" story (most personal day)
+          7. DAY 4: Add family dimension (you + wife running Nofonex)
+          8. DAY 5: Add your specific "sword and trowel" situation
+          9. DAY 6: Add a giving-from-scarcity experience
+          10. DAY 7: Write your personal closing declaration
+          11. BIO: Personalize the author bio
+
+          GENERAL: Read ALL Dutch sections aloud. Adjust anything that sounds "translated"
+          rather than natural Surinamese Dutch. Your voice is the product. */}
+
       {/* Hero Section */}
       <section className="pt-20 pb-10 md:pt-28 md:pb-16 bg-gradient-to-br from-primary/5 via-white to-primary/5">
         <div className="container mx-auto px-4">
@@ -74,6 +92,13 @@ export default function BlogPost() {
       <section className="py-10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
+            {/* ✏️ XENOFON: Add a personal intro paragraph here. Something like:
+                "My name is Xenofon. I run a language services business from Suriname with my wife.
+                 For years, MTPE and translation kept us going. Then AI changed everything — rates dropped,
+                 clients pulled back, and I found myself asking God: what now?
+                 This devotional came out of that season."
+                Write it in YOUR voice. 2-3 sentences. Be vulnerable. */}
+
             <StyledParagraph>
               <DropCap>Y</DropCap>ou opened your laptop this morning with a knot in your stomach. Maybe the industry is shifting beneath your feet. Maybe clients are drying up, or AI is doing what you used to do — faster and cheaper. Maybe you are sitting in Suriname, the Netherlands, or anywhere in between, wondering: what comes next?
             </StyledParagraph>
@@ -83,6 +108,8 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <StyledParagraph variant="highlight">
+              {/* ✏️ XENOFON: Review this Dutch paragraph. Read it aloud — does it sound like how
+                  you'd say it at EWMI or to a friend? Adjust the tone to your Surinamese Dutch voice. */}
               <em>Deze overdenking is voor jou. Geen motivatiespeech. Geen businesscursus. Dit zijn zeven dagen in de Schrift met mensen die dezelfde angsten droegen — en ontdekten dat God hen niet vroeg om een wonder te ontvangen, maar om er een te <strong>worden</strong>.</em>
             </StyledParagraph>
 
@@ -142,6 +169,13 @@ export default function BlogPost() {
               Maybe your industry is changing. Maybe you built a career in translation, and AI is now doing it in seconds. Maybe you started a business that worked for years, and suddenly the clients are gone. You are sitting with what Abraham sat with: the discomfort of knowing that what got you here will not take you where you need to go.
             </StyledParagraph>
 
+            {/* ✏️ XENOFON: This is a great place for YOUR story. Something like:
+                "I know this feeling. I built Nofonex on MTPE and quality assurance — skills I spent
+                 years perfecting. Then in 2024, the rates started dropping. Agencies that used to pay
+                 €0.06/word now offered €0.03. Some stopped calling altogether. I sat at my desk in
+                 Paramaribo wondering: did I build all of this for nothing?"
+                Replace or add to the paragraph above with your real experience. */}
+
             <StyledParagraph>
               Here is the key: God did not just tell Abraham to leave. He told him <strong>why</strong>: &ldquo;You will be a blessing.&rdquo; The purpose of the move was not survival — it was significance. God was not rescuing Abraham from danger. He was positioning him for impact.
             </StyledParagraph>
@@ -159,6 +193,9 @@ export default function BlogPost() {
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
               <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
               <p className="text-gray-700 italic">Lord, I confess that the unknown terrifies me. Like Abraham, I have built something here — my skills, my reputation, my comfort. But I hear You calling me forward. Give me the courage to step out before I see the full road. I choose to trust that You are making me into a blessing, even when I cannot yet see how. Amen.</p>
+              {/* ✏️ XENOFON: Review all Dutch prayers — pray them aloud and adjust any phrasing
+                  that doesn't feel natural to you. "zien" below is misspelled (should be "zien" → ok actually,
+                  but check the whole prayer flows in your voice). */}
               <p className="text-gray-500 italic mt-3 text-sm">Heer, ik beken dat het onbekende mij angst aanjaagt. Net als Abraham heb ik hier iets opgebouwd. Maar ik hoor U mij voorwaarts roepen. Geef mij de moed om te stappen voordat ik de hele weg zie. Ik kies ervoor om te vertrouwen dat U mij tot een zegen maakt, zelfs als ik nog niet kan zien hoe. Amen.</p>
             </div>
 
@@ -202,6 +239,14 @@ export default function BlogPost() {
             <StyledParagraph>
               You might be in a season where nothing seems to move. Clients are slow. Revenue is down. The projects you pitch get no response. It feels like prison. But the question is not: &ldquo;Why am I stuck here?&rdquo; The question is: &ldquo;What am I doing while I am here?&rdquo;
             </StyledParagraph>
+
+            {/* ✏️ XENOFON: Add your "active waiting" example here. What have YOU been doing
+                in your quiet season? Building this website? Learning Claude? Working on Walabamba?
+                Serving at EWMI? Example:
+                "For me, the 'prison work' has been learning to use AI tools — not to replace my skills,
+                 but to multiply them. Building content systems. Studying what makes people click, read,
+                 and come back. I didn't choose this season, but I refuse to waste it."
+                Even 2 sentences makes this section real. */}
 
             <StyledParagraph>
               Are you sharpening your skills? Building something even when no one is paying for it yet? Serving others in your community, your church, your network — not for exposure, but because that is who you are becoming? Joseph did not know that his prison work was his rehearsal for the palace. You do not know what God is rehearsing you for either.
@@ -266,6 +311,13 @@ export default function BlogPost() {
               The freelance translator whose work is being replaced by AI. The developer whose framework is deprecated. The marketer whose strategies no longer convert. Your Egyptian education — the skills that gave you status — may need to be laid down before God can use you in the next chapter.
             </StyledParagraph>
 
+            {/* ✏️ XENOFON: This is the most personal day for you. Consider adding:
+                "As a MTPE specialist, I built my identity on catching what machines miss — the nuance,
+                 the cultural register, the subtle errors that only a human eye catches. Now those
+                 machines are getting better. I had to ask myself: am I a translator, or am I something
+                 more? The unlearning is painful. But I'm starting to see what's on the other side."
+                Your MTPE background makes this day incredibly authentic. Share what you're unlearning. */}
+
             <StyledParagraph>
               This is not failure. Moses&apos; desert was not a punishment. It was a preparation. And the leader who emerged from 40 years of sheep and silence was infinitely more useful to God than the powerful prince of Egypt.
             </StyledParagraph>
@@ -320,6 +372,13 @@ export default function BlogPost() {
             <StyledParagraph>
               There is a principle here for every entrepreneur and freelancer: when you choose to bless others — your family, your clients, your community — even at personal cost, you position yourself in God&apos;s economy. That economy does not follow spreadsheets. It follows faithfulness.
             </StyledParagraph>
+
+            {/* ✏️ XENOFON: Add a family dimension here. Ruth's story is about loyalty to family.
+                You and your wife run Nofonex together with your children involved. Consider:
+                "My wife and I run this business together. Some months the numbers don't add up.
+                 But we keep showing up — for each other, for our children, for the clients who
+                 trust us. That's our gleaning. Not glamorous. But faithful."
+                The family angle will deeply resonate with other professional parents reading this. */}
 
             <StyledParagraph>
               Maybe your &ldquo;gleaning&rdquo; right now is taking on small projects that do not pay much. Helping a friend with their business. Writing content that gets no views yet. Do the work. Be faithful. God sees the field you are working in.
@@ -380,6 +439,14 @@ export default function BlogPost() {
               This is what entrepreneurship with faith looks like. You build your website while worrying about rent. You write content while competitors undercut you. You learn new skills while your old ones still pay the bills. Sword and trowel. Prayer and spreadsheets. Faith and action.
             </StyledParagraph>
 
+            {/* ✏️ XENOFON: This is literally your life right now. You're rebuilding the Nofonex
+                website (trowel) while managing financial pressure (sword). Consider adding:
+                "Right now, I am rebuilding my company's website while managing declining revenue.
+                 I am learning content production while still delivering MTPE projects. Some days
+                 it feels like holding a sword and a trowel is exhausting. But I'd rather build
+                 tired than sit still comfortable."
+                Name the specific things you're building. Readers respect specificity. */}
+
             <StyledParagraph>
               The wall was completed in 52 days (Nehemiah 6:15). When the surrounding nations heard, they lost their confidence — because they realized the work had been done with God&apos;s help. Your work, done faithfully under pressure, sends the same message.
             </StyledParagraph>
@@ -430,6 +497,12 @@ export default function BlogPost() {
             <StyledParagraph>
               When money is tight, the instinct is to hoard: guard your time, charge for everything, never give for free. And there is wisdom in valuing your work. But there is also a kingdom principle at play: sometimes the breakthrough comes not from earning more, but from giving more.
             </StyledParagraph>
+
+            {/* ✏️ XENOFON: Have you experienced this? Given something when you had little?
+                A pro bono translation for EWMI? Helped someone without charging? If you have a
+                concrete example of giving from scarcity and seeing God provide, add it here.
+                Even something small: "Last month I helped a fellow translator with a project review
+                 for free. That same week, an unexpected invoice got paid." Real stories > theory. */}
 
             <StyledParagraph>
               A free article that helps a business owner understand localization. A pro bono translation for a church. A mentoring conversation with a young freelancer. These are not losses on your balance sheet. They are seeds in God&apos;s economy.
@@ -525,6 +598,13 @@ export default function BlogPost() {
               Your language skills can bridge cultures. Your experience can mentor others. Your content can teach. Your business can serve. Your faith can encourage. You have more than you think. And the One who made you already planned what to do with it.
             </StyledParagraph>
 
+            {/* ✏️ XENOFON: Close with YOUR declaration. This is the climax. Something like:
+                "I am choosing to become a blessing. Through Nofonex, through the content I create,
+                 through the services I provide, through the way I raise my children and serve my
+                 church. I don't have the full map yet. But I have the next step. And that is enough."
+                This final personal statement is what turns this from 'a devotional' into 'YOUR devotional.'
+                Write it as if you're saying it to your wife, your kids, and God — all at the same time. */}
+
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
               <h4 className="font-bold text-primary mb-2">Final Reflection / Slotreflectie</h4>
               <p className="text-gray-700 mb-3">Look at this week&apos;s six stories. Which one spoke to you most? Why? What is one concrete step you will take this week to shift from &ldquo;waiting for a blessing&rdquo; to &ldquo;becoming a blessing&rdquo;?</p>
@@ -593,6 +673,12 @@ export default function BlogPost() {
             </div>
 
             {/* Author Section */}
+            {/* ✏️ XENOFON: Personalize this bio. Add something warm — mention your family,
+                Suriname specifically, or what drives you. Example:
+                "Xenofon lives in Suriname with his wife and children. When he's not working on
+                 translations or building content systems, he serves at his local church (EWMI)
+                 and dreams about what Nofonex can become next."
+                Also review the Dutch version for natural flow. */}
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 About the author: Xenofon Martokarijo is the founder of Nofonex, a language services and digital content production company based in Suriname. He specializes in English-Dutch translation, MTPE, and creating content that bridges cultures. A committed Christian, he believes that faith and professional excellence are inseparable.
