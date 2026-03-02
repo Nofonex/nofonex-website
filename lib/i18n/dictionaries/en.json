@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "profile": "Profile"
+  },
+  "hero": {
+    "badge": "Language Services & Digital Content",
+    "title": "Bridging Languages,",
+    "titleHighlight": "Connecting Worlds",
+    "description": "Specialized language services and digital content production to help businesses communicate effectively across cultures and platforms.",
+    "cta": "Get Started",
+    "ctaSecondary": "Explore Services"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "What We Offer",
+    "subtitle": "Comprehensive language and digital content solutions tailored to your business needs",
+    "languageServices": "Language Services",
+    "languageServicesDesc": "Professional translation, editing, proofreading, LQA, MTPE, and more in multiple languages.",
+    "audioVideo": "Audio/Video Services",
+    "audioVideoDesc": "Professional transcription, subtitling, and multimedia accessibility solutions.",
+    "contentWriting": "Content Writing",
+    "contentWritingDesc": "Compelling copywriting, articles, product descriptions, educational material, and e-books.",
+    "interactiveMedia": "Interactive Media",
+    "interactiveMediaDesc": "Engaging interactive content, animation, audio, and video production.",
+    "ebookProduction": "E-Book Production",
+    "ebookProductionDesc": "End-to-end e-book creation including writing, editing, formatting, and publishing.",
+    "documentServices": "Document Services",
+    "documentServicesDesc": "Professional document preparation, formatting, and management services."
+  },
+  "entrepreneurs": {
+    "badge": "For Entrepreneurs",
+    "title": "Launch Your Digital Journey",
+    "description": "Starting a business with international ambitions? We provide specialized services to help entrepreneurs establish a compelling global presence from day one.",
+    "multilingualWeb": "Multilingual Website Development",
+    "multilingualWebDesc": "Create a professional website that speaks your customers' language",
+    "brandIdentity": "Brand Identity Creation",
+    "brandIdentityDesc": "Develop a consistent and compelling brand across all markets",
+    "digitalMarketing": "Digital Marketing Materials",
+    "digitalMarketingDesc": "Get the content you need to launch successful marketing campaigns",
+    "ongoingSupport": "Ongoing Support",
+    "ongoingSupportDesc": "Continuous language and content assistance as your business grows",
+    "cta": "Explore Entrepreneur Package"
+  },
+  "values": {
+    "badge": "Our Values",
+    "title": "What Drives Our Work",
+    "subtitle": "These core values have guided our journey from simple transcription work to complex language projects and now into creative content exploration.",
+    "continuousLearning": "Continuous Learning",
+    "continuousLearningDesc": "Every project teaches us something new. From basic transcription to complex language quality assurance, we continuously refine our skills and apply what we learn to deliver better results for each client.",
+    "reliableDelivery": "Reliable Delivery",
+    "reliableDeliveryDesc": "Our reputation depends on meeting deadlines and delivering quality work consistently. We respect our clients' timelines and communicate clearly throughout every project.",
+    "culturalBridge": "Cultural Bridge-Building",
+    "culturalBridgeDesc": "Working between international contexts, we understand that effective communication goes beyond literal translation — it's about making messages feel natural and appropriate in each cultural setting.",
+    "thoughtfulAdaptation": "Thoughtful Adaptation",
+    "thoughtfulAdaptationDesc": "We embrace new tools and approaches that genuinely improve our work, from AI assistance in language tasks to exploring creative content production with our family — always with purpose, not just for novelty.",
+    "personalAttention": "Personal Attention",
+    "personalAttentionDesc": "Working directly with clients means we can offer the kind of personalized service and attention to detail that larger operations often can't provide. Your project gets our full focus.",
+    "honestCommunication": "Honest Communication",
+    "honestCommunicationDesc": "We believe in transparent communication about timelines, capabilities, and costs. If we can't do something or need to collaborate with others, we'll tell you upfront rather than overpromise."
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Get In Touch",
+    "description": "Have questions about our services or ready to start a project? Contact us today and one of our experts will get back to you shortly.",
+    "emailUs": "Email Us",
+    "callUs": "Call Us",
+    "visitUs": "Visit Us",
+    "sendMessage": "Send Us a Message",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getInTouch": "Get in Touch",
+    "backToBlog": "Back to Blog"
+  }
+}

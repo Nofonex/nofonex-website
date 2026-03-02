@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over Ons",
+    "services": "Diensten",
+    "pricing": "Prijzen",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signIn": "Inloggen",
+    "signUp": "Registreren",
+    "signOut": "Uitloggen",
+    "profile": "Profiel"
+  },
+  "hero": {
+    "badge": "Taaldiensten & Digitale Content",
+    "title": "Talen Verbinden,",
+    "titleHighlight": "Werelden Verbinden",
+    "description": "Gespecialiseerde taaldiensten en digitale contentproductie om bedrijven te helpen effectief te communiceren over culturen en platformen heen.",
+    "cta": "Aan de Slag",
+    "ctaSecondary": "Ontdek Diensten"
+  },
+  "services": {
+    "badge": "Onze Diensten",
+    "title": "Wat Wij Bieden",
+    "subtitle": "Uitgebreide taal- en digitale contentoplossingen op maat van uw bedrijfsbehoeften",
+    "languageServices": "Taaldiensten",
+    "languageServicesDesc": "Professionele vertaling, redactie, proeflezen, LQA, MTPE en meer in meerdere talen.",
+    "audioVideo": "Audio/Video Diensten",
+    "audioVideoDesc": "Professionele transcriptie, ondertiteling en multimedia-toegankelijkheidsoplossingen.",
+    "contentWriting": "Contentcreatie",
+    "contentWritingDesc": "Overtuigende copywriting, artikelen, productbeschrijvingen, educatief materiaal en e-books.",
+    "interactiveMedia": "Interactieve Media",
+    "interactiveMediaDesc": "Boeiende interactieve content, animatie, audio- en videoproductie.",
+    "ebookProduction": "E-Bookproductie",
+    "ebookProductionDesc": "Complete e-bookcreatie inclusief schrijven, redactie, opmaak en publicatie.",
+    "documentServices": "Documentdiensten",
+    "documentServicesDesc": "Professionele documentvoorbereiding, opmaak en beheerdiensten."
+  },
+  "entrepreneurs": {
+    "badge": "Voor Ondernemers",
+    "title": "Start Uw Digitale Reis",
+    "description": "Een bedrijf starten met internationale ambities? Wij bieden gespecialiseerde diensten om ondernemers te helpen vanaf dag één een overtuigende wereldwijde aanwezigheid op te bouwen.",
+    "multilingualWeb": "Meertalige Website Ontwikkeling",
+    "multilingualWebDesc": "Maak een professionele website die de taal van uw klanten spreekt",
+    "brandIdentity": "Merkidentiteit Creatie",
+    "brandIdentityDesc": "Ontwikkel een consistent en overtuigend merk in alle markten",
+    "digitalMarketing": "Digitale Marketingmaterialen",
+    "digitalMarketingDesc": "Krijg de content die u nodig heeft voor succesvolle marketingcampagnes",
+    "ongoingSupport": "Doorlopende Ondersteuning",
+    "ongoingSupportDesc": "Continue taal- en contentondersteuning terwijl uw bedrijf groeit",
+    "cta": "Ontdek Ondernemerspakket"
+  },
+  "values": {
+    "badge": "Onze Waarden",
+    "title": "Wat Ons Drijft",
+    "subtitle": "Deze kernwaarden hebben onze reis begeleid van eenvoudig transcriptiewerk naar complexe taalprojecten en nu naar creatieve contentverkenning.",
+    "continuousLearning": "Continu Leren",
+    "continuousLearningDesc": "Elk project leert ons iets nieuws. Van basistranscriptie tot complexe taalkwaliteitsborging, we verfijnen voortdurend onze vaardigheden en passen toe wat we leren om betere resultaten te leveren voor elke klant.",
+    "reliableDelivery": "Betrouwbare Levering",
+    "reliableDeliveryDesc": "Onze reputatie hangt af van het halen van deadlines en het consistent leveren van kwaliteitswerk. We respecteren de tijdlijnen van onze klanten en communiceren duidelijk gedurende elk project.",
+    "culturalBridge": "Culturele Bruggenbouw",
+    "culturalBridgeDesc": "Werkend tussen internationale contexten begrijpen we dat effectieve communicatie verder gaat dan letterlijke vertaling — het gaat erom boodschappen natuurlijk en gepast te laten voelen in elke culturele setting.",
+    "thoughtfulAdaptation": "Doordachte Aanpassing",
+    "thoughtfulAdaptationDesc": "We omarmen nieuwe tools en benaderingen die ons werk echt verbeteren, van AI-assistentie bij taaltaken tot het verkennen van creatieve contentproductie met ons gezin — altijd met een doel, niet alleen voor de nieuwigheid.",
+    "personalAttention": "Persoonlijke Aandacht",
+    "personalAttentionDesc": "Direct samenwerken met klanten betekent dat we het soort gepersonaliseerde service en oog voor detail kunnen bieden dat grotere organisaties vaak niet kunnen. Uw project krijgt onze volledige aandacht.",
+    "honestCommunication": "Eerlijke Communicatie",
+    "honestCommunicationDesc": "Wij geloven in transparante communicatie over tijdlijnen, mogelijkheden en kosten. Als we iets niet kunnen of met anderen moeten samenwerken, vertellen we het u vooraf in plaats van te veel te beloven."
+  },
+  "contact": {
+    "badge": "Neem Contact Op",
+    "title": "Neem Contact Op",
+    "description": "Heeft u vragen over onze diensten of bent u klaar om een project te starten? Neem vandaag nog contact met ons op en een van onze experts neemt snel contact met u op.",
+    "emailUs": "E-mail Ons",
+    "callUs": "Bel Ons",
+    "visitUs": "Bezoek Ons",
+    "sendMessage": "Stuur Ons een Bericht",
+    "fullName": "Volledige Naam",
+    "emailAddress": "E-mailadres",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "send": "Bericht Versturen"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene Voorwaarden",
+    "cookies": "Cookiebeleid"
+  },
+  "common": {
+    "readMore": "Lees Meer",
+    "learnMore": "Meer Informatie",
+    "getInTouch": "Neem Contact Op",
+    "backToBlog": "Terug naar Blog"
+  }
+}

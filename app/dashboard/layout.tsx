@@ -2,7 +2,7 @@ import type React from "react"
 import { getServerSession } from "next-auth/next"
 import { redirect } from "next/navigation"
 import Link from "next/link"
-import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { authOptions } from "@/lib/auth"
 import { LayoutDashboard, MessageSquare, Users, FileText, Settings, LogOut } from "lucide-react"
 import { Footer } from "@/components/footer"
 

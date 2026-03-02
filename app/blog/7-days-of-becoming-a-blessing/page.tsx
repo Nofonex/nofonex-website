@@ -8,13 +8,13 @@ import DropCap from "@/components/drop-cap"
 import ClientCommentWrapper from "@/components/client-comment-wrapper"
 
 export const metadata: Metadata = {
-  title: "7 Days of Becoming a Blessing: A Bilingual Devotional for Professionals",
+  title: "7 Days of Becoming a Blessing: A Devotional for Professionals",
   description:
-    "A 7-day bilingual (English-Dutch) devotional for Christian professionals navigating career change, entrepreneurship, and fear. Biblical encouragement meets real-life application.",
+    "A 7-day devotional for Christian professionals navigating career change, entrepreneurship, and fear. Biblical encouragement meets real-life application.",
   openGraph: {
     title: "7 Days of Becoming a Blessing | Nofonex Blog",
     description:
-      "Bilingual devotional for professionals: overcome fear, embrace change, and become a blessing in your career and community.",
+      "A devotional for professionals: overcome fear, embrace change, and become a blessing in your career and community.",
   },
 }
 
@@ -24,22 +24,17 @@ export default function BlogPost() {
   return (
     <>
       {/* ✏️ XENOFON — EDITING GUIDE:
-          Search for "✏️ XENOFON" to find all 9 places where you should add/adjust content.
+          Search for "✏️ XENOFON" to find all places where you should add/adjust content.
           Summary of markers:
           1. INTRO: Add personal intro paragraph (who you are, why you wrote this)
-          2. INTRO NL: Review Dutch intro for natural voice
-          3. DAY 1: Add your career change story (MTPE/AI disruption)
-          4. DAY 1 NL: Review Dutch prayers
-          5. DAY 2: Add your "active waiting" example (what you're building now)
-          6. DAY 3: Add your MTPE "unlearning" story (most personal day)
-          7. DAY 4: Add family dimension (you + wife running Nofonex)
-          8. DAY 5: Add your specific "sword and trowel" situation
-          9. DAY 6: Add a giving-from-scarcity experience
-          10. DAY 7: Write your personal closing declaration
-          11. BIO: Personalize the author bio
-
-          GENERAL: Read ALL Dutch sections aloud. Adjust anything that sounds "translated"
-          rather than natural Surinamese Dutch. Your voice is the product. */}
+          2. DAY 1: Add your career change story (MTPE/AI disruption)
+          3. DAY 2: Add your "active waiting" example (what you're building now)
+          4. DAY 3: Add your MTPE "unlearning" story (most personal day)
+          5. DAY 4: Add family dimension (you + wife running Nofonex)
+          6. DAY 5: Add your specific "sword and trowel" situation
+          7. DAY 6: Add a giving-from-scarcity experience
+          8. DAY 7: Write your personal closing declaration
+          9. BIO: Personalize the author bio */}
 
       {/* Hero Section */}
       <section className="pt-20 pb-10 md:pt-28 md:pb-16 bg-gradient-to-br from-primary/5 via-white to-primary/5">
@@ -47,20 +42,17 @@ export default function BlogPost() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-6">
               <Link href="/blog" className="text-primary hover:underline flex items-center">
-                ← Back to Blog
+                &larr; Back to Blog
               </Link>
             </div>
 
             <div className="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium mb-4">
-              Faith-Based / Geloofsinhoud
+              Faith &amp; Work
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6">
-              7 Days of Becoming a Blessing: A Bilingual Devotional for Professionals
+              7 Days of Becoming a Blessing: A Devotional for Professionals
             </h1>
-            <p className="text-xl text-gray-600 mb-4 italic">
-              7 Dagen van een Zegen Worden: Een Tweetalige Overdenking voor Professionals
-            </p>
 
             <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center">
@@ -73,13 +65,13 @@ export default function BlogPost() {
               </div>
               <div className="flex items-center">
                 <Tag size={16} className="mr-1" />
-                <span>Devotional, Career, Faith & Work, Bilingual</span>
+                <span>Devotional, Career, Faith &amp; Work</span>
               </div>
             </div>
 
             <div className="relative h-[300px] md:h-[450px] rounded-lg overflow-hidden mb-10 bg-gradient-to-br from-primary/10 via-secondary/5 to-primary/10 flex items-center justify-center">
               <div className="text-center p-8">
-                <p className="text-6xl mb-4">✝️</p>
+                <p className="text-6xl mb-4">&#x271D;&#xFE0F;</p>
                 <p className="text-2xl font-bold text-primary">7 Days of Becoming a Blessing</p>
                 <p className="text-lg text-gray-600 mt-2">For professionals navigating change with faith</p>
               </div>
@@ -107,27 +99,18 @@ export default function BlogPost() {
               This devotional is for you. Not a motivational speech. Not a business course. This is seven days in Scripture with people who faced the same fears you carry — and discovered that God was not asking them to receive a miracle, but to <strong>become</strong> one.
             </StyledParagraph>
 
-            <StyledParagraph variant="highlight">
-              {/* ✏️ XENOFON: Review this Dutch paragraph. Read it aloud — does it sound like how
-                  you'd say it at EWMI or to a friend? Adjust the tone to your Surinamese Dutch voice. */}
-              <em>Deze overdenking is voor jou. Geen motivatiespeech. Geen businesscursus. Dit zijn zeven dagen in de Schrift met mensen die dezelfde angsten droegen — en ontdekten dat God hen niet vroeg om een wonder te ontvangen, maar om er een te <strong>worden</strong>.</em>
-            </StyledParagraph>
-
             <StyledParagraph>
               Each day follows the same structure: a biblical story, an in-depth look at what was really happening, and a direct connection to your professional life right now. Whether you are an entrepreneur, a freelancer, or someone employed who feels the ground shifting — these stories are for you.
             </StyledParagraph>
 
             <div className="my-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
-              <h3 className="font-bold text-primary mb-3">How to Use This Devotional / Hoe Gebruik Je Deze Overdenking</h3>
+              <h3 className="font-bold text-primary mb-3">How to Use This Devotional</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>Read one day each morning before starting work</li>
                 <li>Sit with the reflection question — write your answer if you can</li>
                 <li>Pray the closing prayer out loud</li>
                 <li>Come back at the end of the week for Day 7, which ties everything together</li>
               </ul>
-              <p className="mt-3 text-sm text-gray-500 italic">
-                Lees elke ochtend één dag vóór je aan het werk gaat. Neem de tijd voor de reflectievraag. Bid het slotgebed hardop.
-              </p>
             </div>
 
             <div className="my-10">
@@ -136,11 +119,10 @@ export default function BlogPost() {
 
             {/* ============ DAY 1 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 1 / Dag 1</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 1</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 Abraham Left Before He Had a Map
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">Abraham Vertrok Voordat Hij een Kaart Had</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -156,11 +138,7 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <StyledParagraph>
-              The Hebrew word for &ldquo;go&rdquo; here is <em>lekh-lekha</em> (לֶךְ-לְךָ), which literally means &ldquo;go to yourself&rdquo; or &ldquo;go for yourself.&rdquo; Rabbinical scholars have long interpreted this as: go on a journey that will reveal who you truly are. The leaving was not just geographical — it was an identity shift.
-            </StyledParagraph>
-
-            <StyledParagraph variant="callout" bgColor="blue">
-              <strong>Het Hebreeuwse woord voor &ldquo;ga&rdquo; is hier <em>lekh-lekha</em> (לֶךְ-לְךָ)</strong>, wat letterlijk betekent &ldquo;ga naar jezelf&rdquo; of &ldquo;ga voor jezelf.&rdquo; Het vertrek was niet alleen geografisch — het was een identiteitsverschuiving.
+              The Hebrew word for &ldquo;go&rdquo; here is <em>lekh-lekha</em> (&#x5DC;&#x5B6;&#x5DA;&#x5B0;-&#x5DC;&#x5B0;&#x5DA;&#x5B8;), which literally means &ldquo;go to yourself&rdquo; or &ldquo;go for yourself.&rdquo; Rabbinical scholars have long interpreted this as: go on a journey that will reveal who you truly are. The leaving was not just geographical — it was an identity shift.
             </StyledParagraph>
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">For the Professional</h3>
@@ -185,27 +163,21 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Reflection / Reflectie</h4>
+              <h4 className="font-bold text-primary mb-2">Reflection</h4>
               <p className="text-gray-700">What are you holding onto that God might be asking you to leave — not because it is bad, but because He has something bigger?</p>
-              <p className="text-gray-500 italic mt-2 text-sm">Waar houd je aan vast waarvan God misschien vraagt om los te laten — niet omdat het slecht is, maar omdat Hij iets groters heeft?</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Prayer</h4>
               <p className="text-gray-700 italic">Lord, I confess that the unknown terrifies me. Like Abraham, I have built something here — my skills, my reputation, my comfort. But I hear You calling me forward. Give me the courage to step out before I see the full road. I choose to trust that You are making me into a blessing, even when I cannot yet see how. Amen.</p>
-              {/* ✏️ XENOFON: Review all Dutch prayers — pray them aloud and adjust any phrasing
-                  that doesn't feel natural to you. "zien" below is misspelled (should be "zien" → ok actually,
-                  but check the whole prayer flows in your voice). */}
-              <p className="text-gray-500 italic mt-3 text-sm">Heer, ik beken dat het onbekende mij angst aanjaagt. Net als Abraham heb ik hier iets opgebouwd. Maar ik hoor U mij voorwaarts roepen. Geef mij de moed om te stappen voordat ik de hele weg zie. Ik kies ervoor om te vertrouwen dat U mij tot een zegen maakt, zelfs als ik nog niet kan zien hoe. Amen.</p>
             </div>
 
             {/* ============ DAY 2 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 2 / Dag 2</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 2</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 Joseph Worked in the Prison, Not Just Waited In It
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">Jozef Werkte in de Gevangenis, Hij Wachtte Er Niet Alleen</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -220,14 +192,10 @@ export default function BlogPost() {
               But the text says something remarkable: even in prison, Joseph <strong>worked</strong>. He did not just survive — he managed. He organized. He served. He interpreted dreams for fellow prisoners who could give him nothing in return. He made himself useful in a place that was designed to make him useless.
             </StyledParagraph>
 
-            <StyledParagraph variant="callout" bgColor="green">
-              <strong>Zelfs in de gevangenis werkte Jozef.</strong> Hij overleefde niet alleen — hij beheerde, organiseerde en diende. Hij maakte zichzelf nuttig op een plek die bedoeld was om hem nutteloos te maken. Dit is het verschil tussen passief wachten en actief wachten.
-            </StyledParagraph>
-
-            <h3 className="text-xl font-bold text-primary mt-8 mb-4">Waiting Is Not Passive / Wachten Is Niet Passief</h3>
+            <h3 className="text-xl font-bold text-primary mt-8 mb-4">Waiting Is Not Passive</h3>
 
             <StyledParagraph>
-              Here is what most people get wrong about biblical waiting: they think it means sitting still. It does not. The Hebrew concept of <em>qavah</em> (קָוָה), often translated as &ldquo;wait on the Lord,&rdquo; actually carries the meaning of binding together, like twisting threads into a rope. Waiting on God means actively intertwining your work with His purpose — becoming stronger in the tension, not weaker.
+              Here is what most people get wrong about biblical waiting: they think it means sitting still. It does not. The Hebrew concept of <em>qavah</em> (&#x5E7;&#x5B8;&#x5D5;&#x5B8;&#x5D4;), often translated as &ldquo;wait on the Lord,&rdquo; actually carries the meaning of binding together, like twisting threads into a rope. Waiting on God means actively intertwining your work with His purpose — becoming stronger in the tension, not weaker.
             </StyledParagraph>
 
             <StyledParagraph>
@@ -253,15 +221,13 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Reflection / Reflectie</h4>
+              <h4 className="font-bold text-primary mb-2">Reflection</h4>
               <p className="text-gray-700">Where in your professional life does it feel like &ldquo;prison&rdquo;? What productive work can you do there that serves others — even without immediate reward?</p>
-              <p className="text-gray-500 italic mt-2 text-sm">Waar in je professionele leven voelt het als &ldquo;gevangenis&rdquo;? Welk productief werk kun je daar doen dat anderen dient — zelfs zonder directe beloning?</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Prayer</h4>
               <p className="text-gray-700 italic">Father, I confess I have been waiting passively — frustrated, anxious, wondering when things will change. But I see from Joseph&apos;s life that waiting is not sitting still. Show me the work You have for me right here, right now. Let me serve faithfully in this season, trusting that You are preparing something I cannot yet see. Amen.</p>
-              <p className="text-gray-500 italic mt-3 text-sm">Vader, ik beken dat ik passief heb gewacht — gefrustreerd, angstig, me afvragend wanneer dingen zullen veranderen. Maar ik zie uit Jozefs leven dat wachten niet stilzitten is. Toon mij het werk dat U voor mij hebt, hier en nu. Laat mij trouw dienen in dit seizoen. Amen.</p>
             </div>
 
             <div className="my-10">
@@ -270,11 +236,10 @@ export default function BlogPost() {
 
             {/* ============ DAY 3 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 3 / Dag 3</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 3</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 Moses Had to Unlearn Egypt Before He Could Lead Israel
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">Mozes Moest Egypte Afleren Voordat Hij Israël Kon Leiden</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -295,10 +260,6 @@ export default function BlogPost() {
 
             <StyledParagraph>
               This was not weakness. This was readiness. The man who once tried to deliver Israel by killing an Egyptian now understood that deliverance comes from God, not from personal power.
-            </StyledParagraph>
-
-            <StyledParagraph variant="callout" bgColor="purple">
-              <strong>Mozes die zei &ldquo;Wie ben ik?&rdquo; was niet zwak — hij was gereed.</strong> De man die ooit Israël probeerde te bevrijden door een Egyptenaar te doden, begreep nu dat bevrijding van God komt, niet van eigen kracht. Soms moet je afleren wat je geleerd hebt om te worden wie je moet zijn.
             </StyledParagraph>
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">For the Professional</h3>
@@ -323,24 +284,21 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Reflection / Reflectie</h4>
+              <h4 className="font-bold text-primary mb-2">Reflection</h4>
               <p className="text-gray-700">What professional identity or skill have you been clinging to? What would it look like to hold it loosely and ask God: &ldquo;What do You want me to become?&rdquo;</p>
-              <p className="text-gray-500 italic mt-2 text-sm">Aan welke professionele identiteit of vaardigheid klamp je je vast? Hoe zou het eruit zien om het los te houden en God te vragen: &ldquo;Wat wilt U dat ik word?&rdquo;</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Prayer</h4>
               <p className="text-gray-700 italic">God, I built my confidence on what I could do. Now that is shifting, and I feel lost. But I see in Moses that the desert was not a dead end — it was a doorway. Strip away anything in me that trusts my own power more than Yours. Teach me humility. Prepare me for what is next. Amen.</p>
-              <p className="text-gray-500 italic mt-3 text-sm">God, ik bouwde mijn vertrouwen op wat ik kon doen. Nu verschuift dat en ik voel me verloren. Maar ik zie in Mozes dat de woestijn geen doodlopende weg was — het was een doorgang. Leer mij nederigheid. Bereid mij voor op wat komt. Amen.</p>
             </div>
 
             {/* ============ DAY 4 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 4 / Dag 4</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 4</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 Ruth Chose Loyalty Over Security — and God Multiplied It
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">Ruth Koos Loyaliteit Boven Zekerheid — en God Vermenigvuldigde Het</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -357,10 +315,6 @@ export default function BlogPost() {
 
             <StyledParagraph>
               And then she worked. Ruth did not sit in Bethlehem waiting for provision. She went to the fields and gleaned — the ancient world&apos;s equivalent of picking up scraps. She did the lowest, hardest, most unglamorous work available. She did not wait for a miracle. She put herself in a position where God&apos;s provision could find her.
-            </StyledParagraph>
-
-            <StyledParagraph variant="callout" bgColor="orange">
-              <strong>Ruth wachtte niet op een wonder.</strong> Ze plaatste zichzelf in een positie waar Gods voorzienigheid haar kon vinden. Ze deed het laagste, hardste, minst glamoureuze werk dat beschikbaar was. En precies daar — op het veld van Boaz — opende God de deur die haar leven zou veranderen.
             </StyledParagraph>
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">For the Professional</h3>
@@ -385,15 +339,13 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Reflection / Reflectie</h4>
+              <h4 className="font-bold text-primary mb-2">Reflection</h4>
               <p className="text-gray-700">Where is your &ldquo;field of gleaning&rdquo; right now? What faithful, unglamorous work is God asking you to do — not for applause, but because it is right?</p>
-              <p className="text-gray-500 italic mt-2 text-sm">Waar is jouw &ldquo;veld van aren lezen&rdquo; op dit moment? Welk trouw, onopvallend werk vraagt God van je — niet voor applaus, maar omdat het goed is?</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Prayer</h4>
               <p className="text-gray-700 italic">Father, I want security. I want the guaranteed path. But Ruth shows me that faithfulness is the path. Help me to keep showing up, keep serving, keep blessing others even when my own needs feel urgent. I trust that You see my field. Provide as You promised. Amen.</p>
-              <p className="text-gray-500 italic mt-3 text-sm">Vader, ik wil zekerheid. Ik wil het gegarandeerde pad. Maar Ruth laat mij zien dat trouw het pad is. Help mij om te blijven opdagen, te blijven dienen, te blijven zegenen — zelfs wanneer mijn eigen noden dringend voelen. Ik vertrouw erop dat U mijn veld ziet. Amen.</p>
             </div>
 
             <div className="my-10">
@@ -402,11 +354,10 @@ export default function BlogPost() {
 
             {/* ============ DAY 5 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 5 / Dag 5</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 5</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 Nehemiah Built With a Sword in One Hand and a Trowel in the Other
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">Nehemia Bouwde Met een Zwaard in de Ene Hand en een Troffel in de Andere</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -423,10 +374,6 @@ export default function BlogPost() {
 
             <StyledParagraph>
               Nehemiah did not wait for the opposition to disappear before building. He built <strong>in the middle of the opposition</strong>. He acknowledged the danger and kept working anyway.
-            </StyledParagraph>
-
-            <StyledParagraph variant="callout" bgColor="blue">
-              <strong>Nehemia wachtte niet tot de oppositie verdween.</strong> Hij bouwde midden in de oppositie. Hij erkende het gevaar en bleef toch werken. Het zwaard was niet een teken van angst — het was een teken van realisme gecombineerd met geloof.
             </StyledParagraph>
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">For the Professional</h3>
@@ -452,24 +399,21 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Reflection / Reflectie</h4>
+              <h4 className="font-bold text-primary mb-2">Reflection</h4>
               <p className="text-gray-700">What are you trying to build right now? What opposition are you facing? How can you hold both the sword (wisdom, boundaries, realistic planning) and the trowel (the actual work) at the same time?</p>
-              <p className="text-gray-500 italic mt-2 text-sm">Wat probeer je nu te bouwen? Welke oppositie ervaar je? Hoe kun je tegelijkertijd het zwaard (wijsheid, grenzen, realistisch plannen) en de troffel (het eigenlijke werk) vasthouden?</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Prayer</h4>
               <p className="text-gray-700 italic">Lord, I see the broken walls in my professional life and I feel the weight of rebuilding. I also see the opposition — financial pressure, doubt, competition, discouragement. Like Nehemiah, I will not stop building. Give me the discipline to hold the sword and the trowel. Let my enemies see that this work is done by Your hand. Amen.</p>
-              <p className="text-gray-500 italic mt-3 text-sm">Heer, ik zie de gebroken muren in mijn professionele leven en ik voel het gewicht van de wederopbouw. Ik zie ook de oppositie. Net als Nehemia zal ik niet stoppen met bouwen. Geef mij de discipline om het zwaard en de troffel vast te houden. Amen.</p>
             </div>
 
             {/* ============ DAY 6 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 6 / Dag 6</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 6</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 The Widow of Zarephath Gave Her Last — and Her Supply Never Ran Out
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">De Weduwe van Zarfath Gaf Haar Laatste — en Haar Voorraad Raakte Nooit Op</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -485,11 +429,7 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <StyledParagraph>
-              The Hebrew word for &ldquo;jar&rdquo; here (<em>kad</em> כַּד) is the same word used for the jars at the well where Abraham&apos;s servant found Rebekah — another story where generosity to a stranger unlocked a divine destiny. Scripture is consistent: the vessel that gives is the vessel God refills.
-            </StyledParagraph>
-
-            <StyledParagraph variant="callout" bgColor="green">
-              <strong>De Schrift is consistent: het vat dat geeft, is het vat dat God hervult.</strong> De weduwe had elke reden om nee te zeggen. Maar ze gaf haar laatste, en God vulde bij wat zij niet kon produceren. Dit is het verschil tussen menselijke economie en Gods economie.
+              The Hebrew word for &ldquo;jar&rdquo; here (<em>kad</em> &#x5DB;&#x5B7;&#x5D3;) is the same word used for the jars at the well where Abraham&apos;s servant found Rebekah — another story where generosity to a stranger unlocked a divine destiny. Scripture is consistent: the vessel that gives is the vessel God refills.
             </StyledParagraph>
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">For the Professional</h3>
@@ -513,15 +453,13 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Reflection / Reflectie</h4>
+              <h4 className="font-bold text-primary mb-2">Reflection</h4>
               <p className="text-gray-700">What is your &ldquo;last handful of flour&rdquo;? What skill, time, or resource could you give to someone else this week — not from abundance, but from faith?</p>
-              <p className="text-gray-500 italic mt-2 text-sm">Wat is jouw &ldquo;laatste handvol meel&rdquo;? Welke vaardigheid, tijd of bron zou je deze week aan iemand anders kunnen geven — niet vanuit overvloed, maar vanuit geloof?</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Prayer / Gebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Prayer</h4>
               <p className="text-gray-700 italic">Father, my jar feels almost empty. I am tempted to protect what little I have left. But the widow teaches me that giving in faith unlocks Your provision. I bring You what I have — my skills, my time, my work — and I trust You to multiply it. Let me be generous even when I feel poor. Amen.</p>
-              <p className="text-gray-500 italic mt-3 text-sm">Vader, mijn kruik voelt bijna leeg. Ik ben geneigd te beschermen wat ik nog heb. Maar de weduwe leert mij dat geven in geloof Uw voorziening ontsluit. Ik breng U wat ik heb — mijn vaardigheden, mijn tijd, mijn werk — en ik vertrouw erop dat U het vermenigvuldigt. Amen.</p>
             </div>
 
             <div className="my-10">
@@ -530,11 +468,10 @@ export default function BlogPost() {
 
             {/* ============ DAY 7 ============ */}
             <div className="border-t-4 border-primary pt-8 mt-12">
-              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 7 / Dag 7</p>
+              <p className="text-sm font-semibold text-secondary uppercase tracking-wider">Day 7</p>
               <h2 className="text-2xl md:text-3xl font-bold text-primary mt-2 mb-6">
                 You Are the Blessing — Not Just the Recipient
               </h2>
-              <p className="text-lg text-gray-500 italic mb-6">Jij Bent de Zegen — Niet Alleen de Ontvanger</p>
             </div>
 
             <StyledParagraph variant="quote">
@@ -577,11 +514,7 @@ export default function BlogPost() {
             </StyledParagraph>
 
             <StyledParagraph>
-              The Greek word in Ephesians 2:10 for &ldquo;handiwork&rdquo; is <em>poiema</em> (ποίημα) — from which we get the English word &ldquo;poem.&rdquo; You are God&apos;s poem. Not a factory product. Not a random assemblage. A deliberate, crafted, intentional work of art — made to do good works that were prepared before you were born.
-            </StyledParagraph>
-
-            <StyledParagraph variant="callout" bgColor="purple">
-              <strong>Het Griekse woord voor &ldquo;maaksel&rdquo; is <em>poiema</em> (ποίημα)</strong> — waarvan ons woord &ldquo;gedicht&rdquo; komt. Je bent Gods gedicht. Geen fabrieksproduct. Een bewust, ambachtelijk, intentioneel kunstwerk — gemaakt om goede werken te doen die van tevoren bereid zijn.
+              The Greek word in Ephesians 2:10 for &ldquo;handiwork&rdquo; is <em>poiema</em> (&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03BC;&#x03B1;) — from which we get the English word &ldquo;poem.&rdquo; You are God&apos;s poem. Not a factory product. Not a random assemblage. A deliberate, crafted, intentional work of art — made to do good works that were prepared before you were born.
             </StyledParagraph>
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">For the Professional: The Shift</h3>
@@ -606,25 +539,22 @@ export default function BlogPost() {
                 Write it as if you're saying it to your wife, your kids, and God — all at the same time. */}
 
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
-              <h4 className="font-bold text-primary mb-2">Final Reflection / Slotreflectie</h4>
-              <p className="text-gray-700 mb-3">Look at this week&apos;s six stories. Which one spoke to you most? Why? What is one concrete step you will take this week to shift from &ldquo;waiting for a blessing&rdquo; to &ldquo;becoming a blessing&rdquo;?</p>
-              <p className="text-gray-500 italic text-sm">Kijk naar de zes verhalen van deze week. Welke sprak je het meest aan? Waarom? Wat is één concrete stap die je deze week zult nemen om te verschuiven van &ldquo;wachten op een zegen&rdquo; naar &ldquo;een zegen worden&rdquo;?</p>
+              <h4 className="font-bold text-primary mb-2">Final Reflection</h4>
+              <p className="text-gray-700">Look at this week&apos;s six stories. Which one spoke to you most? Why? What is one concrete step you will take this week to shift from &ldquo;waiting for a blessing&rdquo; to &ldquo;becoming a blessing&rdquo;?</p>
             </div>
 
             <div className="my-8 p-6 bg-secondary/5 rounded-lg">
-              <h4 className="font-bold text-secondary mb-2">Closing Prayer / Slotgebed</h4>
+              <h4 className="font-bold text-secondary mb-2">Closing Prayer</h4>
               <p className="text-gray-700 italic mb-4">Father, thank You for this week. Thank You for Abraham&apos;s courage, Joseph&apos;s patience, Moses&apos; humility, Ruth&apos;s loyalty, Nehemiah&apos;s resilience, and the widow&apos;s faith. I see now that You were never just preparing blessings <strong>for</strong> them — You were preparing them <strong>to be</strong> blessings.</p>
               <p className="text-gray-700 italic mb-4">Do the same in me. Whatever my career looks like next month, next year, five years from now — let me be a blessing. Let my work serve people. Let my faith encourage others. Let my skills build something that lasts.</p>
               <p className="text-gray-700 italic mb-4">I am Your poem. Write the next verse.</p>
               <p className="text-gray-700 italic">In Jesus&apos; name, Amen.</p>
-              <hr className="my-4 border-gray-200" />
-              <p className="text-gray-500 italic text-sm">Vader, dank U voor deze week. Ik zie nu dat U nooit alleen zegeningen voor hen bereidde — U bereidde hen om zegeningen te zijn. Doe hetzelfde in mij. Wat mijn carrière er ook uitziet — laat mij een zegen zijn. Laat mijn werk mensen dienen. Laat mijn geloof anderen bemoedigen. Ik ben Uw gedicht. Schrijf het volgende vers. In Jezus&apos; naam, Amen.</p>
             </div>
 
             {/* ============ WHAT'S NEXT ============ */}
             <div className="border-t-2 border-gray-200 pt-8 mt-12">
               <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                What&apos;s Next? / Wat Nu?
+                What&apos;s Next?
               </h2>
 
               <StyledParagraph>
@@ -634,40 +564,28 @@ export default function BlogPost() {
               <div className="space-y-4 my-6">
                 <div className="flex gap-3 items-start">
                   <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">1</span>
-                  <div>
-                    <p className="font-bold">Share it with someone who needs it.</p>
-                    <p className="text-sm text-gray-500">Deel het met iemand die het nodig heeft.</p>
-                  </div>
+                  <p className="font-bold">Share it with someone who needs it.</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">2</span>
-                  <div>
-                    <p className="font-bold">Re-read the day that spoke to you most, slowly, one more time.</p>
-                    <p className="text-sm text-gray-500">Herlees de dag die je het meest aansprak, langzaam, nog één keer.</p>
-                  </div>
+                  <p className="font-bold">Re-read the day that spoke to you most, slowly, one more time.</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">3</span>
-                  <div>
-                    <p className="font-bold">Take your one concrete step this week. Write it down. Do it.</p>
-                    <p className="text-sm text-gray-500">Zet je ene concrete stap deze week. Schrijf het op. Doe het.</p>
-                  </div>
+                  <p className="font-bold">Take your one concrete step this week. Write it down. Do it.</p>
                 </div>
               </div>
 
               <div className="my-8 p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg border border-primary/10">
                 <h3 className="font-bold text-primary mb-2">Need Help With Your Professional Transition?</h3>
-                <p className="text-gray-700 mb-3">
-                  At Nofonex, we help professionals and businesses communicate across languages and cultures. Whether you need content that speaks to both Dutch and English audiences, or help positioning your expertise for a global market — we are here to help you build.
-                </p>
-                <p className="text-gray-500 italic text-sm mb-4">
-                  Bij Nofonex helpen we professionals en bedrijven om te communiceren over talen en culturen heen. Of u nu content nodig heeft die zowel Nederlands- als Engelstalige doelgroepen aanspreekt — wij zijn er om u te helpen bouwen.
+                <p className="text-gray-700 mb-4">
+                  At Nofonex, we help professionals and businesses communicate across languages and cultures. Whether you need content that speaks to international audiences, or help positioning your expertise for a global market — we are here to help you build.
                 </p>
                 <Link
                   href="/#contact"
                   className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-medium"
                 >
-                  Get in Touch / Neem Contact Op
+                  Get in Touch
                 </Link>
               </div>
             </div>
@@ -677,14 +595,10 @@ export default function BlogPost() {
                 Suriname specifically, or what drives you. Example:
                 "Xenofon lives in Suriname with his wife and children. When he's not working on
                  translations or building content systems, he serves at his local church (EWMI)
-                 and dreams about what Nofonex can become next."
-                Also review the Dutch version for natural flow. */}
+                 and dreams about what Nofonex can become next." */}
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 About the author: Xenofon Martokarijo is the founder of Nofonex, a language services and digital content production company based in Suriname. He specializes in English-Dutch translation, MTPE, and creating content that bridges cultures. A committed Christian, he believes that faith and professional excellence are inseparable.
-              </p>
-              <p className="text-gray-400 italic text-sm mt-2">
-                Over de auteur: Xenofon Martokarijo is de oprichter van Nofonex, een taalservice- en digitale contentproductiebedrijf gevestigd in Suriname. Hij is gespecialiseerd in Engels-Nederlandse vertaling, MTPE, en het creëren van content die culturen verbindt. Als toegewijd christen gelooft hij dat geloof en professionele excellentie onafscheidelijk zijn.
               </p>
             </div>
           </div>
