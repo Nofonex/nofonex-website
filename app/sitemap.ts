@@ -100,6 +100,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog posts
     {
+      url: `${baseUrl}/blog/7-days-of-becoming-a-blessing`,
+      lastModified: new Date("2026-03-02"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/bridging-technical-expertise-creative-engagement`,
       lastModified: new Date("2024-04-28"),
       changeFrequency: "yearly",
