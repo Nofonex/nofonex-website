@@ -1,10 +1,7 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
+import { useEffect, useRef } from "react"
 
-// Update the AdBannerProps interface to use a more strict type for size
 interface AdBannerProps {
   size: "sidebar" | "inline" | "top" | "bottom" | "medium" | "large"
   position?: string
@@ -14,97 +11,59 @@ interface AdBannerProps {
 }
 
 export default function AdBanner({ size, id, className = "" }: AdBannerProps) {
-  const [adData, setAdData] = useState<{
-    imageUrl: string
-    linkUrl: string
-    altText: string
-    width: number
-    height: number
-  } | null>(null)
+  const adRef = useRef<HTMLDivElement>(null)
 
-  // This would normally fetch from an ad network API
-  // Update the useEffect hook to handle all possible size values
-  useEffect(() => {
-    // Simulate ad loading
-    const timeout = setTimeout(() => {
-      // Placeholder ad data - in a real implementation, this would come from your ad network
-      const sizeMap = {
-        sidebar: { width: 300, height: 600 },
-        inline: { width: 728, height: 90 },
-        top: { width: 970, height: 250 },
-        bottom: { width: 728, height: 90 },
-        medium: { width: 728, height: 90 },
-        large: { width: 970, height: 250 },
-      }
-
-      // Default size as fallback
-      const adSize = sizeMap[size] || { width: 300, height: 250 }
-
-      setAdData({
-        imageUrl: `/placeholder.svg?height=${adSize.height}&width=${adSize.width}&query=Your ad here - ${size} banner`,
-        linkUrl: "/advertise",
-        altText: "Advertisement",
-        width: adSize.width,
-        height: adSize.height,
-      })
-    }, 300)
-
-    return () => clearTimeout(timeout)
-  }, [size])
-
-  // Update the loading state to use the same fallback logic
-  if (!adData) {
-    // Default dimensions based on size with fallback
-    let width = "100%"
-    let height = "90px"
-    let maxWidth = "728px"
-
-    if (size === "sidebar") {
-      width = "300px"
-      height = "600px"
-      maxWidth = "300px"
-    } else if (size === "top" || size === "large") {
-      height = "250px"
-      maxWidth = "970px"
-    }
-
-    return (
-      <div
-        id={id}
-        className={`bg-gray-100 flex items-center justify-center ${className}`}
-        style={{
-          width,
-          height,
-          maxWidth,
-          margin: "1.5rem auto",
-        }}
-      >
-        <div className="text-gray-400">Loading advertisement...</div>
-      </div>
-    )
+  const sizeMap = {
+    sidebar: { width: 300, height: 600 },
+    inline: { width: 728, height: 90 },
+    top: { width: 970, height: 250 },
+    bottom: { width: 728, height: 90 },
+    medium: { width: 728, height: 90 },
+    large: { width: 970, height: 250 },
   }
+
+  const adSize = sizeMap[size] || { width: 300, height: 250 }
+
+  useEffect(() => {
+    if (!adRef.current) return
+
+    // Adsterra native banner integration
+    const script = document.createElement("script")
+    script.async = true
+    script.setAttribute("data-cfasync", "false")
+    script.src = "//pl28825063.effectivegatecpm.com/f6/89/2e/f6892ec944b67119568ccfe2605a6421.js"
+
+    // Only add popunder script once per page
+    if (!document.querySelector('script[src*="f6892ec944b67119568ccfe2605a6421"]')) {
+      document.head.appendChild(script)
+    }
+  }, [])
 
   return (
     <div
       id={id}
       className={`ad-container relative ${className}`}
+      ref={adRef}
       style={{
         width: size === "sidebar" ? "300px" : "100%",
-        maxWidth: adData.width,
-        height: adData.height,
+        maxWidth: adSize.width,
+        minHeight: adSize.height / 4,
         margin: "1.5rem auto",
       }}
     >
       <div className="absolute top-0 right-0 bg-gray-200 text-xs px-1 z-10 opacity-70">Ad</div>
-      <Link href={adData.linkUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-        <Image
-          src={adData.imageUrl || "/placeholder.svg"}
-          alt={adData.altText}
-          width={adData.width}
-          height={adData.height}
-          className="w-full h-full object-cover"
-        />
-      </Link>
+      <a
+        href="https://www.effectivegatecpm.com/wampbzh4y?key=5be0998546ee06c1a83bd0bf28dda1a5"
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        className="block w-full h-full bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center rounded-lg border border-gray-200 hover:border-secondary/30 transition-colors"
+        style={{ minHeight: adSize.height / 4, maxWidth: adSize.width }}
+      >
+        <div className="text-center p-4">
+          <p className="text-sm font-medium text-primary">Discover More</p>
+          <p className="text-xs text-gray-500 mt-1">Sponsored Content</p>
+        </div>
+      </a>
     </div>
   )
 }
