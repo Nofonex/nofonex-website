@@ -13,7 +13,7 @@ export default function StyledParagraph({ children, variant = "default", bgColor
     default: "",
     highlight: "border-l-4 border-primary pl-4 italic",
     callout: "rounded-lg p-6 shadow-md",
-    quote: "text-xl italic font-serif border-l-4 border-gray-300 pl-6 py-2",
+    quote: "text-xl italic font-serif border-l-4 border-primary pl-6 py-2 text-primary-light",
   }
 
   const bgColorStyles = {

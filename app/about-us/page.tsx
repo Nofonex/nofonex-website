@@ -22,8 +22,8 @@ export default function AboutUsPage() {
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Nofonex</h1>
             <p className="text-lg text-gray-600">
-              We are a specialized team of language and digital content experts dedicated to providing exceptional
-              English-Dutch translation and content services.
+              A freelance language services practice based in Suriname, specializing in English-Dutch translation
+              and digital content production — with occasional help from the family.
             </p>
           </div>
         </div>
@@ -187,102 +187,88 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Meet Our Team */}
+      {/* Who We Are */}
       <section className="py-16 md:py-24 bg-primary/5">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="badge badge-secondary mb-2">Our Team</div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Meet the Team</h2>
+            <div className="badge badge-secondary mb-2">Who We Are</div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">The People Behind Nofonex</h2>
             <p className="text-gray-600">
-              Our specialized team combines linguistic expertise with technological innovation to deliver exceptional
-              results for our clients.
+              Nofonex is primarily a freelance operation. The work is done by one person, with occasional help
+              from family members who pitch in alongside their own occupations.
             </p>
           </div>
 
-          {/* First row - Team Members 1 & 2 */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {/* Team Member 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/images/xenofon-martokarijo.jpg" alt="Xenofon Martokarijo - Founder & Director" fill className="object-cover" />
+          {/* Founder */}
+          <div className="max-w-2xl mx-auto mb-12">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
+              <div className="relative w-36 h-36 mx-auto mb-4 rounded-full overflow-hidden">
+                <Image src="/images/xenofon-martokarijo.jpg" alt="Xenofon Martokarijo - Freelance Language Professional" fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Xenofon Martokarijo</h3>
-              <p className="text-secondary font-medium mb-2">Founder & Director</p>
-              <p className="text-gray-600 text-sm">
-                With extensive experience in linguistics and entrepreneurship, Xenofon established Nofonex Online
-                Services to bridge language gaps in the digital world. His expertise in English-Dutch translation and
-                content creation forms the foundation of our specialized services.
-              </p>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/images/team-1.jpg" alt="Suraya Martokarijo-Batenburg - Content Director" fill className="object-cover" />
-              </div>
-              <h3 className="text-xl font-semibold text-primary">Suraya Martokarijo-Batenburg</h3>
-              <p className="text-secondary font-medium mb-2">Content Director</p>
-              <p className="text-gray-600 text-sm">
-                Suraya brings valuable insight to our content creation process, specializing in developing engaging
-                materials for diverse audiences. Her expertise in visual creativity ensures our content to maintain 
-                cultural authenticity and attraction.
+              <p className="text-secondary font-medium mb-3">Freelance Language Professional &amp; Founder</p>
+              <p className="text-gray-600 text-sm max-w-lg mx-auto">
+                Xenofon runs Nofonex as a freelance language services practice from Suriname. With years of experience
+                in English-Dutch translation, MTPE, subtitling, and content writing, he handles the day-to-day work
+                — from client communication and project delivery to website management and content creation.
               </p>
             </div>
           </div>
 
-          {/* Second row - Team Members 3, 4 & 5 */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Team Member 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/images/team-2.jpg" alt="Quinxen Martokarijo - Creative Assistant" fill className="object-cover" />
+          {/* Family helpers */}
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-lg font-semibold text-primary text-center mb-6">Family Support</h3>
+            <p className="text-gray-600 text-center mb-8 text-sm">
+              When time allows, family members lend a hand with specific tasks alongside their main occupations
+              — school, household, and other commitments come first.
+            </p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                <div className="relative w-20 h-20 mx-auto mb-3 rounded-full overflow-hidden">
+                  <Image src="/images/team-1.jpg" alt="Suraya Martokarijo-Batenburg" fill className="object-cover" />
+                </div>
+                <h4 className="text-sm font-semibold text-primary">Suraya</h4>
+                <p className="text-gray-500 text-xs">Occasional creative input</p>
               </div>
-              <h3 className="text-xl font-semibold text-primary">Quinxen Martokarijo</h3>
-              <p className="text-secondary font-medium mb-2">Creative Assistant</p>
-              <p className="text-gray-600 text-sm">
-                Quinxen contributes to our visual content development, bringing a fresh perspective to our creative
-                projects. His developing skills in digital illustration complement our content creation services.
-              </p>
-            </div>
 
-            {/* Team Member 4 */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/images/team-3.jpg" alt="Xenaya Martokarijo - Production Assistant" fill className="object-cover" />
+              <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                <div className="relative w-20 h-20 mx-auto mb-3 rounded-full overflow-hidden">
+                  <Image src="/images/team-2.jpg" alt="Quinxen Martokarijo" fill className="object-cover" />
+                </div>
+                <h4 className="text-sm font-semibold text-primary">Quinxen</h4>
+                <p className="text-gray-500 text-xs">Helps with illustrations</p>
               </div>
-              <h3 className="text-xl font-semibold text-primary">Xenaya Martokarijo</h3>
-              <p className="text-secondary font-medium mb-2">Production Assistant</p>
-              <p className="text-gray-600 text-sm">
-                Xenaya assists with our production processes, helping to coordinate project workflows and implement
-                innovative tools that enhance our content development capabilities.
-              </p>
-            </div>
 
-            {/* Team Member 5 */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                <Image src="/images/team-4.jpg" alt="Yaixelina Martokarijo - Quality Assurance Assistant" fill className="object-cover" />
+              <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                <div className="relative w-20 h-20 mx-auto mb-3 rounded-full overflow-hidden">
+                  <Image src="/images/team-3.jpg" alt="Xenaya Martokarijo" fill className="object-cover" />
+                </div>
+                <h4 className="text-sm font-semibold text-primary">Xenaya</h4>
+                <p className="text-gray-500 text-xs">Assists with small tasks</p>
               </div>
-              <h3 className="text-xl font-semibold text-primary">Yaixelina Martokarijo</h3>
-              <p className="text-secondary font-medium mb-2">Quality Assurance Assistant</p>
-              <p className="text-gray-600 text-sm">
-                Yaixelina contributes to our quality assurance process, providing valuable feedback that helps ensure
-                our deliverables meet the highest standards of clarity and engagement.
-              </p>
+
+              <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                <div className="relative w-20 h-20 mx-auto mb-3 rounded-full overflow-hidden">
+                  <Image src="/images/team-4.jpg" alt="Yaixelina Martokarijo" fill className="object-cover" />
+                </div>
+                <h4 className="text-sm font-semibold text-primary">Yaixelina</h4>
+                <p className="text-gray-500 text-xs">Gives feedback on content</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Join Our Team Section */}
+      {/* How We Work Section */}
       <section className="py-16 md:py-24 bg-primary text-white">
         <div className="container-custom">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Collaborative Approach</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">How We Work</h2>
               <p className="text-gray-200 mb-6">
-                While our core team specializes in English-Dutch language services, we leverage advanced AI technologies
-                and collaborate with specialized partners when projects require additional language pairs or expertise.
+                As a freelance operation, we keep things simple and personal. You work directly with the person
+                doing the work — no account managers, no layers of bureaucracy. For projects that need additional
+                language pairs or expertise, we collaborate with trusted partners.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -291,7 +277,7 @@ export default function AboutUsPage() {
                   <div>
                     <h3 className="font-semibold text-white">English-Dutch Specialization</h3>
                     <p className="text-gray-200">
-                      Our team provides expert native-level translation between English and Dutch
+                      Native-level translation, editing, and content creation between English and Dutch
                     </p>
                   </div>
                 </div>
@@ -299,9 +285,9 @@ export default function AboutUsPage() {
                 <div className="flex items-start">
                   <CheckCircle className="text-secondary mt-1 mr-3 flex-shrink-0" size={20} />
                   <div>
-                    <h3 className="font-semibold text-white">AI-Enhanced Capabilities</h3>
+                    <h3 className="font-semibold text-white">AI-Assisted Workflows</h3>
                     <p className="text-gray-200">
-                      We utilize advanced AI technologies to support additional language pairs
+                      Using AI tools to work more efficiently while maintaining human quality control
                     </p>
                   </div>
                 </div>
@@ -309,9 +295,9 @@ export default function AboutUsPage() {
                 <div className="flex items-start">
                   <CheckCircle className="text-secondary mt-1 mr-3 flex-shrink-0" size={20} />
                   <div>
-                    <h3 className="font-semibold text-white">Remote Collaboration</h3>
+                    <h3 className="font-semibold text-white">Direct Communication</h3>
                     <p className="text-gray-200">
-                      Our digital-first approach enables efficient remote work and collaboration at competitive rates
+                      You deal directly with the freelancer — clear, honest, and efficient
                     </p>
                   </div>
                 </div>
@@ -319,9 +305,9 @@ export default function AboutUsPage() {
                 <div className="flex items-start">
                   <CheckCircle className="text-secondary mt-1 mr-3 flex-shrink-0" size={20} />
                   <div>
-                    <h3 className="font-semibold text-white">Continuous Innovation</h3>
+                    <h3 className="font-semibold text-white">Competitive Rates</h3>
                     <p className="text-gray-200">
-                      We constantly explore new technologies to enhance our service offerings
+                      Low overhead means fair pricing without compromising on quality
                     </p>
                   </div>
                 </div>
@@ -335,7 +321,7 @@ export default function AboutUsPage() {
             <div>
               <Image
                 src="/images/join-team.jpg"
-                alt="Nofonex collaborative approach to language services"
+                alt="Nofonex freelance approach to language services"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
