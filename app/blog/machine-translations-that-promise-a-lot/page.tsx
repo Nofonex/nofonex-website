@@ -241,21 +241,21 @@ export default function BlogPost() {
 
             <div className="my-8 space-y-4">
               <div className="flex gap-3 p-4 bg-gray-50 rounded-lg">
-                <span className="text-red-500 font-bold text-lg mt-0.5">&bull;</span>
+                <span className="text-primary font-bold text-lg mt-0.5">&bull;</span>
                 <p>
                   <strong>B2B customers in the Netherlands notice inconsistent Dutch.</strong> This undermines trust, even
                   if they cannot pinpoint exactly what is &ldquo;wrong.&rdquo;
                 </p>
               </div>
               <div className="flex gap-3 p-4 bg-gray-50 rounded-lg">
-                <span className="text-red-500 font-bold text-lg mt-0.5">&bull;</span>
+                <span className="text-primary font-bold text-lg mt-0.5">&bull;</span>
                 <p>
                   <strong>Legal and compliance content with subtle errors can lead to liability:</strong> a mistranslated
                   clause in a contract does not mean &ldquo;more or less&rdquo; the right thing.
                 </p>
               </div>
               <div className="flex gap-3 p-4 bg-gray-50 rounded-lg">
-                <span className="text-red-500 font-bold text-lg mt-0.5">&bull;</span>
+                <span className="text-primary font-bold text-lg mt-0.5">&bull;</span>
                 <p>
                   <strong>Marketing content that is mechanically correct but culturally flat generates less
                   engagement</strong> than well-localized content. Studies show that 75% of consumers prefer to make

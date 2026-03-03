@@ -323,8 +323,8 @@ export default function Home() {
                 <div className="badge badge-secondary mb-2">Contact Us</div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Get In Touch</h2>
                 <p className="text-gray-600 mb-8">
-                  Have questions about our services or ready to start a project? Contact us today and one of our experts
-                  will get back to you shortly.
+                  Have questions about our services or ready to start a project? Get in touch and I will get back to
+                  you shortly.
                 </p>
 
                 <div className="space-y-6 mb-8">

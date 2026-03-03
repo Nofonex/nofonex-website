@@ -69,12 +69,14 @@ export default function BlogPost() {
               </div>
             </div>
 
-            <div className="relative h-[300px] md:h-[450px] rounded-lg overflow-hidden mb-10 bg-gradient-to-br from-primary/10 via-secondary/5 to-primary/10 flex items-center justify-center">
-              <div className="text-center p-8">
-                <p className="text-6xl mb-4">&#x271D;&#xFE0F;</p>
-                <p className="text-2xl font-bold text-primary">7 Days of Becoming a Blessing</p>
-                <p className="text-lg text-gray-600 mt-2">For professionals navigating change with faith</p>
-              </div>
+            <div className="relative h-[300px] md:h-[450px] rounded-lg overflow-hidden mb-10">
+              <Image
+                src="/images/blog/planning-board.png"
+                alt="Planning board for 7 Days of Becoming a Blessing devotional"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>

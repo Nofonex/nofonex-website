@@ -51,7 +51,7 @@ const blogPosts: BlogPost[] = [
     author: "Xenofon Martokarijo",
     category: "Devotional",
     tags: ["Devotional", "Faith & Work", "Career"],
-    image: "/placeholder.svg",
+    image: "/images/blog/planning-board.png",
     readTime: "25 min read",
   },
   {
