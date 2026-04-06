@@ -95,7 +95,8 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 My name is Xenofon. I have been professionally active in the language industry for almost 10 years. As the impact of AI changed my life significantly, I found myself asking God: what now? This devotional is dedicated to those who share similar experiences.</p>
-              
+            </div>
+            
             <StyledParagraph>
               <DropCap>Y</DropCap>ou opened your laptop this morning with a knot in your stomach. Maybe the industry is shifting beneath your feet. Maybe clients are drying up, or AI is doing what you used to do — faster and cheaper. Maybe you are living somwhere tropical, like me, in a modern European country, or anywhere in between, wondering: what comes next?
             </StyledParagraph>
@@ -161,6 +162,7 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 What you see here is what I am currently experiencing while writing this. Nofonex is build on my personal developed expertise over many years in languages services. I perhaps may have been the luckier ones compared to Dutch natives that reside in countries where costs for living are much higher than where I live. The decline in rates went from €0.06 to €0.03 on average and compensating it with volume was the only way to keep the same level of revenue. Requests shifted from clean translations to editing AI generated translations, clients only needed a final human touch. But with 75% less jobs since the beginning of this year a transformational course change becomes a sudden necessity for anyone, anywhere in the world.</p> 
+            </div>
             
             <StyledParagraph>
               Here is the key: God did not just tell Abraham to leave. He told him <strong>why</strong>: &ldquo;You will be a blessing.&rdquo; The purpose of the move was not survival — it was significance. God was not rescuing Abraham from danger. He was positioning him for impact.
@@ -226,7 +228,8 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 A few months ago a sister in my church spoke to me through the inspiration of the Holy Spirit during ministry. The prayer call was so specific and relevant for me personally and individually that my pastor and my wife even confirmed that I was probably the one she was talking about. No else came, so it probably is true. The words pointed out towards content creation. For me, 'prison work' is developing the website of my church (<a href="https://www.ewmi.sr">EWMI</a>) and working towards creating content together with church members and my own family. It involves embracing AI technology by learning to work with it, develop new skills, and research new opportunities in a transitioning world, that of my own in the first place. It&apos;s not mere survival, because I&apos;m not earning any money in this phase, it actually costs me a few subscriptions and unpaid labor. It is preparation for what is coming, even when it is unclear. Trusting God that He will show Himself at the right moment.</p>
-            
+            </div>
+              
             <StyledParagraph>
               Are you sharpening your skills? Building something even when no one is paying for it yet? Serving others in your community, your church, your network — not for exposure, but because that is who you are becoming? Joseph did not know that his prison work was his rehearsal for the palace. You do not know what God is rehearsing you for either.
             </StyledParagraph>
@@ -292,7 +295,8 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 Some would call me an MTPE specialist, someone with an eye for details, the human eye for nuances, the cultural register. Now those machines are getting much better at much lower costs. I ask myself: I am a translator or I am more than that? What is keeping my mindset below the level of Gods understanding of my being? The unlearning will take effort, pain, time. The other side is still vague, but I start to see something.</p>
-              
+            </div>
+            
             <StyledParagraph>
               This is not failure. Moses&apos; desert was not a punishment. It was a preparation. And the leader who emerged from 40 years of sheep and silence was infinitely more useful to God than the powerful prince of Egypt.
             </StyledParagraph>
@@ -350,7 +354,8 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 My wife and children support me delevering jobs for our clients wherever they can. Even though the numbers don't add up, we keep showing up. For our children, for the clients, but even for God who entrusted us with this business. Our gleaning is not glamorous, but faithful.</p>
-            
+            </div>
+              
             <StyledParagraph>
               Maybe your &ldquo;gleaning&rdquo; right now is taking on small projects that do not pay much. Helping a friend with their business. Writing content that gets no views yet. Do the work. Be faithful. God sees the field you are working in.
             </StyledParagraph>
@@ -414,7 +419,8 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 Right now, I am rebuilding my company&apos;s website while managing declining revenue. I am learning content production while still delivering language projects. Some days it feels like holding a sword and a trowel is exhausting. To be honest, it brings along mixed feelings. I&apos;ve never proven myself to being able to generate revenue with these new skills. My new digital products and services have bever been sold to anyone before. The content I creating were never monetized. But I'd rather build tired than sit still comfortable.</p>
-            
+            </div>
+              
             <StyledParagraph>
               The wall was completed in 52 days (Nehemiah 6:15). When the surrounding nations heard, they lost their confidence — because they realized the work had been done with God&apos;s help. Your work, done faithfully under pressure, sends the same message.
             </StyledParagraph>
@@ -467,7 +473,8 @@ export default function BlogPost() {
            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 My partnership with EWMI costs me time in labor, some capacity of my resources, and some money. I don&apos;t expect any reimbursement of expenses or whatsoever. What I received in return is hope. Our goal is to spread the gospel and if possible with the aid of digital presence. Fellow church members who have seen some concepts of the website and content are motivated and start showing interest and involvement. It marks a beginning of something big.</p>
-            
+            </div>
+             
             <StyledParagraph>
               A free article that helps a business owner understand localization. A pro bono translation for a church. A mentoring conversation with a young freelancer. These are not losses on your balance sheet. They are seeds in God&apos;s economy.
             </StyledParagraph>
@@ -564,6 +571,8 @@ export default function BlogPost() {
             <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
               <p className="text-gray-500 italic">
                 I choose to become a blessing. Through Nofonex, through the content I create and services I provide as an individual with my wife, with my children, and with my church community. I don't have the full map yet. But I do have the next step. And that is enough for now.</p>
+            </div>
+              
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
               <h4 className="font-bold text-primary mb-2">Final Reflection</h4>
               <p className="text-gray-700">Look at this week&apos;s six stories. Which one spoke to you most? Why? What is one concrete step you will take this week to shift from &ldquo;waiting for a blessing&rdquo; to &ldquo;becoming a blessing&rdquo;?</p>
