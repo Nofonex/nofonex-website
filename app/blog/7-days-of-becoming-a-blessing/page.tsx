@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, User, Tag } from "lucide-react"
+import { Calendar, User, Tag, PenLine } from "lucide-react"
 import AdBanner from "@/components/ad-banner"
 import StyledParagraph from "@/components/styled-paragraph"
 import DropCap from "@/components/drop-cap"
@@ -92,9 +92,17 @@ export default function BlogPost() {
                  clients pulled back, and I found myself asking God: what now?
                  This devotional came out of that season."
                 Write it in YOUR voice. 2-3 sentences. Be vulnerable. */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                My name is Xenofon. I have been professionally active in the language industry for almost 10 years. As the impact of AI changed my life significantly, I found myself asking God: what now? This devotional is dedicated to those who share similar experiences.</p>
+            {/* INTRO personal box — centered, gradient, prominent */}
+            <div className="my-10 bg-gradient-to-br from-primary/5 via-white to-secondary/5 border border-primary/15 rounded-2xl p-8 text-center shadow-sm">
+              <div className="flex justify-center mb-4">
+                <span className="inline-flex items-center gap-2 bg-primary text-white text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full">
+                  <PenLine size={11} /> From the Author
+                </span>
+              </div>
+              <p className="text-gray-700 italic leading-relaxed text-[1.05rem]">
+                My name is Xenofon. I have been professionally active in the language industry for almost 10 years. As the impact of AI changed my life significantly, I found myself asking God: what now? This devotional is dedicated to those who share similar experiences.
+              </p>
+              <p className="text-primary/50 text-sm mt-5 font-medium">— Xenofon Martokarijo</p>
             </div>
             
             <StyledParagraph>
@@ -159,9 +167,18 @@ export default function BlogPost() {
                  €0.06/word now offered €0.03. Some stopped calling altogether. I sat at my desk in
                  Paramaribo wondering: did I build all of this for nothing?"
                 Replace or add to the paragraph above with your real experience. */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                What you see here is what I am currently experiencing while writing this. Nofonex is build on my personal developed expertise over many years in languages services. I perhaps may have been the luckier ones compared to Dutch natives that reside in countries where costs for living are much higher than where I live. The decline in rates went from €0.06 to €0.03 on average and compensating it with volume was the only way to keep the same level of revenue. Requests shifted from clean translations to editing AI generated translations, clients only needed a final human touch. But with 75% less jobs since the beginning of this year a transformational course change becomes a sudden necessity for anyone, anywhere in the world.</p> 
+            {/* DAY 1 personal box — orange left-bar accent, full-width */}
+            <div className="my-10 flex gap-0 rounded-r-xl overflow-hidden shadow-sm">
+              <div className="w-2 bg-secondary flex-shrink-0 rounded-l-xl"></div>
+              <div className="bg-secondary/8 border border-secondary/20 border-l-0 rounded-r-xl p-6 flex-1">
+                <span className="inline-flex items-center gap-1.5 text-secondary text-xs font-semibold uppercase tracking-wider mb-3">
+                  <PenLine size={11} /> Xenofon&apos;s experience
+                </span>
+                <p className="text-gray-700 italic leading-relaxed">
+                  What you see here is what I am currently experiencing while writing this. Nofonex is build on my personal developed expertise over many years in languages services. I perhaps may have been the luckier ones compared to Dutch natives that reside in countries where costs for living are much higher than where I live. The decline in rates went from €0.06 to €0.03 on average and compensating it with volume was the only way to keep the same level of revenue. Requests shifted from clean translations to editing AI generated translations, clients only needed a final human touch. But with 75% less jobs since the beginning of this year a transformational course change becomes a sudden necessity for anyone, anywhere in the world.
+                </p>
+                <p className="text-secondary/70 text-sm mt-4 font-medium text-right">— Xenofon</p>
+              </div>
             </div>
             
             <StyledParagraph>
@@ -225,9 +242,15 @@ export default function BlogPost() {
                  but to multiply them. Building content systems. Studying what makes people click, read,
                  and come back. I didn't choose this season, but I refuse to waste it."
                 Even 2 sentences makes this section real. */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                A few months ago there was a prayer call in my church by a certain sister. It was so specific and relevant for me personally and individually that my pastor and my wife even confirmed that I was probably the one she was talking about. No one else came, so it probably is true. The elder spoke to me through the inspiration of the Holy Spirit during ministry. The words pointed out towards content creation. For me, 'prison work' is developing the website of my church (<a href="https://www.ewmi.sr">EWMI</a>) and working towards creating content together with church members and my own family. It involves embracing AI technology by learning to work with it, develop new skills, and research new opportunities in a transitioning world, that of my own in the first place. It&apos;s not mere survival, because I&apos;m not earning any money in this phase, it actually costs me a few subscriptions and unpaid labor. It is preparation for what is coming, even when it is unclear. Trusting God that He will show Himself at the right moment.</p>
+            {/* DAY 2 personal box — indented from left, primary left border */}
+            <div className="my-10 md:ml-8 border-l-4 border-primary bg-primary/5 rounded-r-xl p-6 shadow-sm">
+              <span className="inline-flex items-center gap-1.5 text-primary text-xs font-semibold uppercase tracking-wider mb-3">
+                <PenLine size={11} /> Personal note
+              </span>
+              <p className="text-gray-700 italic leading-relaxed">
+                A few months ago there was a prayer call in my church by a certain sister. It was so specific and relevant for me personally and individually that my pastor and my wife even confirmed that I was probably the one she was talking about. No one else came, so it probably is true. The elder spoke to me through the inspiration of the Holy Spirit during ministry. The words pointed out towards content creation. For me, &lsquo;prison work&rsquo; is developing the website of my church (<a href="https://www.ewmi.sr" className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors">EWMI</a>) and working towards creating content together with church members and my own family. It involves embracing AI technology by learning to work with it, develop new skills, and research new opportunities in a transitioning world, that of my own in the first place. It&apos;s not mere survival, because I&apos;m not earning any money in this phase, it actually costs me a few subscriptions and unpaid labor. It is preparation for what is coming, even when it is unclear. Trusting God that He will show Himself at the right moment.
+              </p>
+              <p className="text-primary/50 text-sm mt-4 font-medium">— Xenofon</p>
             </div>
               
             <StyledParagraph>
@@ -292,9 +315,19 @@ export default function BlogPost() {
                  machines are getting better. I had to ask myself: am I a translator, or am I something
                  more? The unlearning is painful. But I'm starting to see what's on the other side."
                 Your MTPE background makes this day incredibly authentic. Share what you're unlearning. */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                Some would call me an MTPE specialist, someone with an eye for details, the human eye for nuances, the cultural register. Now those machines are getting much better at much lower costs. I ask myself: I am a translator or I am more than that? What is keeping my mindset below the level of Gods understanding of my being? The unlearning will take effort, pain, time. The other side is still vague, but I start to see something.</p>
+            {/* DAY 3 personal box — top gradient bar, white card with shadow */}
+            <div className="my-10 rounded-xl overflow-hidden shadow-sm border border-gray-100">
+              <div className="h-1.5 bg-gradient-to-r from-primary via-secondary to-primary"></div>
+              <div className="bg-white p-7">
+                <div className="flex items-center gap-2 mb-4">
+                  <PenLine size={14} className="text-primary" />
+                  <span className="text-primary text-xs font-semibold uppercase tracking-wider">Personal note</span>
+                </div>
+                <p className="text-gray-700 italic leading-relaxed">
+                  Some would call me an MTPE specialist, someone with an eye for details, the human eye for nuances, the cultural register. Now those machines are getting much better at much lower costs. I ask myself: I am a translator or I am more than that? What is keeping my mindset below the level of Gods understanding of my being? The unlearning will take effort, pain, time. The other side is still vague, but I start to see something.
+                </p>
+                <p className="text-primary/50 text-sm mt-4 font-medium text-right">— Xenofon</p>
+              </div>
             </div>
             
             <StyledParagraph>
@@ -351,9 +384,17 @@ export default function BlogPost() {
                  But we keep showing up — for each other, for our children, for the clients who
                  trust us. That's our gleaning. Not glamorous. But faithful."
                 The family angle will deeply resonate with other professional parents reading this. */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                My wife and children support me delevering jobs for our clients wherever they can. Even though the numbers don't add up, we keep showing up. For our children, for the clients, but even for God who entrusted us with this business. Our gleaning is not glamorous, but faithful.</p>
+            {/* DAY 4 personal box — centered pull-quote, elevated card */}
+            <div className="my-10 mx-auto bg-white rounded-2xl shadow-md border border-primary/10 p-8">
+              <div className="flex justify-center mb-4">
+                <PenLine size={22} className="text-primary/25" />
+              </div>
+              <p className="text-gray-700 italic leading-relaxed text-center">
+                My wife and children support me delivering jobs for our clients wherever they can. Even though the numbers don&apos;t add up, we keep showing up. For our children, for the clients, but even for God who entrusted us with this business. Our gleaning is not glamorous, but faithful.
+              </p>
+              <div className="mt-5 flex justify-center">
+                <span className="text-sm text-primary/60 font-medium">— Xenofon</span>
+              </div>
             </div>
               
             <StyledParagraph>
@@ -416,9 +457,15 @@ export default function BlogPost() {
                  tired than sit still comfortable."
                 Name the specific things you're building. Readers respect specificity. */}
 
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                Right now, I am rebuilding my company&apos;s website while managing declining revenue. I am learning content production while still delivering language projects. Some days it feels like holding a sword and a trowel is exhausting. To be honest, it brings along mixed feelings. I&apos;ve never proven myself to being able to generate revenue with these new skills. My new digital products and services have never been sold to anyone before. The content I am creating has never been monetized. But I'd rather build tired than sit still comfortable.</p>
+            {/* DAY 5 personal box — bold secondary left border, gradient wash */}
+            <div className="my-10 border-l-[6px] border-secondary bg-gradient-to-r from-secondary/8 to-transparent rounded-r-xl p-6 md:pl-8">
+              <span className="inline-flex items-center gap-1.5 text-secondary text-xs font-semibold uppercase tracking-wider mb-3">
+                <PenLine size={11} /> From Xenofon&apos;s desk
+              </span>
+              <p className="text-gray-700 italic leading-relaxed">
+                Right now, I am rebuilding my company&apos;s website while managing declining revenue. I am learning content production while still delivering language projects. Some days it feels like holding a sword and a trowel is exhausting. To be honest, it brings along mixed feelings. I&apos;ve never proven myself to being able to generate revenue with these new skills. My new digital products and services have never been sold to anyone before. The content I am creating has never been monetized. But I&apos;d rather build tired than sit still comfortable.
+              </p>
+              <p className="text-secondary/70 text-sm mt-4 font-medium">— Xenofon</p>
             </div>
               
             <StyledParagraph>
@@ -470,9 +517,18 @@ export default function BlogPost() {
                 concrete example of giving from scarcity and seeing God provide, add it here.
                 Even something small: "Last month I helped a fellow translator with a project review
                  for free. That same week, an unexpected invoice got paid." Real stories > theory. */}
-           <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                My partnership with EWMI costs me time in labor, some capacity of my resources, and some money. I don&apos;t expect any reimbursement of expenses or whatsoever. What I received in return is hope. Our goal is to spread the gospel and if possible with the aid of digital presence. Fellow church members who have seen some concepts of the website and content are motivated and start showing interest and involvement. It marks a beginning of something big.</p>
+            {/* DAY 6 personal box — narrowed, right-weighted, soft primary tones */}
+            <div className="my-10 md:ml-auto md:max-w-[88%] bg-primary/5 border border-primary/10 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="w-6 h-px bg-primary/30"></span>
+                <PenLine size={12} className="text-primary/60" />
+                <span className="text-primary text-xs font-semibold uppercase tracking-wider">Personal note</span>
+                <span className="w-6 h-px bg-primary/30"></span>
+              </div>
+              <p className="text-gray-700 italic leading-relaxed">
+                My partnership with EWMI costs me time in labor, some capacity of my resources, and some money. I don&apos;t expect any reimbursement of expenses or whatsoever. What I received in return is hope. Our goal is to spread the gospel and if possible with the aid of digital presence. Fellow church members who have seen some concepts of the website and content are motivated and start showing interest and involvement. It marks a beginning of something big.
+              </p>
+              <p className="text-primary/50 text-sm mt-4 font-medium text-right">— Xenofon</p>
             </div>
              
             <StyledParagraph>
@@ -568,9 +624,16 @@ export default function BlogPost() {
                  church. I don't have the full map yet. But I have the next step. And that is enough."
                 This final personal statement is what turns this from 'a devotional' into 'YOUR devotional.'
                 Write it as if you're saying it to your wife, your kids, and God — all at the same time. */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                I choose to become a blessing. Through Nofonex, through the content I create and services I provide as an individual with my wife, with my children, and with my church community. I don't have the full map yet. But I do have the next step. And that is enough for now.</p>
+            {/* DAY 7 personal box — declaration style, inverted primary, most prominent */}
+            <div className="my-10 bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 text-white shadow-lg">
+              <div className="flex items-center gap-2 mb-4">
+                <PenLine size={14} className="text-white/60" />
+                <span className="text-white/60 text-xs font-semibold uppercase tracking-widest">Personal declaration</span>
+              </div>
+              <p className="text-white/90 italic leading-relaxed text-[1.05rem]">
+                I choose to become a blessing. Through Nofonex, through the content I create and services I provide as an individual with my wife, with my children, and with my church community. I don&apos;t have the full map yet. But I do have the next step. And that is enough for now.
+              </p>
+              <p className="text-white/50 text-sm mt-5 font-medium">— Xenofon</p>
             </div>
               
             <div className="my-8 p-6 bg-primary/5 rounded-lg">
@@ -631,9 +694,21 @@ export default function BlogPost() {
                 "Xenofon lives in Suriname with his wife and children. When he's not working on
                  translations or building content systems, he serves at his local church (EWMI)
                  and dreams about what Nofonex can become next." */}
-            <div className="mt-12 mb-6 border-t border-gray-200 pt-6">
-              <p className="text-gray-500 italic">
-                About the author: Xenofon Martokarijo is the founder of Nofonex, a language services and digital content production company based in Suriname. He specializes in English-Dutch translation, MTPE, and creating content that bridges cultures. A committed Christian, husband, father of three, and entrepreneur. He believes that faith and professional excellence are inseparable.</p>
+            {/* AUTHOR BIO box — structured profile card */}
+            <div className="mt-16 mb-6 bg-gradient-to-br from-gray-50 to-primary/5 rounded-2xl border border-primary/10 p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 border border-primary/15">
+                  <User size={24} className="text-primary" />
+                </div>
+                <div>
+                  <p className="font-bold text-primary text-lg leading-tight">Xenofon Martokarijo</p>
+                  <p className="text-secondary text-sm font-semibold mt-0.5">Founder, Nofonex</p>
+                </div>
+              </div>
+              <div className="w-12 h-px bg-primary/20 mb-5"></div>
+              <p className="text-gray-700 italic leading-relaxed">
+                Xenofon Martokarijo is the founder of Nofonex, a language services and digital content production company based in Suriname. He specializes in English-Dutch translation, MTPE, and creating content that bridges cultures. A committed Christian, husband, father of three, and entrepreneur. He believes that faith and professional excellence are inseparable.
+              </p>
             </div>
           </div>
         </div>
