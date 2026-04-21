@@ -1,4 +1,14 @@
+import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Learn how Nofonex collects, uses, and protects your personal data.",
+}
+
 export default function PrivacyPolicyPage() {
+  const lastUpdated = process.env.NEXT_PUBLIC_PRIVACY_POLICY_DATE || "April 2026"
+
   return (
     <>
       {/* Hero Section */}
@@ -6,223 +16,295 @@ export default function PrivacyPolicyPage() {
         <div className="container">
           <div className="hero-content text-center max-w-3xl mx-auto">
             <h1>Privacy Policy</h1>
-            <p className="text-xl text-gray-600">Learn how we collect, use, and protect your personal information.</p>
+            <p className="text-xl text-gray-600">
+              How we collect, use, and protect your personal information.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Privacy Content */}
+      {/* Content */}
       <section className="py-16">
         <div className="container">
           <div className="legal-container">
-            <p className="legal-date">Last Updated: April 21, 2023</p>
+            <p className="legal-date">Last updated: {lastUpdated}</p>
 
+            {/* 1. Who We Are */}
             <div className="legal-section">
-              <h2>1. Introduction</h2>
+              <h2>1. Who We Are</h2>
               <p>
-                At Nofonex Online Services ("Nofonex", "we", "us", or "our"), we respect your privacy and are committed
-                to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and
-                safeguard your information when you visit our website nofonex.com or use our services in any way.
+                Nofonex (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) is a digital production house
+                operated by <strong>Xenofon Martokarijo</strong>, based in Paramaribo, Suriname. We build digital
+                products and services for global audiences.
               </p>
-              <p>
-                By accessing or using our services, you consent to the collection, use, and disclosure of information in
-                accordance with this Privacy Policy. If you do not agree with our policies and practices, do not use our
-                services.
+              <p className="mt-2">
+                Contact:{" "}
+                <a href="mailto:privacy@nofonex.com" className="text-primary hover:underline">
+                  privacy@nofonex.com
+                </a>{" "}
+                &middot;{" "}
+                <span className="text-primary">nofonex.com</span>
+              </p>
+              <div className="mt-4 p-4 bg-blue-50 border border-blue-100 rounded-lg text-sm text-gray-700">
+                <strong>For SoFoWo and BeamFoWo users:</strong> Payment data is processed independently by our
+                Merchant of Record (named on our{" "}
+                <Link href="/pricing#payment" className="text-primary hover:underline font-medium">
+                  Pricing page
+                </Link>
+                ) under their own privacy policy.
+              </div>
+            </div>
+
+            {/* 2. What Data We Collect */}
+            <div className="legal-section">
+              <h2>2. What Data We Collect</h2>
+              <p className="text-gray-600 mb-5">We collect only what is necessary to operate our services.</p>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                  <h3 className="text-base font-semibold text-primary mb-2">Account data</h3>
+                  <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                    <li>Email address</li>
+                    <li>Display name (optional)</li>
+                    <li>Hashed password</li>
+                    <li>Organization name (Church tier only)</li>
+                  </ul>
+                </div>
+
+                <div className="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                  <h3 className="text-base font-semibold text-primary mb-2">Usage data</h3>
+                  <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                    <li>Features used</li>
+                    <li>App logs and error reports</li>
+                    <li>Device and browser type (anonymized)</li>
+                  </ul>
+                </div>
+
+                <div className="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                  <h3 className="text-base font-semibold text-primary mb-2">Payment data</h3>
+                  <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                    <li>
+                      We do <strong>not</strong> store card details
+                    </li>
+                    <li>Transaction confirmation (from our Merchant of Record)</li>
+                    <li>Subscription status</li>
+                  </ul>
+                </div>
+
+                <div className="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                  <h3 className="text-base font-semibold text-primary mb-2">Communication data</h3>
+                  <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                    <li>Support emails and quote requests</li>
+                    <li>Translation project data (source &amp; translated texts)</li>
+                  </ul>
+                  <p className="text-xs text-gray-500 mt-2">
+                    Translation data retained 12 months for QA, then deleted.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                <h3 className="text-base font-semibold text-primary mb-2">Cookies</h3>
+                <p className="text-sm text-gray-700">
+                  Session cookies only — required for authentication. We do <strong>not</strong> use advertising or
+                  tracking cookies.
+                </p>
+              </div>
+            </div>
+
+            {/* 3. How We Use Your Data */}
+            <div className="legal-section">
+              <h2>3. How We Use Your Data</h2>
+              <div className="overflow-x-auto rounded-lg border border-gray-200">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="bg-primary/10">
+                      <th className="border-b border-gray-200 p-3 text-left font-semibold text-gray-800 whitespace-nowrap">
+                        Purpose
+                      </th>
+                      <th className="border-b border-gray-200 p-3 text-left font-semibold text-gray-800 whitespace-nowrap">
+                        Legal basis
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    {[
+                      ["Provide and operate the service", "Contract performance"],
+                      ["Account authentication and security", "Contract performance / legitimate interest"],
+                      ["Process payments (via our MoR)", "Contract performance"],
+                      ["Send transactional emails", "Contract performance"],
+                      ["Service announcements (downtime, major updates)", "Legitimate interest"],
+                      ["Respond to support requests", "Legitimate interest"],
+                      ["Improve service using aggregated usage data", "Legitimate interest"],
+                      ["Comply with legal obligations", "Legal obligation"],
+                    ].map(([purpose, basis]) => (
+                      <tr key={purpose} className="hover:bg-gray-50">
+                        <td className="p-3 text-gray-700">{purpose}</td>
+                        <td className="p-3 text-gray-600">{basis}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-sm font-medium text-gray-700">
+                We do not sell your personal data. We do not use your data for advertising.
               </p>
             </div>
 
+            {/* 4. Who We Share Data With */}
             <div className="legal-section">
-              <h2>2. Information We Collect</h2>
+              <h2>4. Who We Share Data With</h2>
+              <div className="overflow-x-auto rounded-lg border border-gray-200">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="bg-primary/10">
+                      <th className="border-b border-gray-200 p-3 text-left font-semibold text-gray-800 whitespace-nowrap">
+                        Recipient
+                      </th>
+                      <th className="border-b border-gray-200 p-3 text-left font-semibold text-gray-800 whitespace-nowrap">
+                        Purpose
+                      </th>
+                      <th className="border-b border-gray-200 p-3 text-left font-semibold text-gray-800 whitespace-nowrap">
+                        Location
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-3 text-gray-700">
+                        Our Merchant of Record
+                        <span className="block text-xs text-gray-500">
+                          (named on{" "}
+                          <Link href="/pricing#payment" className="text-primary hover:underline">
+                            Pricing page
+                          </Link>
+                          )
+                        </span>
+                      </td>
+                      <td className="p-3 text-gray-700">Payment processing, VAT/sales tax, subscriptions</td>
+                      <td className="p-3 text-gray-600">See MoR privacy policy</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-3 text-gray-700">Supabase Inc.</td>
+                      <td className="p-3 text-gray-700">Database hosting, authentication</td>
+                      <td className="p-3 text-gray-600">US (EU data regions available)</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-3 text-gray-700">Vercel Inc.</td>
+                      <td className="p-3 text-gray-700">Application hosting</td>
+                      <td className="p-3 text-gray-600">US / edge</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-3 text-gray-700">Google LLC</td>
+                      <td className="p-3 text-gray-700">OAuth authentication (if signing in with Google)</td>
+                      <td className="p-3 text-gray-600">US</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-3 text-gray-700">Sentry (Functional Software Inc.)</td>
+                      <td className="p-3 text-gray-700">Error monitoring</td>
+                      <td className="p-3 text-gray-600">US</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="mt-4 space-y-2 text-sm text-gray-600">
+                <p>
+                  All third-party processors are bound by data processing agreements. Transfers outside the EEA are
+                  covered by Standard Contractual Clauses or equivalent safeguards.
+                </p>
+                <p>
+                  Our Merchant of Record processes payment data independently under their own privacy policy, linked on
+                  our{" "}
+                  <Link href="/pricing#payment" className="text-primary hover:underline">
+                    Pricing page
+                  </Link>{" "}
+                  and in your purchase confirmation email.
+                </p>
+              </div>
+            </div>
 
-              <h3>2.1 Personal Information</h3>
-              <p>We may collect personal information that you voluntarily provide to us when you:</p>
-              <ul>
-                <li>Register for an account</li>
-                <li>Use our services</li>
-                <li>Subscribe to our newsletter</li>
-                <li>Contact our customer support</li>
-                <li>Participate in surveys or promotions</li>
-                <li>Apply for employment</li>
+            {/* 5. Data Retention */}
+            <div className="legal-section">
+              <h2>5. Data Retention</h2>
+              <ul className="space-y-3 text-gray-700">
+                {[
+                  ["Account data", "Duration of account + 30 days after deletion"],
+                  ["Translation project data", "12 months from project completion"],
+                  ["Support communications", "3 years"],
+                  ["Backup and audit logs", "Up to 12 months"],
+                ].map(([label, period]) => (
+                  <li key={label} className="flex flex-wrap gap-x-2 gap-y-0.5">
+                    <span className="font-medium text-primary">{label}</span>
+                    <span className="text-gray-400">&mdash;</span>
+                    <span>{period}</span>
+                  </li>
+                ))}
               </ul>
-              <p>This information may include:</p>
-              <ul>
-                <li>Name, email address, phone number, and postal address</li>
-                <li>Username and password</li>
-                <li>Payment information</li>
-                <li>Demographic information</li>
-                <li>Professional or employment-related information</li>
-                <li>Any other information you choose to provide</li>
-              </ul>
+            </div>
 
-              <h3>2.2 Automatically Collected Information</h3>
-              <p>
-                When you visit our website or use our services, we may automatically collect certain information about
-                your device and usage patterns, including:
+            {/* 6. Your Rights */}
+            <div className="legal-section">
+              <h2>6. Your Rights (GDPR / International)</h2>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {[
+                  "Access",
+                  "Correct",
+                  "Delete (right to be forgotten)",
+                  "Export (data portability)",
+                  "Restrict or object",
+                  "Withdraw consent",
+                ].map((right) => (
+                  <span
+                    key={right}
+                    className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary/10 text-primary font-medium"
+                  >
+                    {right}
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-2">
+                To exercise any right, email{" "}
+                <a href="mailto:privacy@nofonex.com" className="text-primary hover:underline">
+                  privacy@nofonex.com
+                </a>
+                . We respond within 30 days.
               </p>
-              <ul>
-                <li>IP address</li>
-                <li>Browser type and version</li>
-                <li>Operating system</li>
-                <li>Referring website</li>
-                <li>Pages viewed and time spent</li>
-                <li>Links clicked</li>
-                <li>Search terms used</li>
-              </ul>
-            </div>
-
-            <div className="legal-section">
-              <h2 id="cookies">3. Cookies and Similar Technologies</h2>
-              <p>
-                We use cookies and similar tracking technologies to track activity on our website and hold certain
-                information. Cookies are files with a small amount of data that may include an anonymous unique
-                identifier. Cookies are sent to your browser from a website and stored on your device.
-              </p>
-              <p>
-                You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However,
-                if you do not accept cookies, you may not be able to use some portions of our service.
-              </p>
-              <p>We use the following types of cookies:</p>
-              <ul>
-                <li>
-                  <strong>Essential Cookies:</strong> These cookies are necessary for the website to function properly.
-                </li>
-                <li>
-                  <strong>Preference Cookies:</strong> These cookies remember your preferences and settings.
-                </li>
-                <li>
-                  <strong>Analytics Cookies:</strong> These cookies help us understand how visitors interact with our
-                  website.
-                </li>
-                <li>
-                  <strong>Marketing Cookies:</strong> These cookies track your online activity to help deliver targeted
-                  advertising.
-                </li>
-                <li>
-                  <strong>Third-Party Cookies:</strong> These cookies are placed by third-party services that appear on
-                  our pages.
-                </li>
-              </ul>
-            </div>
-
-            <div className="legal-section">
-              <h2>4. How We Use Your Information</h2>
-              <p>We may use the information we collect for various purposes, including to:</p>
-              <ul>
-                <li>Provide, maintain, and improve our services</li>
-                <li>Process transactions and send related information</li>
-                <li>Send administrative information, such as updates or security alerts</li>
-                <li>Respond to your comments, questions, and requests</li>
-                <li>Communicate with you about products, services, offers, and events</li>
-                <li>Monitor and analyze trends, usage, and activities</li>
-                <li>Detect, investigate, and prevent fraudulent transactions and other illegal activities</li>
-                <li>Personalize your experience and deliver content relevant to your interests</li>
-                <li>Fulfill any other purpose for which you provide the information</li>
-              </ul>
-            </div>
-
-            <div className="legal-section">
-              <h2>5. Information Sharing and Disclosure</h2>
-              <p>We may share your information with the following parties:</p>
-              <ul>
-                <li>
-                  <strong>Service Providers:</strong> We may share your information with third-party vendors,
-                  consultants, and other service providers who need access to such information to carry out work on our
-                  behalf.
-                </li>
-                <li>
-                  <strong>Business Transfers:</strong> If we are involved in a merger, acquisition, or sale of all or a
-                  portion of our assets, your information may be transferred as part of that transaction.
-                </li>
-                <li>
-                  <strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or
-                  in response to valid requests by public authorities.
-                </li>
-                <li>
-                  <strong>Protection of Rights:</strong> We may disclose your information to protect the rights,
-                  property, or safety of Nofonex, our customers, or others.
-                </li>
-              </ul>
-            </div>
-
-            <div className="legal-section">
-              <h2>6. Data Security</h2>
-              <p>
-                We implement appropriate technical and organizational measures to protect the security of your personal
-                information. However, please be aware that no method of transmission over the Internet or method of
-                electronic storage is 100% secure.
+              <p className="text-gray-700">
+                EU/EEA residents may lodge a complaint with their local supervisory authority.
               </p>
             </div>
 
+            {/* 7. Children */}
             <div className="legal-section">
-              <h2>7. International Data Transfers</h2>
+              <h2>7. Children</h2>
               <p>
-                Your information may be transferred to — and maintained on — computers located outside of your state,
-                province, country, or other governmental jurisdiction where the data protection laws may differ from
-                those of your jurisdiction.
-              </p>
-              <p>
-                If you are located outside of our primary operating jurisdiction and choose to provide information to
-                us, please note that we transfer the information to our servers and process it there.
+                Our services are not directed at children under 13. We do not knowingly collect personal data from
+                children. Contact{" "}
+                <a href="mailto:privacy@nofonex.com" className="text-primary hover:underline">
+                  privacy@nofonex.com
+                </a>{" "}
+                if you believe a child has provided us with data.
               </p>
             </div>
 
+            {/* 8. Changes to This Policy */}
             <div className="legal-section">
-              <h2>8. Your Rights</h2>
+              <h2>8. Changes to This Policy</h2>
               <p>
-                Depending on your location, you may have certain rights regarding your personal information, including:
-              </p>
-              <ul>
-                <li>The right to access your personal information</li>
-                <li>The right to rectify inaccurate personal information</li>
-                <li>The right to request the deletion of your personal information</li>
-                <li>The right to restrict the processing of your personal information</li>
-                <li>The right to data portability</li>
-                <li>The right to object to the processing of your personal information</li>
-              </ul>
-              <p>
-                To exercise these rights, please contact us using the information provided at the end of this Privacy
-                Policy.
-              </p>
-            </div>
-
-            <div className="legal-section">
-              <h2>9. Children's Privacy</h2>
-              <p>
-                Our services are not intended for individuals under the age of 16. We do not knowingly collect personal
-                information from children under 16. If we become aware that we have collected personal information from
-                a child under 16 without verification of parental consent, we will take steps to remove that information
-                from our servers.
-              </p>
-            </div>
-
-            <div className="legal-section">
-              <h2>10. Changes to This Privacy Policy</h2>
-              <p>
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-                Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.
-              </p>
-              <p>
-                You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy
-                Policy are effective when they are posted on this page.
+                We will notify registered users by email at least 30 days before material changes. The updated policy
+                is always available at{" "}
+                <span className="text-primary font-medium">nofonex.com/privacy-policy</span>.
               </p>
             </div>
 
             <div className="legal-contact">
-              <h3>Contact Us</h3>
-              <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+              <h3>Privacy Contact</h3>
               <p>
-                Email:{" "}
-                <a href="mailto:info@nofonex.com" className="text-primary hover:underline">
-                  info@nofonex.com
+                For privacy-related questions or to exercise your rights, email{" "}
+                <a href="mailto:privacy@nofonex.com" className="text-primary hover:underline">
+                  privacy@nofonex.com
                 </a>
-              </p>
-              <p>Phone: +597 8828756</p>
-              <p>
-                Address: Weg naar Reeberg 27
-                <br />
-                Lelydorp, Wanica
-                <br />
-                Suriname
+                .
               </p>
             </div>
           </div>

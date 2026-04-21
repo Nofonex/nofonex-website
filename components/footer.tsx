@@ -90,6 +90,11 @@ export function Footer() {
                   Cookie Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/refund-policy" className="footer-link">
+                  Refund Policy
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
