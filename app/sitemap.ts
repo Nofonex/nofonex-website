@@ -43,8 +43,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+
+    // Language Solutions
+    {
+      url: `${baseUrl}/language-solutions`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     {
       url: `${baseUrl}/trabyhum`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/trabyage`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
