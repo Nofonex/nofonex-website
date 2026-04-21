@@ -17,7 +17,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "SoFoWo", href: "/sofowo" },
     { name: "BeamFoWo", href: "/beamfowo" },
-    { name: "TraByHum", href: "/trabyhum" },
+    { name: "Language Solutions", href: "/language-solutions" },
     { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/#contact" },

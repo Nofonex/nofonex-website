@@ -403,17 +403,30 @@ export default function PricingPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          TraByHum — Translation By Humans
+          Language Solutions — TraByHum & TraByAge
       ══════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24">
+      <section id="language-solutions" className="py-16 md:py-24">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="badge badge-primary mb-3">TraByHum</div>
-            <h2 className="section-title">Translation By Humans</h2>
+            <div className="badge badge-primary mb-3">Language Solutions</div>
+            <h2 className="section-title">Language Solutions — TraByHum &amp; TraByAge</h2>
             <p className="section-subtitle">
-              Professional human translation and subtitling at transparent per-unit rates.
+              Two paths: professional human expertise or agent-powered speed.
             </p>
-            <p className="mt-3 text-sm text-gray-500">
+            <div className="mt-4 bg-primary/5 rounded-lg p-4 text-sm text-gray-600 text-left max-w-2xl mx-auto">
+              Both TraByHum and TraByAge offer subscription plans with capacity bundles. Unused capacity rolls over for
+              a maximum of one month, after which it expires. Additional capacity above your bundle is billed
+              separately. Subscription pricing will be published when our payment infrastructure goes live.
+            </div>
+          </div>
+
+          {/* TraByHum subsection */}
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="badge badge-secondary">TraByHum</div>
+              <h3 className="text-2xl font-bold text-primary">Translation By Humans</h3>
+            </div>
+            <p className="text-sm text-gray-500 mb-6">
               Minimum order: $45.{" "}
               <Link href="/contact" className="text-primary underline hover:no-underline">
                 Contact us
@@ -544,6 +557,27 @@ export default function PricingPage() {
             <Link href="/contact" className="btn btn-primary">
               Get a Quote
             </Link>
+          </div>
+
+          {/* TraByAge subsection */}
+          <div className="mt-16 pt-16 border-t border-gray-200">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="badge badge-secondary">TraByAge</div>
+              <h3 className="text-2xl font-bold text-primary">Translation By Agents</h3>
+              <span className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">
+                Coming Soon
+              </span>
+            </div>
+            <p className="text-gray-600 text-sm mb-6 max-w-2xl">
+              Agent-powered language services at significantly lower per-unit rates. Exact pricing will be published at
+              launch. The same service types as TraByHum are available via agents: translation, proofreading, editing,
+              subtitling, transcription, copywriting, and annotation.
+            </p>
+            <div className="bg-primary/5 rounded-lg p-6 max-w-2xl">
+              <p className="text-sm text-gray-600 italic">
+                TraByAge pricing is still being determined. Join the waitlist to be notified when rates are published.
+              </p>
+            </div>
           </div>
         </div>
       </section>

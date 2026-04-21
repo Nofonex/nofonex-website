@@ -65,6 +65,14 @@ const humanPoints = [
   },
 ]
 
+const steps = [
+  "Register a free account",
+  "Select your service type",
+  "Upload your source document",
+  "Receive your free preview (first 10%, read-only)",
+  "Approve and pay — full delivery follows",
+]
+
 export default function TraByHumPage() {
   return (
     <>
@@ -74,29 +82,48 @@ export default function TraByHumPage() {
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="badge badge-primary">TraByHum</div>
-              <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800">
-                SaaS platform in development
-              </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
               Translation and subtitling by humans. Always.
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Every word translated by a professional. No AI output, no post-editing of machine
-              translation. Just human expertise.
+              Every word translated by a professional. No AI output, no post-editing of machine translation. Just human
+              expertise.
             </p>
-            <Link href="/contact" className="btn btn-primary">
-              Request a quote
-            </Link>
-            <p className="text-sm text-gray-500 mt-4">
-              Currently accepting projects directly. Platform coming soon.
-            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/register" className="btn btn-primary">
+                Get your free preview
+              </Link>
+              <Link href="/contact" className="btn btn-outline">
+                Request a quote
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── Diensten ── */}
+      {/* ── How it works ── */}
       <section className="py-16 md:py-24">
+        <div className="container-custom">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="badge badge-secondary mb-3">How it works</div>
+            <h2 className="section-title">How it works</h2>
+          </div>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {steps.map((text, i) => (
+              <div key={i} className="flex gap-4 items-start bg-white rounded-lg p-5 shadow-sm border border-gray-100">
+                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-sm font-bold">{i + 1}</span>
+                </div>
+                <p className="text-gray-700 pt-0.5">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Services ── */}
+      <section className="py-16 md:py-24 bg-primary/5">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="badge badge-secondary mb-3">Services</div>
@@ -123,8 +150,8 @@ export default function TraByHumPage() {
         </div>
       </section>
 
-      {/* ── Taalcombinaties ── */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      {/* ── Languages ── */}
+      <section className="py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="badge badge-secondary mb-3">Languages</div>
@@ -141,8 +168,8 @@ export default function TraByHumPage() {
         </div>
       </section>
 
-      {/* ── Waarom menselijk ── */}
-      <section className="py-16 md:py-24">
+      {/* ── Why human ── */}
+      <section className="py-16 md:py-24 bg-primary/5">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="badge badge-secondary mb-3">Why human</div>
@@ -162,17 +189,58 @@ export default function TraByHumPage() {
         </div>
       </section>
 
-      {/* ── Coming soon: platform ── */}
-      <section className="py-12">
+      {/* ── Pricing ── */}
+      <section className="py-16 md:py-24">
         <div className="container-custom">
-          <div className="bg-primary/5 rounded-xl p-6 md:p-8 max-w-3xl mx-auto">
-            <div className="badge badge-primary mb-4">Coming Soon</div>
-            <h2 className="text-2xl font-bold text-primary mb-3">TraByHum Platform</h2>
-            <p className="text-gray-600 mb-6">
-              We&apos;re building a platform that brings the full translation workflow online — project
-              management, delivery, invoicing, and communication in one place. Currently in development.
-            </p>
-            <WaitlistForm product="trabyhum" />
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <div className="badge badge-secondary mb-3">Pricing</div>
+            <h2 className="section-title">Pay per order or subscribe</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {/* Per order */}
+            <div className="card p-8">
+              <h3 className="text-xl font-bold text-primary mb-2">Per Order</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                Pay per project based on the per-word or per-minute rate. No commitment required.
+              </p>
+              <table className="w-full text-sm mb-4">
+                <tbody className="divide-y divide-gray-100">
+                  <tr>
+                    <td className="py-2 text-gray-700">General translation</td>
+                    <td className="py-2 text-right font-medium text-primary">$0.155/word</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 text-gray-700">Technical / specialized</td>
+                    <td className="py-2 text-right font-medium text-primary">$0.235/word</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 text-gray-700">Subtitling</td>
+                    <td className="py-2 text-right font-medium text-primary">from $5.50/min</td>
+                  </tr>
+                </tbody>
+              </table>
+              <Link href="/pricing#language-solutions" className="text-primary text-sm underline hover:no-underline">
+                View full rate table →
+              </Link>
+            </div>
+
+            {/* Subscription */}
+            <div className="card p-8 border border-dashed border-gray-300">
+              <div className="flex items-center gap-3 mb-2">
+                <h3 className="text-xl font-bold text-primary">Subscription</h3>
+                <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">
+                  Coming Soon
+                </span>
+              </div>
+              <p className="text-gray-600 text-sm mb-4">
+                Monthly or annual capacity bundle with volume discount. Unused capacity rolls over for a maximum of one
+                month. Extra capacity billed separately.
+              </p>
+              <p className="text-sm text-gray-500 italic mb-4">
+                Subscription pricing will be published when our payment infrastructure goes live.
+              </p>
+              <WaitlistForm product="trabyhum-subscription" />
+            </div>
           </div>
         </div>
       </section>
@@ -185,9 +253,14 @@ export default function TraByHumPage() {
               Ready to start a project?
             </h2>
             <p className="text-gray-200 mb-8">Minimum order $45. Rush delivery available.</p>
-            <Link href="/contact" className="btn bg-white text-primary hover:bg-gray-100">
-              Request a quote
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/register" className="btn bg-white text-primary hover:bg-gray-100">
+                Get your free preview
+              </Link>
+              <Link href="/contact" className="btn border border-white text-white hover:bg-white/10">
+                Request a quote
+              </Link>
+            </div>
           </div>
         </div>
       </section>
