@@ -7,7 +7,7 @@ import DropCap from "@/components/drop-cap"
 import ClientCommentWrapper from "@/components/client-comment-wrapper"
 
 // Force static rendering for this page
-export const dynamic = "force-static"
+export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: "Effective Content Localization Strategies | Nofonex",
