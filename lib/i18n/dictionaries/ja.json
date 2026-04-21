@@ -7,7 +7,6 @@
     "trabyhum": "TraByHum",
     "trabyage": "TraByAge",
     "pricing": "料金",
-    "blog": "ブログ",
     "contact": "お問い合わせ",
     "signIn": "ログイン",
     "signUp": "新規登録",
@@ -73,7 +72,7 @@
   "contact": {
     "badge": "お問い合わせ",
     "title": "お問い合わせ",
-    "description": "サービスについてのご質問やプロジェクトの開始準備ができましたら、今すぐお問い合わせください。",
+    "description": "製品、パートナーシップ、またはカスタムプロジェクトについてのご質問はありますか？私たちは小規模なチームで、すべてのメッセージを個人的に読んでいます。お気軽にご連絡ください。",
     "emailUs": "メールで連絡",
     "callUs": "電話で連絡",
     "visitUs": "所在地",
@@ -94,6 +93,6 @@
     "readMore": "続きを読む",
     "learnMore": "詳しく見る",
     "getInTouch": "お問い合わせ",
-    "backToBlog": "ブログに戻る"
+    "backToBlog": ""
   }
 }
