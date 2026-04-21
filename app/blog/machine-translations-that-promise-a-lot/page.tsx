@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 }
 
 // Force static rendering for this page
-export const dynamic = "force-static"
+export const dynamic = "force-dynamic"
 
 export default function BlogPost() {
   return (
