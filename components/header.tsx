@@ -14,12 +14,13 @@ export default function Header() {
   const { t } = useLocale()
 
   const navigation = [
-    { name: t("nav.home"), href: "/" },
-    { name: t("nav.about"), href: "/about-us" },
-    { name: t("nav.services"), href: "/#services" },
-    { name: t("nav.pricing"), href: "/pricing" },
-    { name: t("nav.blog"), href: "/blog" },
-    { name: t("nav.contact"), href: "/#contact" },
+    { name: "Home", href: "/" },
+    { name: "SoFoWo", href: "/sofowo" },
+    { name: "BeamFoWo", href: "/beamfowo" },
+    { name: "TraByHum", href: "/trabyhum" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   return (
@@ -29,7 +30,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo-small.png" alt="Nofonex Logo" width={32} height={32} className="h-8 w-8" />
-            <span className="text-xl font-bold text-primary">Bridging languages</span>
+            <span className="text-xl font-bold text-primary">Nofonex</span>
           </Link>
 
           {/* Desktop Navigation */}

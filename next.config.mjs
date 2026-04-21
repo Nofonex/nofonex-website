@@ -1,5 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/services/:path*",
+        destination: "/trabyhum",
+        permanent: true,
+      },
+      {
+        source: "/entrepreneur-package",
+        destination: "/pricing",
+        permanent: true,
+      },
+      {
+        source: "/get-started",
+        destination: "/pricing",
+        permanent: false,
+      },
+    ]
+  },
   serverExternalPackages: ['@prisma/client', 'prisma'],
   eslint: {
     ignoreDuringBuilds: true,
