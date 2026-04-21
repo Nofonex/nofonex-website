@@ -10,36 +10,35 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Image src="/logo-small.png" alt="Nofonex Logo" width={32} height={32} className="h-8 w-8" />
-              <span className="text-xl font-bold text-primary">Bridging languages</span>
+              <span className="text-xl font-bold text-primary">Nofonex</span>
             </Link>
             <p className="text-gray-600 text-sm">
-              Specialized language services and digital content production to help businesses communicate
-              effectively across cultures and platforms.
+              SaaS tools and human translation services. Built for churches, creators, and businesses communicating across languages.
             </p>
           </div>
 
-          {/* Services */}
+          {/* Products */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Services</h3>
+            <h3 className="font-semibold text-gray-900 mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/language-services" className="footer-link">
-                  Language Services
+                <Link href="/sofowo" className="footer-link">
+                  SoFoWo
                 </Link>
               </li>
               <li>
-                <Link href="/services/content-writing" className="footer-link">
-                  Content Writing
+                <Link href="/beamfowo" className="footer-link">
+                  BeamFoWo
                 </Link>
               </li>
               <li>
-                <Link href="/services/audio-video-services" className="footer-link">
-                  Audio/Video Services
+                <Link href="/trabyhum" className="footer-link">
+                  TraByHum
                 </Link>
               </li>
               <li>
-                <Link href="/services/interactive-media" className="footer-link">
-                  Interactive Media
+                <Link href="/pricing" className="footer-link">
+                  Pricing
                 </Link>
               </li>
             </ul>
@@ -56,17 +55,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/blog" className="footer-link">
-                  Insights
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="footer-link">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="footer-link">
-                  Pricing
+                <Link href="/#contact" className="footer-link">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -82,8 +76,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/terms-of-service" className="footer-link">
+                <Link href="/terms" className="footer-link">
                   Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/refund-policy" className="footer-link">
+                  Refund Policy
                 </Link>
               </li>
               <li>

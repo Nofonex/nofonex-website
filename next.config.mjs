@@ -1,7 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  env: {
-    NEXTAUTH_URL: process.env.NEXTAUTH_URL || 'https://nofonex.com',
+  async redirects() {
+    return [
+      {
+        source: "/services/:path*",
+        destination: "/trabyhum",
+        permanent: true,
+      },
+      {
+        source: "/entrepreneur-package",
+        destination: "/pricing",
+        permanent: true,
+      },
+      {
+        source: "/get-started",
+        destination: "/pricing",
+        permanent: false,
+      },
+    ]
   },
   serverExternalPackages: ['@prisma/client', 'prisma'],
   eslint: {

@@ -157,7 +157,7 @@ export default function AboutUsPage() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">Thoughtful Adaptation</h3>
               <p className="text-gray-600">
-                We embrace new tools and approaches that genuinely improve our work, from AI assistance in language tasks
+                We embrace new tools and approaches that genuinely improve our work, from building efficient digital workflows
                 to exploring creative content production with our family—always with purpose, not just for novelty.
               </p>
             </div>
@@ -285,9 +285,9 @@ export default function AboutUsPage() {
                 <div className="flex items-start">
                   <CheckCircle className="text-secondary mt-1 mr-3 flex-shrink-0" size={20} />
                   <div>
-                    <h3 className="font-semibold text-white">AI-Assisted Workflows</h3>
+                    <h3 className="font-semibold text-white">Digital-First Workflows</h3>
                     <p className="text-gray-200">
-                      Using AI tools to work more efficiently while maintaining human quality control
+                      Using modern tools to work efficiently while keeping human expertise at the center of every project
                     </p>
                   </div>
                 </div>
@@ -342,8 +342,8 @@ export default function AboutUsPage() {
                 and achieve your global objectives.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/get-started" className="btn btn-primary">
-                  Get Started
+                <Link href="/pricing" className="btn btn-primary">
+                  See pricing
                 </Link>
                 <Link href="/#contact" className="btn btn-outline">
                   Contact Us
