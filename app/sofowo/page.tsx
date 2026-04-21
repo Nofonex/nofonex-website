@@ -60,6 +60,17 @@ const tiers = [
 export default function SoFoWoPage() {
   return (
     <>
+      {/* ── Breadcrumb ── */}
+      <div className="bg-white border-b border-gray-100">
+        <div className="container-custom py-3">
+          <nav className="flex items-center gap-2 text-sm text-gray-500">
+            <Link href="/ministry-solutions" className="hover:text-primary transition-colors">Ministry Solutions</Link>
+            <span>/</span>
+            <span className="text-gray-800 font-medium">SoFoWo</span>
+          </nav>
+        </div>
+      </div>
+
       {/* ── Hero ── */}
       <section className="pt-20 pb-16 md:pt-28 md:pb-24 bg-gradient-to-br from-primary/5 via-white to-primary/5">
         <div className="container-custom">

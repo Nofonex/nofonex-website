@@ -98,6 +98,17 @@ const tiers = [
 export default function BeamFoWoPage() {
   return (
     <>
+      {/* ── Breadcrumb ── */}
+      <div className="bg-white border-b border-gray-100">
+        <div className="container-custom py-3">
+          <nav className="flex items-center gap-2 text-sm text-gray-500">
+            <Link href="/ministry-solutions" className="hover:text-primary transition-colors">Ministry Solutions</Link>
+            <span>/</span>
+            <span className="text-gray-800 font-medium">BeamFoWo</span>
+          </nav>
+        </div>
+      </div>
+
       {/* ── Hero ── */}
       <section className="pt-20 pb-16 md:pt-28 md:pb-24 bg-gradient-to-br from-primary/5 via-white to-primary/5">
         <div className="container-custom">
@@ -202,6 +213,23 @@ export default function BeamFoWoPage() {
           <div className="text-center">
             <Link href="/pricing#beamfowo" className="text-primary font-medium hover:underline">
               View full pricing →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SoFoWo cross-sell ── */}
+      <section className="py-12">
+        <div className="container-custom">
+          <div className="bg-primary text-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-gray-100 max-w-xl">
+              <span className="font-semibold text-white">Pair with SoFoWo.</span> Manage your worship songs in SoFoWo and pull them directly into BeamFoWo — no re-entering lyrics needed.
+            </p>
+            <Link
+              href="/sofowo"
+              className="btn bg-white text-primary hover:bg-gray-100 whitespace-nowrap flex-shrink-0"
+            >
+              Learn about SoFoWo →
             </Link>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { BookOpen, Laptop, FileText, Globe, Award, Users } from "lucide-react"
+import { BookOpen, FileText, Globe, Award, Users } from "lucide-react"
 import BrandCarousel from "@/components/brand-carousel"
 
 export const metadata: Metadata = {
@@ -18,16 +18,9 @@ export const metadata: Metadata = {
 const productLines = [
   {
     icon: BookOpen,
-    name: "SoFoWo",
-    tagline: "Worship songbook for churches worldwide",
-    href: "/sofowo",
-    comingSoon: false,
-  },
-  {
-    icon: Laptop,
-    name: "BeamFoWo",
-    tagline: "Screen presentation app, offline-first",
-    href: "/beamfowo",
+    name: "Ministry Solutions",
+    tagline: "SoFoWo · BeamFoWo · More coming",
+    href: "/ministry-solutions",
     comingSoon: false,
   },
   {
