@@ -23,13 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-
     // Product pages
     {
       url: `${baseUrl}/ministry-solutions`,
@@ -68,38 +61,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
-    },
-
-    // Blog posts
-    {
-      url: `${baseUrl}/blog/7-days-of-becoming-a-blessing`,
-      lastModified: new Date("2026-03-02"),
-      changeFrequency: "yearly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/bridging-technical-expertise-creative-engagement`,
-      lastModified: new Date("2024-04-28"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/navigating-ai-revolution-remote-workers`,
-      lastModified: new Date("2024-04-10"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/effective-content-localization-strategies`,
-      lastModified: new Date("2024-05-15"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/ai-translation-human-expertise`,
-      lastModified: new Date("2023-05-28"),
-      changeFrequency: "yearly",
-      priority: 0.6,
     },
 
     // Legal pages

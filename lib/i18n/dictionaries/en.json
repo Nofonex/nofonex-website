@@ -8,7 +8,6 @@
     "trabyhum": "TraByHum",
     "trabyage": "TraByAge",
     "pricing": "Pricing",
-    "blog": "Blog",
     "contact": "Contact",
     "signIn": "Sign In",
     "signUp": "Sign Up",
@@ -74,7 +73,7 @@
   "contact": {
     "badge": "Contact Us",
     "title": "Get In Touch",
-    "description": "Have questions about our services or ready to start a project? Contact us today and one of our experts will get back to you shortly.",
+    "description": "Questions about our products, partnerships, or custom projects? We're a small team and we read every message personally. Reach out and we'll get back to you.",
     "emailUs": "Email Us",
     "callUs": "Call Us",
     "visitUs": "Visit Us",
@@ -95,6 +94,6 @@
     "readMore": "Read More",
     "learnMore": "Learn More",
     "getInTouch": "Get in Touch",
-    "backToBlog": "Back to Blog"
+    "backToBlog": ""
   }
 }

@@ -8,7 +8,6 @@
     "trabyhum": "TraByHum",
     "trabyage": "TraByAge",
     "pricing": "Prijzen",
-    "blog": "Blog",
     "contact": "Contact",
     "signIn": "Inloggen",
     "signUp": "Registreren",
@@ -74,7 +73,7 @@
   "contact": {
     "badge": "Neem Contact Op",
     "title": "Neem Contact Op",
-    "description": "Heeft u vragen over onze diensten of bent u klaar om een project te starten? Neem vandaag nog contact met ons op en een van onze experts neemt snel contact met u op.",
+    "description": "Vragen over onze producten, samenwerkingen of maatwerkopdrachten? We zijn een klein team en lezen elk bericht persoonlijk. Neem contact op en we komen bij je terug.",
     "emailUs": "E-mail Ons",
     "callUs": "Bel Ons",
     "visitUs": "Bezoek Ons",
@@ -95,6 +94,6 @@
     "readMore": "Lees Meer",
     "learnMore": "Meer Informatie",
     "getInTouch": "Neem Contact Op",
-    "backToBlog": "Terug naar Blog"
+    "backToBlog": ""
   }
 }
