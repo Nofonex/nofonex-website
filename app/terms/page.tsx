@@ -20,7 +20,7 @@ export default function TermsPage() {
             <div className="legal-section">
               <h2>1. Introduction</h2>
               <p>
-                Welcome to Nofonex Online Services ("Nofonex", "we", "us", or "our"). By accessing our website at
+                Welcome to Nofonex ("Nofonex", "we", "us", or "our"). By accessing our website at
                 nofonex.com, engaging with our services, or otherwise using our platform, you acknowledge that you have
                 read, understood, and agree to be bound by these Terms and Conditions ("Terms").
               </p>
@@ -31,7 +31,7 @@ export default function TermsPage() {
               <h2>2. Services</h2>
               <h3>2.1 Description</h3>
               <p>
-                Nofonex Online Services provides specialized language, content, and digital services, including but not
+                Nofonex provides specialized language, content, and digital services, including but not
                 limited to:
               </p>
               <ul>

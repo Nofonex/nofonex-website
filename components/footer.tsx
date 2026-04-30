@@ -95,7 +95,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Nofonex Online Services. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Nofonex. All rights reserved.</p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <a href="mailto:info@nofonex.com" className="text-gray-500 hover:text-primary transition-colors">
               info@nofonex.com
