@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Refund Policy",
   description:
-    "Refund policy for Nofonex digital subscriptions and services — SoFoWo, BeamFoWo, TraByHum, and Magaxines.",
+    "Refund policy for Nofonex digital subscriptions and services — SoFoWo, BeamFoWo, SubByAge, and Magaxines.",
 }
 
 export default function RefundPolicyPage() {
@@ -105,7 +105,11 @@ export default function RefundPolicyPage() {
 
             {/* 3 */}
             <div className="legal-section">
-              <h2>3. Translation Services (TraByHum)</h2>
+              <h2>3. Subtitling &amp; Translation Services (SubByAge)</h2>
+
+              <p>
+                SubByAge is a fully automated service. Processing begins immediately upon payment.
+              </p>
 
               <div className="overflow-x-auto mt-4 rounded-lg border border-gray-200">
                 <table className="w-full border-collapse text-sm">
@@ -122,33 +126,28 @@ export default function RefundPolicyPage() {
                   <tbody>
                     <tr>
                       <td className="border-b border-gray-200 px-4 py-3 whitespace-nowrap align-top">
-                        Project not yet started
+                        Technical failure on our part
+                        <span className="block text-xs text-gray-500 mt-0.5">
+                          (processing failed, no output delivered)
+                        </span>
                       </td>
                       <td className="border-b border-gray-200 px-4 py-3 align-top">Full refund</td>
                     </tr>
                     <tr className="bg-gray-50">
                       <td className="border-b border-gray-200 px-4 py-3 whitespace-nowrap align-top">
-                        Project in progress
-                      </td>
-                      <td className="border-b border-gray-200 px-4 py-3 align-top">
-                        Refund for uncompleted portion
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 px-4 py-3 whitespace-nowrap align-top">
-                        Project delivered and accepted
+                        Processing started or completed
                       </td>
                       <td className="border-b border-gray-200 px-4 py-3 align-top">No refund</td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr>
                       <td className="px-4 py-3 align-top">
-                        Quality dispute
+                        Output quality dispute
                         <span className="block text-xs text-gray-500 mt-0.5">
-                          (translation does not meet agreed specifications)
+                          (output does not match expected language or format)
                         </span>
                       </td>
                       <td className="px-4 py-3 align-top">
-                        Free revision or partial refund, at our discretion after review
+                        Free reprocessing or partial refund, at our discretion after review
                       </td>
                     </tr>
                   </tbody>
@@ -156,11 +155,11 @@ export default function RefundPolicyPage() {
               </div>
 
               <p className="mt-4">
-                To request a refund or raise a quality dispute, email{" "}
+                To report a technical failure or raise a quality dispute, email{" "}
                 <a href="mailto:support@nofonex.com" className="text-primary hover:underline">
                   support@nofonex.com
                 </a>{" "}
-                within 14 days of delivery.
+                within 7 days of your order.
               </p>
             </div>
 

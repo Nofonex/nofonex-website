@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Globe, CheckCircle, Pencil, Film, FileText, Award, Layers, Users } from "lucide-react"
+import { Globe, CheckCircle, Pencil, Film, FileText, Award, Layers } from "lucide-react"
 import { WaitlistForm } from "@/components/waitlist-form"
 
 export const metadata: Metadata = {
@@ -184,29 +184,6 @@ export default function TraByAgePage() {
               </p>
               <WaitlistForm product="trabyage-subscription" />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Add human review ── */}
-      <section className="py-12 bg-primary/5">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto bg-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm border border-gray-100">
-            <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <Users className="text-primary" size={20} />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold text-primary mb-2">Need human quality assurance?</h2>
-                <p className="text-gray-600 text-sm">
-                  After receiving your agent output, you can add a human review step via TraByHum. Reviewed by a
-                  professional, delivered with confidence.
-                </p>
-              </div>
-            </div>
-            <Link href="/trabyhum" className="btn btn-outline whitespace-nowrap flex-shrink-0">
-              Learn about TraByHum →
-            </Link>
           </div>
         </div>
       </section>
