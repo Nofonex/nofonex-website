@@ -20,7 +20,7 @@ export default function PrivacyPage() {
             <div className="legal-section">
               <h2>1. Introduction</h2>
               <p>
-                At Nofonex Online Services ("Nofonex", "we", "us", or "our"), we respect your privacy and are committed
+                At Nofonex ("Nofonex", "we", "us", or "our"), we respect your privacy and are committed
                 to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and
                 safeguard your information when you visit our website nofonex.com or use our services in any way.
               </p>

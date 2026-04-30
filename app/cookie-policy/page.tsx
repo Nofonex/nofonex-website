@@ -20,7 +20,7 @@ export default function CookiePolicyPage() {
             <div className="legal-section">
               <h2>1. Introduction</h2>
               <p>
-                This Cookie Policy explains how Nofonex Online Services ("Nofonex", "we", "us", or "our") uses cookies
+                This Cookie Policy explains how Nofonex ("Nofonex", "we", "us", or "our") uses cookies
                 and similar technologies to recognize you when you visit our website at nofonex.com ("Website"). It
                 explains what these technologies are and why we use them, as well as your rights to control our use of
                 them.
