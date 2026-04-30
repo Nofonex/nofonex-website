@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of Service for Nofonex digital products and services — SoFoWo, BeamFoWo, TraByHum, and Magaxines.",
+    "Terms of Service for Nofonex digital products and services — SoFoWo, BeamFoWo, SubByAge, and Magaxines.",
 }
 
 export default function TermsOfServicePage() {
@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
                 by Nofonex, operated by Xenofon Martokarijo, Paramaribo, Suriname ("Nofonex", "we", "us").
               </p>
               <p className="mt-3">
-                <strong>Products covered:</strong> SoFoWo, BeamFoWo, TraByHum, Magaxines, and any other
+                <strong>Products covered:</strong> SoFoWo, BeamFoWo, TraByAge, SubByAge, Magaxines, and any other
                 Nofonex service linking to these Terms.
               </p>
               <blockquote className="mt-4 border-l-4 border-primary pl-4 italic text-gray-700">
@@ -150,15 +150,25 @@ export default function TermsOfServicePage() {
 
             {/* 7 */}
             <div className="legal-section">
-              <h2>7. Translation Services (TraByHum)</h2>
+              <h2>7. Subtitling &amp; Translation Services (SubByAge)</h2>
               <ul>
                 <li>
-                  All translations are performed by human translators. AI is never used to generate
-                  translations.
+                  Subtitles and translations are generated automatically by AI agents. No human
+                  translators are involved.
                 </li>
-                <li>Delivery times are estimates.</li>
-                <li>Ownership of translated content transfers to you upon full payment.</li>
-                <li>You warrant that you have the right to have the source material translated.</li>
+                <li>
+                  Output files (SRT, VTT) and burned-in video are delivered digitally upon
+                  completion of processing.
+                </li>
+                <li>
+                  Delivery is typically within minutes; actual time depends on video length and
+                  server load.
+                </li>
+                <li>Ownership of output files transfers to you upon full payment.</li>
+                <li>
+                  You warrant that you have the right to have the source video processed and
+                  distributed.
+                </li>
               </ul>
             </div>
 

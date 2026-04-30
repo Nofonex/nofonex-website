@@ -403,164 +403,20 @@ export default function PricingPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          Language Solutions — TraByHum & TraByAge
+          Language Solutions — TraByAge & SubByAge
       ══════════════════════════════════════════════════════════════ */}
       <section id="language-solutions" className="py-16 md:py-24">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="badge badge-primary mb-3">Language Solutions</div>
-            <h2 className="section-title">Language Solutions — TraByHum &amp; TraByAge</h2>
+            <h2 className="section-title">Language Solutions</h2>
             <p className="section-subtitle">
-              Two paths: professional human expertise or agent-powered speed.
+              Two agent-powered Language Solutions: text translation and video subtitling.
             </p>
-            <div className="mt-4 bg-primary/5 rounded-lg p-4 text-sm text-gray-600 text-left max-w-2xl mx-auto">
-              Both TraByHum and TraByAge offer subscription plans with capacity bundles. Unused capacity rolls over for
-              a maximum of one month, after which it expires. Additional capacity above your bundle is billed
-              separately. Subscription pricing will be published when our payment infrastructure goes live.
-            </div>
-          </div>
-
-          {/* TraByHum subsection */}
-          <div className="mb-16">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="badge badge-secondary">TraByHum</div>
-              <h3 className="text-2xl font-bold text-primary">Translation By Humans</h3>
-            </div>
-            <p className="text-sm text-gray-500 mb-6">
-              Minimum order: $45.{" "}
-              <Link href="/contact" className="text-primary underline hover:no-underline">
-                Contact us
-              </Link>{" "}
-              for custom quotes on large projects.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* a) Written Translation */}
-            <div className="card p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">Written Translation</h3>
-              <table className="w-full text-sm">
-                <tbody className="divide-y divide-gray-100">
-                  <tr>
-                    <td className="py-2.5 text-gray-700">General translation</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$0.155/word</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Technical / specialized</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$0.235/word</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Proofreading / editing</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$0.075/word</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Rush (&lt; 48 h)</td>
-                    <td className="py-2.5 text-right font-medium text-primary">standard + 50%</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p className="text-sm text-gray-500 mt-4">
-                10,000+ words?{" "}
-                <Link href="/contact" className="text-primary underline hover:no-underline">
-                  Request a custom quote.
-                </Link>
-              </p>
-            </div>
-
-            {/* b) Subtitling — Creating New Subtitles */}
-            <div className="card p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">
-                Subtitling — Creating New Subtitles
-              </h3>
-              <table className="w-full text-sm">
-                <tbody className="divide-y divide-gray-100">
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Same-language subtitling</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$5.50/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Same-language, technical audio</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$7.50/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Direct foreign, common pairs</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$10.90/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Direct foreign, less common pairs</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$14.90/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Rush</td>
-                    <td className="py-2.5 text-right font-medium text-primary">standard + 50%</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Hard-coding (burn-in)</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$1.50/min</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p className="text-xs text-gray-500 italic mt-4">
-                Direct foreign subtitling: audio transcribed and translated in one step. Faster and
-                more affordable when no source-language file is needed.
-              </p>
-            </div>
-
-            {/* c) Subtitle Translation */}
-            <div className="card p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">
-                Subtitle Translation — Translating an Existing File
-              </h3>
-              <table className="w-full text-sm">
-                <tbody className="divide-y divide-gray-100">
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Common language pairs</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$7.90/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Less common pairs</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$11.90/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Rush</td>
-                    <td className="py-2.5 text-right font-medium text-primary">standard + 50%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            {/* d) Subtitle Review & QC */}
-            <div className="card p-6">
-              <h3 className="text-xl font-bold text-primary mb-4">
-                Subtitle Review &amp; Quality Control
-              </h3>
-              <table className="w-full text-sm">
-                <tbody className="divide-y divide-gray-100">
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Linguistic review</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$2.90/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Full QC</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$4.50/min</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2.5 text-gray-700">Machine subtitle correction</td>
-                    <td className="py-2.5 text-right font-medium text-primary">$5.50/min</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="text-center mt-10">
-            <Link href="/contact" className="btn btn-primary">
-              Get a Quote
-            </Link>
           </div>
 
           {/* TraByAge subsection */}
-          <div className="mt-16 pt-16 border-t border-gray-200">
+          <div className="mb-16">
             <div className="flex items-center gap-3 mb-6">
               <div className="badge badge-secondary">TraByAge</div>
               <h3 className="text-2xl font-bold text-primary">Translation By Agents</h3>
@@ -570,13 +426,108 @@ export default function PricingPage() {
             </div>
             <p className="text-gray-600 text-sm mb-6 max-w-2xl">
               Agent-powered language services at significantly lower per-unit rates. Exact pricing will be published at
-              launch. The same service types as TraByHum are available via agents: translation, proofreading, editing,
-              subtitling, transcription, copywriting, and annotation.
+              launch. Available service types: translation, proofreading, editing, subtitling, transcription,
+              copywriting, and annotation.
             </p>
             <div className="bg-primary/5 rounded-lg p-6 max-w-2xl">
               <p className="text-sm text-gray-600 italic">
                 TraByAge pricing is still being determined. Join the waitlist to be notified when rates are published.
               </p>
+            </div>
+          </div>
+
+          {/* SubByAge subsection */}
+          <div className="pt-16 border-t border-gray-200">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="badge badge-secondary">SubByAge</div>
+              <h3 className="text-2xl font-bold text-primary">Subtitle By Agents</h3>
+              <span className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">
+                Coming Soon
+              </span>
+            </div>
+            <p className="text-gray-600 text-sm mb-8 max-w-2xl">
+              Fully automated video subtitling. Upload a video — Whisper transcribes, Helsinki-NLP/DeepL translates,
+              subtitles delivered in SRT, VTT, or burned-in MP4. Pay per video or subscribe for volume discounts.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
+              {/* Per video */}
+              <div className="card p-6">
+                <h4 className="text-lg font-bold text-primary mb-4">Per Video</h4>
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="pb-2 text-left text-gray-600 font-medium">Duration</th>
+                      <th className="pb-2 text-right text-gray-600 font-medium">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr>
+                      <td className="py-2.5 text-gray-700">0–10 minutes</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$2.50</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 text-gray-700">10–30 minutes</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$5.00</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 text-gray-700">30–60 minutes</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$9.00</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 text-gray-700">60–120 minutes</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$15.00</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 text-gray-700">+$1.50 per extra language</td>
+                      <td className="py-2.5 text-right font-medium text-primary">—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Subscription */}
+              <div className="card p-6">
+                <h4 className="text-lg font-bold text-primary mb-4">Subscription</h4>
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="pb-2 text-left text-gray-600 font-medium">Plan</th>
+                      <th className="pb-2 text-right text-gray-600 font-medium">Monthly</th>
+                      <th className="pb-2 text-right text-gray-600 font-medium">Annual</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr>
+                      <td className="py-2.5 text-gray-700">Starter — 60 min</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$9</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$89</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 text-gray-700">Creator — 200 min</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$24</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$239</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 text-gray-700">Pro — 600 min</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$59</td>
+                      <td className="py-2.5 text-right font-medium text-primary">$589</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p className="text-xs text-gray-500 mt-3 italic">
+                  Unused minutes do not roll over. Extra minutes billed at per-video rates.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 flex items-center gap-4">
+              <span className="inline-block py-2.5 px-6 rounded-md text-sm font-medium cursor-not-allowed opacity-60 bg-primary/10 text-primary">
+                Coming Soon
+              </span>
+              <Link href="/subbyage" className="text-sm text-primary underline hover:no-underline">
+                Learn more about SubByAge →
+              </Link>
             </div>
           </div>
         </div>

@@ -1,14 +1,28 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Users, Laptop, FileText, Clock, CheckCircle } from "lucide-react"
+import { FileText, Clock, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Language Solutions — TraByHum & TraByAge",
+  title: "Language Solutions — TraByAge & SubByAge",
   description:
-    "Choose your level of human involvement. Professional human translation or agent-powered speed — both with a free 10% preview before you commit.",
+    "Two agent-powered Language Solutions: text translation and video subtitling. Both with a free preview before you commit.",
 }
 
-const services = ["Translation", "Proofreading", "Editing", "Subtitling", "Transcription", "Copywriting", "Annotation"]
+const trabyageServices = [
+  "Translation",
+  "Proofreading",
+  "Editing",
+  "Subtitling",
+  "Transcription",
+  "Copywriting",
+  "Annotation",
+]
+
+const subbyageFeatures = [
+  "AI Transcription (Whisper)",
+  "Instant Translation",
+  "Multiple Formats — SRT, VTT, MP4",
+]
 
 export default function LanguageSolutionsPage() {
   return (
@@ -21,12 +35,8 @@ export default function LanguageSolutionsPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 leading-tight">
               Language Solutions
             </h1>
-            <p className="text-xl font-medium text-gray-700 mb-4">
-              Choose your level of human involvement.
-            </p>
             <p className="text-lg text-gray-600">
-              Nofonex offers two distinct paths — agent-powered speed or human-guaranteed quality. Both start with a
-              free preview so you know what you&apos;re getting before you commit.
+              Two agent-powered paths: text translation or video subtitling.
             </p>
           </div>
         </div>
@@ -35,82 +45,62 @@ export default function LanguageSolutionsPage() {
       {/* ── Two products ── */}
       <section className="py-16 md:py-24">
         <div className="container-custom">
-          {/* Visual element */}
-          <div className="flex items-center justify-center gap-6 mb-14">
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <Users className="text-primary" size={30} />
-              </div>
-              <span className="text-sm font-medium text-gray-600">Human expertise</span>
-            </div>
-            <div className="flex flex-1 max-w-sm items-center gap-3">
-              <div className="flex-1 h-px bg-gray-200" />
-              <span className="text-xs text-gray-400 font-medium px-2 py-1 rounded-full border border-gray-200 whitespace-nowrap">
-                or
-              </span>
-              <div className="flex-1 h-px bg-gray-200" />
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center">
-                <Laptop className="text-gray-600" size={30} />
-              </div>
-              <span className="text-sm font-medium text-gray-600">Agent speed</span>
-            </div>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* TraByHum */}
+            {/* TraByAge */}
             <div className="card p-8 border-2 border-primary/30 flex flex-col">
               <div className="mb-4">
-                <span className="inline-flex items-center rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">
-                  Human
+                <span className="inline-flex items-center rounded-full bg-gray-700 px-3 py-1 text-xs font-semibold text-white">
+                  AI Agent
                 </span>
               </div>
-              <h2 className="text-2xl font-bold text-primary mb-1">TraByHum</h2>
-              <p className="text-sm text-gray-500 mb-2">Translation By Humans</p>
-              <p className="font-semibold text-gray-700 mb-3">Every word reviewed by a professional.</p>
+              <h2 className="text-2xl font-bold text-primary mb-1">TraByAge</h2>
+              <p className="text-sm text-gray-500 mb-2">Translation By Agents</p>
+              <p className="font-semibold text-gray-700 mb-3">AI-powered speed. Upload text, get translations.</p>
               <p className="text-gray-600 text-sm mb-6">
-                For clients who require certified quality, cultural nuance, or accountability. A human expert handles
-                your project from start to finish.
+                Fast, cost-efficient document and text translation across language pairs. Upload your file, select your
+                target language, and receive output in minutes.
               </p>
               <ul className="space-y-2 mb-8 flex-1">
-                {services.map((s) => (
+                {trabyageServices.map((s) => (
                   <li key={s} className="flex items-center gap-2 text-sm text-gray-700">
                     <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
                     {s}
                   </li>
                 ))}
               </ul>
-              <Link href="/trabyhum" className="btn btn-primary w-full text-center">
-                Start with TraByHum
+              <Link href="/trabyage" className="btn btn-primary w-full text-center">
+                Start with TraByAge
               </Link>
             </div>
 
-            {/* TraByAge */}
-            <div className="card p-8 border-2 border-gray-200 flex flex-col">
-              <div className="mb-4">
-                <span className="inline-flex items-center rounded-full bg-gray-700 px-3 py-1 text-xs font-semibold text-white">
-                  AI Agent
+            {/* SubByAge */}
+            <div className="card p-8 border-2 border-gray-200 flex flex-col opacity-80">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-600">
+                  Agents
+                </span>
+                <span className="inline-flex items-center rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">
+                  Coming Soon
                 </span>
               </div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-1">TraByAge</h2>
-              <p className="text-sm text-gray-500 mb-2">Translation By Agents</p>
-              <p className="font-semibold text-gray-700 mb-3">AI-powered speed. Human review optional.</p>
+              <h2 className="text-2xl font-bold text-gray-800 mb-1">SubByAge</h2>
+              <p className="text-sm text-gray-500 mb-2">Subtitle By Agents</p>
+              <p className="font-semibold text-gray-700 mb-3">Upload a video. Get subtitles in minutes.</p>
               <p className="text-gray-600 text-sm mb-6">
-                For clients prioritising turnaround and cost efficiency. Select an agent, upload your document, and
-                receive output fast. Add human review when it matters.
+                Fully automated subtitle generation and translation for video content. Whisper-powered transcription,
+                instant translation, multiple export formats.
               </p>
               <ul className="space-y-2 mb-8 flex-1">
-                {services.map((s) => (
+                {subbyageFeatures.map((s) => (
                   <li key={s} className="flex items-center gap-2 text-sm text-gray-700">
                     <CheckCircle className="h-4 w-4 text-gray-400 flex-shrink-0" />
                     {s}
                   </li>
                 ))}
               </ul>
-              <Link href="/trabyage" className="btn btn-outline w-full text-center">
-                Start with TraByAge
-              </Link>
+              <span className="block w-full py-2.5 px-4 rounded-md text-center text-sm font-medium cursor-not-allowed opacity-60 bg-primary/10 text-primary">
+                Coming soon
+              </span>
             </div>
           </div>
         </div>
