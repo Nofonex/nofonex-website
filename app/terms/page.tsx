@@ -95,7 +95,7 @@ export default function TermsPage() {
               <h3>4.3 Payment Terms</h3>
               <p>
                 Payment terms will be specified in your order confirmation or contract. We accept various payment
-                methods including regular bank transfers, PayPal, Payoneer, Wise, Stripe, and cryptocurrency (MetaMask).
+                methods including regular bank transfers, PayPal, Payoneer, Wise, and cryptocurrency (MetaMask).
               </p>
 
               <h3>4.4 Late Payments</h3>
