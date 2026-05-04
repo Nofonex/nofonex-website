@@ -24,6 +24,7 @@ const nextConfig = {
       { source: "/blog/navigating-ai-revolution-remote-workers", destination: "/language-solutions", permanent: true },
       { source: "/blog/effective-content-localization-strategies", destination: "/language-solutions", permanent: true },
       { source: "/blog/ai-translation-human-expertise", destination: "/language-solutions", permanent: true },
+      { source: "/terms", destination: "/terms-of-service", permanent: true },
     ]
   },
   serverExternalPackages: ['@prisma/client', 'prisma'],
