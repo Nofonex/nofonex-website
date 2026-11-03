@@ -7,7 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  deploy:
+  # Runs on every push to main AND every pull request: build check only.
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,6 +34,22 @@ jobs:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
         NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+
+  # Production deploy: only after a successful build, and only on a push to main
+  # (i.e. a merge). Pull requests never reach this job.
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
 
     - name: Install Vercel CLI
       run: npm install -g vercel
