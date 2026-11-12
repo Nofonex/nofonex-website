@@ -13,7 +13,7 @@ const products = [
     icon: BookOpen,
     name: "SoFoWo",
     tagline: "Songbook For Worshippers",
-    desc: "A worship songbook for churches and teams worldwide. Manage songs, setlists, and multilingual lyrics — online and offline. Free to start.",
+    desc: "Songbook and setlists for worship teams: ChordPro songs, transposing, setlists and line-ups, online and offline. Free during the beta.",
     href: "/sofowo",
     comingSoon: false,
     cta: "Explore SoFoWo",

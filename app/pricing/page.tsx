@@ -4,69 +4,12 @@ import { useState } from "react"
 import Link from "next/link"
 import { Check, HelpCircle, Clock } from "lucide-react"
 
-// ── SoFoWo types & data ───────────────────────────────────────────────────────
+// ── SoFoWo ────────────────────────────────────────────────────────────────────
+// SoFoWo is in a free, invitation-only beta. No plans are sold on nofonex.com:
+// the plan model (BL-018) goes live only after payment round B3, and checkout happens in the app.
 
-interface SoFoWoPlan {
-  id: string
-  name: string
-  price: { monthly: string; annual: string }
-  free?: boolean
-  features: string[]
-  extra?: string[]
-  highlight?: boolean
-}
-
-const sofowoPlans: SoFoWoPlan[] = [
-  {
-    id: "free",
-    name: "Free",
-    price: { monthly: "$0", annual: "$0" },
-    free: true,
-    features: [],
-  },
-  {
-    id: "starter",
-    name: "Starter",
-    price: { monthly: "$6.90", annual: "$69" },
-    features: [
-      "Full ChordPro songbook",
-      "Setlist management",
-      "Multilingual library",
-      "Offline access (PWA)",
-      "Song submission",
-      "Email support",
-    ],
-  },
-  {
-    id: "team",
-    name: "Team",
-    price: { monthly: "$16.90", annual: "$169" },
-    features: [
-      "Full ChordPro songbook",
-      "Setlist management",
-      "Multilingual library",
-      "Offline access (PWA)",
-      "Song submission",
-      "Email support",
-    ],
-    extra: ["Multi-member access", "Shared setlists", "Role management"],
-  },
-  {
-    id: "church",
-    name: "Church",
-    price: { monthly: "$39.90", annual: "$399" },
-    highlight: true,
-    features: [
-      "Full ChordPro songbook",
-      "Setlist management",
-      "Multilingual library",
-      "Offline access (PWA)",
-      "Song submission",
-      "Email support",
-    ],
-    extra: ["Admin dashboard", "Unlimited members", "Priority support", "CCLI export tools"],
-  },
-]
+const SOFOWO_APP_URL = "https://sofowo.app"
+const SOFOWO_BETA_REQUEST_HREF = `mailto:sofowo@nofonex.com?subject=${encodeURIComponent("SoFoWo beta access")}`
 
 // ── BeamFoWo types & data ─────────────────────────────────────────────────────
 
@@ -114,12 +57,6 @@ const beamAddons: { name: string; price: string }[] = [
   { name: "Design Collection Quarterly Pass", price: "$1.99/mo" },
   { name: "Seasonal decorations pack", price: "$1.49 one-time" },
   { name: "Program templates pack (5)", price: "$1.99 one-time" },
-]
-
-const sofowoBundles: { sofowoTier: string; beamDiscount: string }[] = [
-  { sofowoTier: "Starter", beamDiscount: "→ Essential for $3.90/mo" },
-  { sofowoTier: "Team", beamDiscount: "→ Essential included, Pro for $6.90/mo" },
-  { sofowoTier: "Church", beamDiscount: "→ Pro included" },
 ]
 
 // ── FAQ data ──────────────────────────────────────────────────────────────────
@@ -173,7 +110,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* ── Billing toggle (shared by SoFoWo & BeamFoWo) ── */}
+      {/* ── Billing toggle (BeamFoWo & SubByAge) ── */}
       <section className="py-8">
         <div className="container-custom">
           <div className="flex justify-center items-center space-x-4">
@@ -208,89 +145,45 @@ export default function PricingPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          SoFoWo — Songbook For Worshippers
+          SoFoWo — Songbook For Worshippers (free beta)
       ══════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24">
+      <section id="sofowo" className="py-16 md:py-24 scroll-mt-24">
         <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="badge badge-primary mb-3">SoFoWo</div>
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="badge badge-primary">SoFoWo</div>
+              <span className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
+                Beta
+              </span>
+            </div>
             <h2 className="section-title">Songbook For Worshippers</h2>
-            <p className="section-subtitle">
-              The complete digital songbook for worship teams and churches.
-            </p>
-            <p className="mt-4 text-sm text-gray-500">
-              Africa &amp; Asia regions receive ~50% discount, applied automatically at checkout.
-            </p>
+            <p className="section-subtitle">Songbook and setlists for worship teams.</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {sofowoPlans.map((plan) => (
-              <div
-                key={plan.id}
-                className={`relative rounded-lg overflow-hidden flex flex-col ${
-                  plan.highlight
-                    ? "border-2 border-primary shadow-lg"
-                    : "border border-gray-200 shadow-md bg-white"
-                } bg-white`}
+          <div className="max-w-xl mx-auto rounded-lg border-2 border-primary shadow-lg bg-white p-6 md:p-8 text-center">
+            <h3 className="text-xl font-bold text-primary mb-2">Free during the beta</h3>
+            <p className="text-gray-600 text-sm mb-6">
+              The beta is by invitation and costs nothing. There are no paid plans yet.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href={SOFOWO_BETA_REQUEST_HREF}
+                className="py-2.5 px-5 rounded-md text-sm font-medium bg-primary text-white hover:bg-primary-dark"
               >
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold text-primary mb-2">{plan.name}</h3>
-                  <div className="mb-6">
-                    <span className="text-3xl font-bold text-primary">
-                      {billingCycle === "monthly" ? plan.price.monthly : plan.price.annual}
-                    </span>
-                    {!plan.free && (
-                      <span className="text-gray-500 text-sm">
-                        {billingCycle === "monthly" ? "/mo" : "/yr"}
-                      </span>
-                    )}
-                  </div>
-
-                  {plan.free ? (
-                    <p className="text-gray-500 text-sm mb-6 flex-1">
-                      Basic access — no credit card required.
-                    </p>
-                  ) : (
-                    <ul className="space-y-2 mb-4 flex-1">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="flex items-start text-sm text-gray-600">
-                          <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                          {feature}
-                        </li>
-                      ))}
-                      {plan.extra && plan.extra.length > 0 && (
-                        <>
-                          <li className="pt-2 text-xs font-semibold text-primary uppercase tracking-wide">
-                            Also includes
-                          </li>
-                          {plan.extra.map((feature, i) => (
-                            <li key={`x-${i}`} className="flex items-start text-sm text-gray-600">
-                              <Check className="h-4 w-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
-                              {feature}
-                            </li>
-                          ))}
-                        </>
-                      )}
-                    </ul>
-                  )}
-
-                  <Link
-                    href={
-                      plan.free
-                        ? "/get-started"
-                        : `/get-started?product=sofowoplan&plan=${plan.id}`
-                    }
-                    className={`block w-full py-2.5 px-4 rounded-md text-center text-sm font-medium mt-auto ${
-                      plan.highlight
-                        ? "bg-primary text-white hover:bg-primary-dark"
-                        : "bg-primary/10 text-primary hover:bg-primary/20"
-                    }`}
-                  >
-                    {plan.free ? "Get Started Free" : "Choose Plan"}
-                  </Link>
-                </div>
-              </div>
-            ))}
+                Request beta access
+              </a>
+              <a
+                href={SOFOWO_APP_URL}
+                className="py-2.5 px-5 rounded-md text-sm font-medium bg-primary/10 text-primary hover:bg-primary/20"
+              >
+                Open SoFoWo
+              </a>
+            </div>
+            <p className="mt-4 text-sm">
+              <Link href="/sofowo" className="text-primary hover:underline">
+                What SoFoWo does →
+              </Link>
+            </p>
           </div>
         </div>
       </section>
@@ -367,32 +260,6 @@ export default function PricingPage() {
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="px-4 py-3 text-gray-700">{addon.name}</td>
                       <td className="px-4 py-3 text-right font-medium text-primary">{addon.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* SoFoWo bundle discounts */}
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-xl font-bold text-primary mb-2">SoFoWo Bundle Discount</h3>
-            <p className="text-gray-600 text-sm mb-4">
-              Already on a SoFoWo plan? Get BeamFoWo at a reduced rate.
-            </p>
-            <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-primary/5">
-                    <th className="px-4 py-3 text-left font-semibold text-primary">SoFoWo Plan</th>
-                    <th className="px-4 py-3 text-left font-semibold text-primary">BeamFoWo Discount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sofowoBundles.map((bundle, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="px-4 py-3 font-medium text-gray-700">{bundle.sofowoTier}</td>
-                      <td className="px-4 py-3 text-gray-600">{bundle.beamDiscount}</td>
                     </tr>
                   ))}
                 </tbody>
