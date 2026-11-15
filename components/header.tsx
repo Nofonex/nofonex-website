@@ -16,7 +16,6 @@ export default function Header() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Ministry Solutions", href: "/ministry-solutions" },
-    { name: "Language Solutions", href: "/language-solutions" },
     { name: "Pricing", href: "/pricing" },
     { name: "Contact", href: "/#contact" },
   ]

@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
                 <span className="text-primary">nofonex.com</span>
               </p>
               <div className="mt-4 p-4 bg-blue-50 border border-blue-100 rounded-lg text-sm text-gray-700">
-                <strong>For SoFoWo and BeamFoWo users:</strong> Payment data is processed independently by our
+                <strong>For SoFoWo and BeFoWo users:</strong> Payment data is processed independently by our
                 Merchant of Record (named on our{" "}
                 <Link href="/pricing#payment" className="text-primary hover:underline font-medium">
                   Pricing page

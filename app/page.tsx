@@ -1,17 +1,16 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { BookOpen, FileText, Globe, Award, Users } from "lucide-react"
-import BrandCarousel from "@/components/brand-carousel"
+import { BookOpen, FileText, Award, Users } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Nofonex — Digital Production House",
   description:
-    "Nofonex is a Christian digital production house creating software, publications, and language services for global audiences.",
+    "Nofonex is a Christian digital production house creating software and publications for global audiences.",
   openGraph: {
     title: "Nofonex — Digital Production House",
     description:
-      "Software, publications, and language services for global audiences.",
+      "Software and publications for global audiences.",
   },
 }
 
@@ -19,7 +18,7 @@ const productLines = [
   {
     icon: BookOpen,
     name: "Ministry Solutions",
-    tagline: "SoFoWo · BeamFoWo · More coming",
+    tagline: "SoFoWo · BeFoWo (coming soon)",
     href: "/ministry-solutions",
     comingSoon: false,
   },
@@ -29,13 +28,6 @@ const productLines = [
     tagline: "Seven digital magazines",
     href: "/magaxines",
     comingSoon: true,
-  },
-  {
-    icon: Globe,
-    name: "Language Solutions",
-    tagline: "TraByHum + TraByAge",
-    href: "/language-solutions",
-    comingSoon: false,
   },
   {
     icon: Award,
@@ -64,19 +56,18 @@ export default function Home() {
               <div className="badge badge-secondary mb-2">Digital Production House</div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 We build products.{" "}
-                <span className="text-secondary">We produce content.</span>{" "}
-                We bridge languages.
+                <span className="text-secondary">We produce content.</span>
               </h1>
               <p className="text-lg text-gray-600">
-                Nofonex is a Christian digital production house creating software, publications, and language services
-                for global audiences.
+                Nofonex is a Christian digital production house creating software and publications for global
+                audiences.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <Link href="/#products" className="btn btn-primary">
                   Explore our products
                 </Link>
-                <Link href="/language-solutions" className="btn btn-outline">
-                  Language Solutions
+                <Link href="/ministry-solutions" className="btn btn-outline">
+                  Ministry Solutions
                 </Link>
               </div>
             </div>
@@ -103,7 +94,7 @@ export default function Home() {
             <div className="badge badge-secondary mb-2">Our Production Lines</div>
             <h2 className="section-title">Our Production Lines</h2>
             <p className="section-subtitle">
-              Software tools, digital publications, and language services — built for communities worldwide.
+              Software tools and digital publications, built for communities worldwide.
             </p>
             <div className="section-divider" />
           </div>
@@ -153,21 +144,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Clients ── */}
-      <section id="clients" className="py-16 md:py-24 bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <div className="badge badge-secondary mb-2">Our Clients</div>
-            <h2 className="section-title">Brands that we&apos;ve served</h2>
-            <p className="section-subtitle">
-              We&apos;re proud to work with innovative companies across various industries
-            </p>
-            <div className="section-divider" />
-          </div>
-        </div>
-        <BrandCarousel />
-      </section>
-
       {/* ── Contact ── */}
       <section id="contact" className="py-16 md:py-24 bg-white">
         <div className="container-custom">
@@ -176,7 +152,7 @@ export default function Home() {
               <div className="badge badge-secondary mb-2">Contact Us</div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Get In Touch</h2>
               <p className="text-gray-600 mb-8">
-                Have questions about our products or ready to start a language project? Get in touch and we&apos;ll get
+                Have questions about our products? Get in touch and we&apos;ll get
                 back to you shortly.
               </p>
 

@@ -3,6 +3,10 @@ const { execSync } = require("child_process")
 console.log("Starting Vercel build process...")
 
 try {
+  // Fail early when a retired product name (BeamFoWo) is back on the site
+  console.log("Checking product names...")
+  execSync("node scripts/check-names.mjs", { stdio: "inherit" })
+
   // Run Prisma generate explicitly
   console.log("Generating Prisma client...")
   execSync("npx prisma generate", { stdio: "inherit" })

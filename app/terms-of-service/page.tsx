@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of Service for Nofonex digital products and services — SoFoWo, BeamFoWo, SubByAge, and Magaxines.",
+    "Terms of Service for Nofonex digital products and services — SoFoWo, BeFoWo, SubByAge, and Magaxines.",
 }
 
 export default function TermsOfServicePage() {
@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
                 by Nofonex, operated by Xenofon Martokarijo, Paramaribo, Suriname ("Nofonex", "we", "us").
               </p>
               <p className="mt-3">
-                <strong>Products covered:</strong> SoFoWo, BeamFoWo, TraByAge, SubByAge, Magaxines, and any other
+                <strong>Products covered:</strong> SoFoWo, BeFoWo, TraByAge, SubByAge, Magaxines, and any other
                 Nofonex service linking to these Terms.
               </p>
               <blockquote className="mt-4 border-l-4 border-primary pl-4 italic text-gray-700">

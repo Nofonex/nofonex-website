@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Checkout",
-  description: "Complete your purchase of Nofonex language services and digital content production plans.",
+  description: "Complete your purchase of a Nofonex product.",
   robots: { index: false, follow: false },
 }
 

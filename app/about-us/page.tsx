@@ -6,10 +6,10 @@ import { CheckCircle, Users, Target, Award, Clock, Globe } from "lucide-react"
 export const metadata: Metadata = {
   title: "About Us - Our Story, Mission & Team",
   description:
-    "Meet the Nofonex team. Founded in 2014 in Suriname, we specialize in English-Dutch language services and digital content production for global businesses.",
+    "The story of Nofonex: founded in 2014 in Suriname as a language practice, now a Christian digital production house for software and publications.",
   openGraph: {
     title: "About Nofonex | Our Story, Mission & Team",
-    description: "Founded in 2014, specializing in English-Dutch language services and digital content production.",
+    description: "Founded in 2014 in Suriname; now a Christian digital production house for software and publications.",
   },
 }
 
