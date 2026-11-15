@@ -6,8 +6,7 @@ import { BookOpen, ListMusic, Library, WifiOff, Mail, ShieldCheck } from "lucide
 // Do not add features, prices or user numbers that are not confirmed there.
 
 const APP_URL = "https://sofowo.app"
-const CONTACT_EMAIL = "sofowo@nofonex.com"
-const BETA_REQUEST_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("SoFoWo beta access")}`
+const CONTACT_EMAIL = "klantenservice@nofonex.com"
 
 const LEGAL_LINKS = {
   privacyEn: `${APP_URL}/en/privacy`,
@@ -65,7 +64,7 @@ const features = [
 const steps = [
   {
     title: "Request beta access",
-    body: `The beta is by invitation. Send us an email and we will get back to you.`,
+    body: `The beta is by invitation. Email ${CONTACT_EMAIL} to ask for access.`,
   },
   {
     title: "Set up your team and songs",
@@ -111,7 +110,7 @@ export default function SoFoWoPage() {
             </p>
             <p className="text-lg font-semibold text-primary mb-8">Free during the beta.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href={BETA_REQUEST_HREF} className="btn btn-primary">
+              <a href={APP_URL} className="btn btn-primary">
                 Request beta access
               </a>
               <a href="#how-it-works" className="btn btn-outline">
@@ -119,9 +118,9 @@ export default function SoFoWoPage() {
               </a>
             </div>
             <p className="mt-4 text-sm text-gray-500">
-              Already invited?{" "}
-              <a href={APP_URL} className="text-primary font-medium hover:underline">
-                Open SoFoWo
+              Questions?{" "}
+              <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary font-medium hover:underline">
+                {CONTACT_EMAIL}
               </a>
             </p>
           </div>
@@ -247,11 +246,8 @@ export default function SoFoWoPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Want to try SoFoWo with your team?</h2>
             <p className="text-gray-600 mb-8">The beta is free and by invitation.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href={BETA_REQUEST_HREF} className="btn btn-primary">
+              <a href={APP_URL} className="btn btn-primary">
                 Request beta access
-              </a>
-              <a href={APP_URL} className="btn btn-outline">
-                Open SoFoWo
               </a>
             </div>
           </div>

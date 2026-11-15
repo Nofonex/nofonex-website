@@ -9,7 +9,6 @@ import { Check, HelpCircle, Clock } from "lucide-react"
 // the plan model (BL-018) goes live only after payment round B3, and checkout happens in the app.
 
 const SOFOWO_APP_URL = "https://sofowo.app"
-const SOFOWO_BETA_REQUEST_HREF = `mailto:sofowo@nofonex.com?subject=${encodeURIComponent("SoFoWo beta access")}`
 
 // ── BeamFoWo types & data ─────────────────────────────────────────────────────
 
@@ -167,16 +166,10 @@ export default function PricingPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <a
-                href={SOFOWO_BETA_REQUEST_HREF}
+                href={SOFOWO_APP_URL}
                 className="py-2.5 px-5 rounded-md text-sm font-medium bg-primary text-white hover:bg-primary-dark"
               >
                 Request beta access
-              </a>
-              <a
-                href={SOFOWO_APP_URL}
-                className="py-2.5 px-5 rounded-md text-sm font-medium bg-primary/10 text-primary hover:bg-primary/20"
-              >
-                Open SoFoWo
               </a>
             </div>
             <p className="mt-4 text-sm">
