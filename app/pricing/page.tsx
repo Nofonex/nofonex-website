@@ -3,10 +3,43 @@
 import Link from "next/link"
 
 // ── SoFoWo ────────────────────────────────────────────────────────────────────
-// SoFoWo is in a free, invitation-only beta. No plans are sold on nofonex.com:
-// the plan model (BL-018) goes live only after payment round B3, and checkout happens in the app.
+// SoFoWo is in a free, invitation-only beta. Prices below follow BL-018 and
+// projects/sofowo/plannen-en-prijzen.md (Nofonex/nofonex-ecosystem); they apply once paid plans start.
+// Nothing is sold on nofonex.com: every button goes to the app, where checkout happens (decision 2026-11-11).
+// Check the amounts against BL-018 before each change. Not shown yet: module Note and music school (not built).
 
 const SOFOWO_APP_URL = "https://sofowo.app"
+
+const sofowoPlans: { name: string; audience: string; price: string; priceNote: string; points: string[]; highlight: boolean }[] = [
+  {
+    name: "Free",
+    audience: "For everyone",
+    price: "€0",
+    priceNote: "forever",
+    points: ["Basic songbook", "Works offline", "Your own setlists"],
+    highlight: false,
+  },
+  {
+    name: "Creator",
+    audience: "For individual songwriters",
+    price: "€4",
+    priceNote: "per month, or €36 per year",
+    points: ["Per person"],
+    highlight: false,
+  },
+  {
+    name: "Team",
+    audience: "For worship teams and bands",
+    price: "€9",
+    priceNote: "per month, including the first 5 members",
+    points: [
+      "+ €2.50 per month for each extra block of 5 members",
+      "The team owner pays; members do not",
+      "Example: a team of 10 pays €11.50 per month",
+    ],
+    highlight: true,
+  },
+]
 
 // ── Page component ────────────────────────────────────────────────────────────
 
@@ -45,20 +78,49 @@ export default function PricingPage() {
             <p className="section-subtitle">Songbook and setlists for worship teams.</p>
           </div>
 
-          <div className="max-w-xl mx-auto rounded-lg border-2 border-primary shadow-lg bg-white p-6 md:p-8 text-center">
-            <h3 className="text-xl font-bold text-primary mb-2">Free during the beta</h3>
-            <p className="text-gray-600 text-sm mb-6">
-              The beta is by invitation and costs nothing. There are no paid plans yet.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href={SOFOWO_APP_URL}
-                className="py-2.5 px-5 rounded-md text-sm font-medium bg-primary text-white hover:bg-primary-dark"
+          <div className="max-w-3xl mx-auto mb-10 rounded-lg bg-amber-50 border border-amber-200 p-4 text-center text-sm text-amber-900">
+            <strong>SoFoWo is free during the beta.</strong> The prices below apply once paid plans start. The beta is by
+            invitation.
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {sofowoPlans.map((plan) => (
+              <div
+                key={plan.name}
+                className={`rounded-lg bg-white p-6 flex flex-col ${
+                  plan.highlight ? "border-2 border-primary shadow-lg" : "border border-gray-200 shadow-md"
+                }`}
               >
-                Request beta access
-              </a>
-            </div>
-            <p className="mt-4 text-sm">
+                <h3 className="text-xl font-bold text-primary">{plan.name}</h3>
+                <p className="text-sm text-gray-500 mb-4">{plan.audience}</p>
+                <p className="mb-1">
+                  <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
+                </p>
+                <p className="text-sm text-gray-500 mb-4">{plan.priceNote}</p>
+                <ul className="space-y-2 text-sm text-gray-600 flex-1">
+                  {plan.points.map((point) => (
+                    <li key={point} className="flex gap-2">
+                      <span className="text-primary" aria-hidden="true">•</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-3xl mx-auto mt-8 text-center space-y-4">
+            <p className="text-sm text-gray-500">
+              Prices in euros. They are adjusted to purchasing power per country, based on your billing country. You
+              pay in the app, never on this website.
+            </p>
+            <a
+              href={SOFOWO_APP_URL}
+              className="inline-block py-2.5 px-5 rounded-md text-sm font-medium bg-primary text-white hover:bg-primary-dark"
+            >
+              Request beta access
+            </a>
+            <p className="text-sm">
               <Link href="/sofowo" className="text-primary hover:underline">
                 What SoFoWo does →
               </Link>
