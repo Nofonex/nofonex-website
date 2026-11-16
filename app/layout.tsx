@@ -11,18 +11,18 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   metadataBase: new URL("https://nofonex.com"),
   title: {
-    default: "Nofonex - Language Services & Digital Content Production",
+    default: "Nofonex - Christian Digital Production House",
     template: "%s | Nofonex",
   },
   description:
-    "Professional English-Dutch translation, content writing, transcreation, and digital content production. Based in Suriname, serving businesses worldwide.",
+    "Nofonex is a Christian digital production house in Suriname, creating software and publications for churches, creators and communities worldwide.",
   keywords:
-    "translation, language services, content writing, Dutch, English, digital content, transcreation, MTPE, Suriname, localization",
+    "Nofonex, SoFoWo, worship songbook, setlists, worship team software, Christian, Suriname",
   authors: [{ name: "Nofonex" }],
   openGraph: {
-    title: "Nofonex - Language Services & Digital Content Production",
+    title: "Nofonex - Christian Digital Production House",
     description:
-      "Professional English-Dutch translation, content writing, and digital content production for global businesses.",
+      "Software and publications for churches, creators and communities worldwide.",
     url: "https://nofonex.com",
     siteName: "Nofonex",
     locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nofonex - Language Services & Digital Content Production",
+    title: "Nofonex - Christian Digital Production House",
     description:
-      "Professional English-Dutch translation, content writing, and digital content production for global businesses.",
+      "Software and publications for churches, creators and communities worldwide.",
   },
   robots: {
     index: true,

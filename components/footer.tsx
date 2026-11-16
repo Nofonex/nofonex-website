@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-xl font-bold text-primary">Nofonex</span>
             </Link>
             <p className="text-gray-600 text-sm">
-              SaaS tools and human translation services. Built for churches, creators, and businesses communicating across languages.
+              A Christian digital production house. Software and publications for churches, creators and communities.
             </p>
           </div>
 
@@ -27,13 +27,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/beamfowo" className="footer-link">
-                  BeamFoWo
-                </Link>
-              </li>
-              <li>
-                <Link href="/trabyhum" className="footer-link">
-                  TraByHum
+                <Link href="/befowo" className="footer-link">
+                  BeFoWo <span className="text-xs text-gray-400">(coming soon)</span>
                 </Link>
               </li>
               <li>

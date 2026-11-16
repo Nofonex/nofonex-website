@@ -37,30 +37,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/beamfowo`,
+      url: `${baseUrl}/befowo`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.9,
-    },
-
-    // Language Solutions
-    {
-      url: `${baseUrl}/language-solutions`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/trabyage`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/subbyage`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
+      priority: 0.5,
     },
 
     // Legal pages
@@ -71,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/terms`,
+      url: `${baseUrl}/terms-of-service`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.3,

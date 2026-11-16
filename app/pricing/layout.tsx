@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Pricing - Transparent Plans for Every Business",
+  title: "Pricing",
   description:
-    "Simple, transparent pricing for translation, content writing, subtitling, and digital content services. Starter, Professional, and Enterprise plans available.",
+    "Pricing for Nofonex products. SoFoWo is free during the beta.",
   openGraph: {
     title: "Pricing Plans | Nofonex",
-    description: "Transparent pricing for translation, content writing, and digital content services.",
+    description: "Pricing for Nofonex products. SoFoWo is free during the beta.",
   },
 }
 

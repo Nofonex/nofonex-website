@@ -3,9 +3,9 @@ import Link from "next/link"
 import { BookOpen, Laptop, Radio } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ministry Solutions — SoFoWo & BeamFoWo",
+  title: "Ministry Solutions — SoFoWo",
   description:
-    "Digital tools built for worship, presentation, and church ministry. SoFoWo worship songbook and BeamFoWo screen presentation — built to work together.",
+    "Digital tools for worship teams and church ministry, starting with SoFoWo: songbook and setlists for worship teams.",
 }
 
 const products = [
@@ -20,12 +20,12 @@ const products = [
   },
   {
     icon: Laptop,
-    name: "BeamFoWo",
-    tagline: "Beam For Worshippers",
-    desc: "Put Bible verses, song lyrics, and visuals on any screen or projector — offline, without preparation. Connects directly to your SoFoWo library.",
-    href: "/beamfowo",
+    name: "BeFoWo",
+    tagline: "Beamerpresentatie For Worshippers",
+    desc: "A presentation tool for worship: song lyrics on the screen during the service.",
+    href: "/befowo",
     comingSoon: true,
-    cta: "Explore BeamFoWo",
+    cta: "More about BeFoWo",
   },
 ]
 
@@ -54,8 +54,7 @@ export default function MinistrySolutionsPage() {
               Digital tools built for worship, presentation, and church ministry.
             </h1>
             <p className="text-lg text-gray-600">
-              Nofonex builds software for churches and worship teams — starting with SoFoWo and BeamFoWo,
-              designed to work together.
+              Nofonex builds software for churches and worship teams, starting with SoFoWo.
             </p>
           </div>
         </div>
@@ -101,45 +100,6 @@ export default function MinistrySolutionsPage() {
                 </Link>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Integration ── */}
-      <section className="py-16 md:py-20 bg-primary/5">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-10">
-              <div className="badge badge-secondary mb-3">Integration</div>
-              <h2 className="section-title">Built to work together</h2>
-            </div>
-            <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-gray-100">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="flex flex-col items-center gap-2 text-center md:w-1/3">
-                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-                    <BookOpen className="text-primary" size={26} />
-                  </div>
-                  <h3 className="font-semibold text-primary">SoFoWo</h3>
-                  <p className="text-xs text-gray-500">Your worship songbook</p>
-                </div>
-                <div className="flex items-center justify-center md:w-1/3">
-                  <span className="text-xs text-gray-500 font-medium px-3 py-1 rounded-full border border-primary/20 bg-white">
-                    connects to
-                  </span>
-                </div>
-                <div className="flex flex-col items-center gap-2 text-center md:w-1/3">
-                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Laptop className="text-primary" size={26} />
-                  </div>
-                  <h3 className="font-semibold text-primary">BeamFoWo</h3>
-                  <p className="text-xs text-gray-500">Your screen presenter</p>
-                </div>
-              </div>
-              <p className="text-center text-gray-600 text-sm mt-6">
-                Pull your SoFoWo songs directly into BeamFoWo and project them on any screen during your
-                service — no re-entering lyrics needed.
-              </p>
-            </div>
           </div>
         </div>
       </section>

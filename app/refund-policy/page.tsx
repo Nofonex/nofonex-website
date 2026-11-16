@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Refund Policy",
   description:
-    "Refund policy for Nofonex digital subscriptions and services — SoFoWo, BeamFoWo, SubByAge, and Magaxines.",
+    "Refund policy for Nofonex digital subscriptions and services — SoFoWo, BeFoWo, SubByAge, and Magaxines.",
 }
 
 export default function RefundPolicyPage() {
@@ -52,7 +52,7 @@ export default function RefundPolicyPage() {
 
             {/* 2 */}
             <div className="legal-section">
-              <h2>2. Subscriptions (SoFoWo, BeamFoWo, Magaxines)</h2>
+              <h2>2. Subscriptions (SoFoWo, BeFoWo, Magaxines)</h2>
 
               {/* 30-day guarantee highlight */}
               <div className="flex items-start gap-3 bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
