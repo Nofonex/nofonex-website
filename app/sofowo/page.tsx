@@ -212,8 +212,8 @@ export default function SoFoWoPage() {
             <div className="text-gray-600 text-sm space-y-3">
               <h2 className="text-xl font-semibold text-primary">Privacy in short</h2>
               <p>
-                No advertising and no selling of your data. You can export your data and delete your account
-                yourself in the app.
+                No advertising and no selling of your data. Your data is stored in the EU (Frankfurt, Germany). You
+                can export your data and delete your account yourself in the app.
               </p>
               <p>
                 For SoFoWo, the app&apos;s own privacy policy and terms of use apply:{" "}
